@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="chrome-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF00FF"/>
+      <stop offset="50%" style="stop-color:#00FFFF"/>
+      <stop offset="100%" style="stop-color:#FFFF00"/>
+    </linearGradient>
+    <linearGradient id="chrome-bar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#FF00FF"/>
+      <stop offset="100%" style="stop-color:#00FFFF"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="#1A0033"/>
+  <!-- Scanline effect -->
+  <line x1="0" y1="50" x2="800" y2="50" stroke="#E0E0FF" stroke-width="0.3" opacity="0.1"/>
+  <line x1="0" y1="100" x2="800" y2="100" stroke="#E0E0FF" stroke-width="0.3" opacity="0.1"/>
+  <line x1="0" y1="150" x2="800" y2="150" stroke="#E0E0FF" stroke-width="0.3" opacity="0.1"/>
+  <line x1="0" y1="200" x2="800" y2="200" stroke="#E0E0FF" stroke-width="0.3" opacity="0.1"/>
+  <line x1="0" y1="250" x2="800" y2="250" stroke="#E0E0FF" stroke-width="0.3" opacity="0.1"/>
+  <line x1="0" y1="300" x2="800" y2="300" stroke="#E0E0FF" stroke-width="0.3" opacity="0.1"/>
+  <line x1="0" y1="350" x2="800" y2="350" stroke="#E0E0FF" stroke-width="0.3" opacity="0.1"/>
+  <line x1="0" y1="400" x2="800" y2="400" stroke="#E0E0FF" stroke-width="0.3" opacity="0.1"/>
+  <line x1="0" y1="450" x2="800" y2="450" stroke="#E0E0FF" stroke-width="0.3" opacity="0.1"/>
+  <line x1="0" y1="500" x2="800" y2="500" stroke="#E0E0FF" stroke-width="0.3" opacity="0.1"/>
+  <line x1="0" y1="550" x2="800" y2="550" stroke="#E0E0FF" stroke-width="0.3" opacity="0.1"/>
+  <!-- Neon glow title -->
+  <text x="400" y="120" text-anchor="middle" font-family="monospace" font-size="64" font-weight="bold" fill="#FF00FF">RETRO</text>
+  <text x="400" y="180" text-anchor="middle" font-family="monospace" font-size="48" font-weight="bold" fill="#00FFFF">Y2K</text>
+  <!-- Chrome gradient bar -->
+  <rect x="100" y="210" width="600" height="4" fill="url(#chrome-bar)" rx="2"/>
+  <!-- Geometric shapes -->
+  <circle cx="200" cy="350" r="80" fill="none" stroke="#FF00FF" stroke-width="2"/>
+  <circle cx="200" cy="350" r="60" fill="none" stroke="#00FFFF" stroke-width="1"/>
+  <circle cx="200" cy="350" r="40" fill="none" stroke="#FFFF00" stroke-width="1"/>
+  <!-- Wireframe cube suggestion -->
+  <polygon points="500,280 580,310 580,400 500,370" fill="none" stroke="#00FFFF" stroke-width="1.5"/>
+  <polygon points="500,280 570,260 650,290 580,310" fill="none" stroke="#FF00FF" stroke-width="1.5"/>
+  <polygon points="580,310 650,290 650,380 580,400" fill="none" stroke="#FFFF00" stroke-width="1.5"/>
+  <!-- Star shapes -->
+  <text x="350" y="350" font-size="48" fill="#FFFF00" opacity="0.6">&#10022;</text>
+  <text x="680" y="200" font-size="32" fill="#FF00FF" opacity="0.5">&#10022;</text>
+  <text x="100" y="240" font-size="24" fill="#00FFFF" opacity="0.5">&#10022;</text>
+  <!-- Bottom text -->
+  <text x="400" y="480" text-anchor="middle" font-family="monospace" font-size="14" fill="#E0E0FF" letter-spacing="4">THE FUTURE AS IMAGINED IN 1999</text>
+  <!-- Neon line bottom -->
+  <rect x="150" y="510" width="500" height="2" fill="#FF00FF" opacity="0.8"/>
+  <rect x="200" y="530" width="400" height="2" fill="#00FFFF" opacity="0.6"/>
+  <rect x="250" y="550" width="300" height="2" fill="#FFFF00" opacity="0.4"/>
+</svg>

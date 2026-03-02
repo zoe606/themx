@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <rect width="800" height="600" fill="#F8FAFC"/>
+  <!-- Sidebar -->
+  <rect x="0" y="0" width="200" height="600" fill="#FFFFFF"/>
+  <rect x="199" y="0" width="1" height="600" fill="#E2E8F0"/>
+  <!-- Sidebar items -->
+  <rect x="0" y="0" width="200" height="48" fill="#EFF6FF"/>
+  <rect x="16" y="14" width="20" height="20" rx="4" fill="#2563EB"/>
+  <rect x="48" y="18" width="80" height="12" rx="2" fill="#2563EB"/>
+  <rect x="16" y="66" width="20" height="20" rx="4" fill="#E2E8F0"/>
+  <rect x="48" y="70" width="70" height="12" rx="2" fill="#475569" opacity="0.4"/>
+  <rect x="16" y="106" width="20" height="20" rx="4" fill="#E2E8F0"/>
+  <rect x="48" y="110" width="90" height="12" rx="2" fill="#475569" opacity="0.4"/>
+  <rect x="16" y="146" width="20" height="20" rx="4" fill="#E2E8F0"/>
+  <rect x="48" y="150" width="60" height="12" rx="2" fill="#475569" opacity="0.4"/>
+  <!-- Top bar -->
+  <rect x="200" y="0" width="600" height="48" fill="#FFFFFF"/>
+  <rect x="200" y="47" width="600" height="1" fill="#E2E8F0"/>
+  <text x="224" y="30" font-family="Inter, sans-serif" font-size="16" font-weight="600" fill="#0F172A">Dashboard</text>
+  <!-- Metric cards row -->
+  <rect x="224" y="72" width="130" height="80" rx="4" fill="#FFFFFF"/>
+  <text x="240" y="96" font-family="Inter, sans-serif" font-size="11" fill="#475569">Revenue</text>
+  <text x="240" y="124" font-family="Inter, sans-serif" font-size="24" font-weight="600" fill="#0F172A">$42.5k</text>
+  <rect x="240" y="136" width="40" height="4" rx="2" fill="#059669"/>
+  <rect x="370" y="72" width="130" height="80" rx="4" fill="#FFFFFF"/>
+  <text x="386" y="96" font-family="Inter, sans-serif" font-size="11" fill="#475569">Users</text>
+  <text x="386" y="124" font-family="Inter, sans-serif" font-size="24" font-weight="600" fill="#0F172A">1,284</text>
+  <rect x="386" y="136" width="40" height="4" rx="2" fill="#2563EB"/>
+  <rect x="516" y="72" width="130" height="80" rx="4" fill="#FFFFFF"/>
+  <text x="532" y="96" font-family="Inter, sans-serif" font-size="11" fill="#475569">Orders</text>
+  <text x="532" y="124" font-family="Inter, sans-serif" font-size="24" font-weight="600" fill="#0F172A">856</text>
+  <rect x="532" y="136" width="40" height="4" rx="2" fill="#059669"/>
+  <rect x="662" y="72" width="114" height="80" rx="4" fill="#FFFFFF"/>
+  <text x="678" y="96" font-family="Inter, sans-serif" font-size="11" fill="#475569">Growth</text>
+  <text x="678" y="124" font-family="Inter, sans-serif" font-size="24" font-weight="600" fill="#059669">+12%</text>
+  <!-- Data table -->
+  <rect x="224" y="176" width="552" height="400" rx="4" fill="#FFFFFF"/>
+  <rect x="224" y="176" width="552" height="36" fill="#FFFFFF"/>
+  <rect x="224" y="211" width="552" height="1" fill="#E2E8F0"/>
+  <text x="248" y="200" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#475569">Name</text>
+  <text x="420" y="200" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#475569">Status</text>
+  <text x="560" y="200" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#475569">Amount</text>
+  <text x="700" y="200" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#475569">Date</text>
+  <!-- Table rows -->
+  <rect x="248" y="226" width="100" height="8" rx="2" fill="#0F172A" opacity="0.2"/>
+  <rect x="420" y="222" width="50" height="18" rx="9" fill="#DCFCE7"/>
+  <text x="445" y="234" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#059669">Active</text>
+  <rect x="560" y="226" width="60" height="8" rx="2" fill="#0F172A" opacity="0.15"/>
+  <rect x="700" y="226" width="50" height="8" rx="2" fill="#0F172A" opacity="0.1"/>
+  <rect x="224" y="248" width="552" height="1" fill="#E2E8F0" opacity="0.5"/>
+  <rect x="248" y="264" width="80" height="8" rx="2" fill="#0F172A" opacity="0.2"/>
+  <rect x="420" y="260" width="56" height="18" rx="9" fill="#DBEAFE"/>
+  <text x="448" y="272" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#2563EB">Pending</text>
+  <rect x="560" y="264" width="70" height="8" rx="2" fill="#0F172A" opacity="0.15"/>
+  <rect x="700" y="264" width="50" height="8" rx="2" fill="#0F172A" opacity="0.1"/>
+  <rect x="224" y="286" width="552" height="1" fill="#E2E8F0" opacity="0.5"/>
+  <rect x="248" y="302" width="110" height="8" rx="2" fill="#0F172A" opacity="0.2"/>
+  <rect x="420" y="298" width="50" height="18" rx="9" fill="#DCFCE7"/>
+  <text x="445" y="310" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#059669">Active</text>
+  <rect x="560" y="302" width="55" height="8" rx="2" fill="#0F172A" opacity="0.15"/>
+  <rect x="700" y="302" width="50" height="8" rx="2" fill="#0F172A" opacity="0.1"/>
+</svg>

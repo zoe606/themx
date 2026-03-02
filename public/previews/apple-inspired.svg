@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <rect width="800" height="600" fill="#FFFFFF"/>
+  <!-- Minimal nav -->
+  <text x="60" y="36" font-family="-apple-system, sans-serif" font-size="14" fill="#1D1D1F" font-weight="600">themx</text>
+  <text x="620" y="36" font-family="-apple-system, sans-serif" font-size="12" fill="#86868B">Features</text>
+  <text x="690" y="36" font-family="-apple-system, sans-serif" font-size="12" fill="#86868B">About</text>
+  <rect x="730" y="22" width="50" height="24" rx="12" fill="#0071E3"/>
+  <text x="755" y="38" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="11" fill="#FFFFFF">Buy</text>
+  <!-- Hero section with massive whitespace -->
+  <text x="400" y="180" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="56" font-weight="600" fill="#1D1D1F">Apple-Inspired</text>
+  <text x="400" y="220" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="21" fill="#86868B">Refined simplicity inspired by Cupertino.</text>
+  <text x="400" y="270" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="17" fill="#0071E3">Learn more &#8250;</text>
+  <!-- Product image placeholder (rounded rectangle) -->
+  <rect x="200" y="310" width="400" height="220" rx="20" fill="#F5F5F7"/>
+  <rect x="280" y="370" width="240" height="100" rx="12" fill="#E8E8ED"/>
+  <text x="400" y="425" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="13" fill="#86868B">Product Image</text>
+  <!-- Purple accent dot -->
+  <circle cx="400" cy="560" r="4" fill="#AC39FF" opacity="0.6"/>
+</svg>

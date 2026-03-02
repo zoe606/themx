@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <rect width="800" height="600" fill="#0D1117"/>
+  <!-- Ornamental top border -->
+  <rect x="100" y="30" width="600" height="2" fill="#B8860B"/>
+  <rect x="120" y="36" width="560" height="1" fill="#C9B037" opacity="0.5"/>
+  <!-- Fan motif top -->
+  <line x1="400" y1="50" x2="300" y2="120" stroke="#B8860B" stroke-width="0.8" opacity="0.4"/>
+  <line x1="400" y1="50" x2="340" y2="130" stroke="#B8860B" stroke-width="0.8" opacity="0.4"/>
+  <line x1="400" y1="50" x2="380" y2="135" stroke="#B8860B" stroke-width="0.8" opacity="0.4"/>
+  <line x1="400" y1="50" x2="420" y2="135" stroke="#B8860B" stroke-width="0.8" opacity="0.4"/>
+  <line x1="400" y1="50" x2="460" y2="130" stroke="#B8860B" stroke-width="0.8" opacity="0.4"/>
+  <line x1="400" y1="50" x2="500" y2="120" stroke="#B8860B" stroke-width="0.8" opacity="0.4"/>
+  <!-- Title -->
+  <text x="400" y="190" text-anchor="middle" font-family="Georgia, serif" font-size="56" fill="#B8860B" letter-spacing="8">ART DECO</text>
+  <!-- Chevron decoration -->
+  <polyline points="340,210 400,230 460,210" fill="none" stroke="#C9B037" stroke-width="1.5"/>
+  <polyline points="360,220 400,235 440,220" fill="none" stroke="#C9B037" stroke-width="1" opacity="0.5"/>
+  <!-- Vertical lines -->
+  <rect x="150" y="260" width="1" height="260" fill="#B8860B" opacity="0.3"/>
+  <rect x="650" y="260" width="1" height="260" fill="#B8860B" opacity="0.3"/>
+  <!-- Content columns with ornamental borders -->
+  <rect x="180" y="270" width="200" height="240" fill="none" stroke="#B8860B" stroke-width="1" opacity="0.3"/>
+  <rect x="185" y="275" width="190" height="230" fill="none" stroke="#C9B037" stroke-width="0.5" opacity="0.2"/>
+  <rect x="200" y="290" width="160" height="100" fill="#1B3A4B"/>
+  <text x="280" y="345" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#E8DCC8" letter-spacing="2">PHOTOGRAPH</text>
+  <rect x="200" y="410" width="140" height="5" fill="#E8DCC8" opacity="0.3"/>
+  <rect x="200" y="425" width="120" height="5" fill="#E8DCC8" opacity="0.2"/>
+  <rect x="200" y="440" width="130" height="5" fill="#E8DCC8" opacity="0.2"/>
+  <rect x="420" y="270" width="200" height="240" fill="none" stroke="#B8860B" stroke-width="1" opacity="0.3"/>
+  <rect x="425" y="275" width="190" height="230" fill="none" stroke="#C9B037" stroke-width="0.5" opacity="0.2"/>
+  <text x="520" y="320" text-anchor="middle" font-family="Georgia, serif" font-size="24" fill="#C9B037" letter-spacing="3">Glamour</text>
+  <rect x="470" y="335" width="100" height="1" fill="#B8860B" opacity="0.5"/>
+  <rect x="440" y="360" width="160" height="5" fill="#E8DCC8" opacity="0.2"/>
+  <rect x="440" y="375" width="140" height="5" fill="#E8DCC8" opacity="0.2"/>
+  <rect x="440" y="390" width="150" height="5" fill="#E8DCC8" opacity="0.2"/>
+  <!-- Gold button -->
+  <rect x="440" y="440" width="120" height="30" fill="none" stroke="#B8860B" stroke-width="1.5"/>
+  <text x="500" y="460" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#B8860B" letter-spacing="3">EXPLORE</text>
+  <!-- Bottom ornament -->
+  <rect x="120" y="550" width="560" height="1" fill="#C9B037" opacity="0.5"/>
+  <rect x="100" y="556" width="600" height="2" fill="#B8860B"/>
+  <!-- Stepped corners (Art Deco motif) -->
+  <path d="M100,30 L100,20 L110,20" fill="none" stroke="#B8860B" stroke-width="2"/>
+  <path d="M700,30 L700,20 L690,20" fill="none" stroke="#B8860B" stroke-width="2"/>
+  <path d="M100,556 L100,570 L110,570" fill="none" stroke="#B8860B" stroke-width="2"/>
+  <path d="M700,556 L700,570 L690,570" fill="none" stroke="#B8860B" stroke-width="2"/>
+</svg>

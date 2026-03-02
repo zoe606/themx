@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <rect width="800" height="600" fill="#FFFFFF"/>
+  <!-- Clean header area -->
+  <text x="60" y="80" font-family="Inter, sans-serif" font-size="32" font-weight="600" fill="#0F172A">Scandinavian Clean</text>
+  <text x="60" y="110" font-family="Inter, sans-serif" font-size="14" fill="#64748B">Functional beauty in simplicity</text>
+  <!-- Subtle separator -->
+  <rect x="60" y="130" width="680" height="1" fill="#0F172A" opacity="0.08"/>
+  <!-- Content cards with minimal style -->
+  <rect x="60" y="160" width="320" height="180" rx="8" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+  <rect x="80" y="180" width="120" height="6" rx="3" fill="#2563EB"/>
+  <rect x="80" y="200" width="260" height="6" rx="3" fill="#0F172A" opacity="0.15"/>
+  <rect x="80" y="216" width="240" height="6" rx="3" fill="#0F172A" opacity="0.15"/>
+  <rect x="80" y="232" width="250" height="6" rx="3" fill="#0F172A" opacity="0.15"/>
+  <rect x="80" y="248" width="200" height="6" rx="3" fill="#0F172A" opacity="0.15"/>
+  <rect x="80" y="290" width="90" height="32" rx="6" fill="#2563EB"/>
+  <text x="125" y="311" text-anchor="middle" font-family="Inter, sans-serif" font-size="13" fill="#FFFFFF">Action</text>
+  <rect x="420" y="160" width="320" height="180" rx="8" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+  <rect x="440" y="180" width="100" height="100" rx="6" fill="#F8FAFC"/>
+  <rect x="560" y="180" width="160" height="6" rx="3" fill="#0F172A" opacity="0.15"/>
+  <rect x="560" y="196" width="140" height="6" rx="3" fill="#0F172A" opacity="0.15"/>
+  <rect x="560" y="212" width="150" height="6" rx="3" fill="#0F172A" opacity="0.15"/>
+  <rect x="440" y="300" width="60" height="6" rx="3" fill="#F97316"/>
+  <!-- Bottom section -->
+  <rect x="60" y="380" width="220" height="160" rx="8" fill="#F8FAFC"/>
+  <text x="170" y="440" text-anchor="middle" font-family="Inter, sans-serif" font-size="36" font-weight="600" fill="#2563EB">86</text>
+  <text x="170" y="465" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" fill="#64748B">Score</text>
+  <rect x="300" y="380" width="220" height="160" rx="8" fill="#F8FAFC"/>
+  <text x="410" y="440" text-anchor="middle" font-family="Inter, sans-serif" font-size="36" font-weight="600" fill="#0F172A">24</text>
+  <text x="410" y="465" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" fill="#64748B">Items</text>
+  <rect x="540" y="380" width="200" height="160" rx="8" fill="#F8FAFC"/>
+  <text x="640" y="440" text-anchor="middle" font-family="Inter, sans-serif" font-size="36" font-weight="600" fill="#F97316">12</text>
+  <text x="640" y="465" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" fill="#64748B">New</text>
+</svg>

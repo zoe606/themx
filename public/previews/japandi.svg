@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <rect width="800" height="600" fill="#F5F0EB"/>
+  <!-- Organic shape -->
+  <ellipse cx="600" cy="300" rx="200" ry="250" fill="#8B7355" opacity="0.08"/>
+  <!-- Heading with elegant serif -->
+  <text x="80" y="140" font-family="Georgia, serif" font-size="44" fill="#2C2420" letter-spacing="1">Japandi</text>
+  <text x="80" y="175" font-family="sans-serif" font-size="14" fill="#8B7355" letter-spacing="3">ZEN MEETS WARMTH</text>
+  <!-- Thin accent line -->
+  <rect x="80" y="195" width="60" height="2" fill="#C4956A"/>
+  <!-- Content with generous whitespace -->
+  <rect x="80" y="240" width="280" height="6" rx="3" fill="#2C2420" opacity="0.2"/>
+  <rect x="80" y="260" width="250" height="6" rx="3" fill="#2C2420" opacity="0.2"/>
+  <rect x="80" y="280" width="270" height="6" rx="3" fill="#2C2420" opacity="0.2"/>
+  <rect x="80" y="300" width="200" height="6" rx="3" fill="#2C2420" opacity="0.2"/>
+  <!-- Natural material card -->
+  <rect x="80" y="350" width="300" height="180" rx="12" fill="#E8E0D6"/>
+  <!-- Wood grain texture suggestion -->
+  <line x1="100" y1="380" x2="360" y2="380" stroke="#8B7355" stroke-width="0.5" opacity="0.3"/>
+  <line x1="100" y1="400" x2="360" y2="402" stroke="#8B7355" stroke-width="0.5" opacity="0.2"/>
+  <line x1="100" y1="420" x2="360" y2="419" stroke="#8B7355" stroke-width="0.5" opacity="0.3"/>
+  <line x1="100" y1="440" x2="360" y2="441" stroke="#8B7355" stroke-width="0.5" opacity="0.2"/>
+  <line x1="100" y1="460" x2="360" y2="460" stroke="#8B7355" stroke-width="0.5" opacity="0.3"/>
+  <text x="230" y="500" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#8B7355" letter-spacing="2">NATURAL TEXTURES</text>
+  <!-- Right side - organic shapes and green accent -->
+  <circle cx="560" cy="180" r="60" fill="#6B8E7B" opacity="0.2"/>
+  <circle cx="560" cy="180" r="30" fill="#6B8E7B" opacity="0.3"/>
+  <rect x="480" y="300" width="240" height="160" rx="80" fill="#6B8E7B" opacity="0.1"/>
+  <text x="600" y="390" text-anchor="middle" font-family="Georgia, serif" font-size="20" fill="#2C2420">Wabi-sabi</text>
+  <!-- Small accent element -->
+  <circle cx="520" cy="520" r="8" fill="#C4956A" opacity="0.6"/>
+  <circle cx="560" cy="530" r="5" fill="#8B7355" opacity="0.4"/>
+</svg>
