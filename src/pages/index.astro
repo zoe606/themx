@@ -1,9 +1,46 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import ThemeFilter from "../components/ThemeFilter";
+import { getCollection } from "astro:content";
+
+const themes = await getCollection("themes");
+const themeData = themes.map((t) => ({
+  name: t.data.name,
+  slug: t.data.slug,
+  category: t.data.category,
+  year: t.data.year,
+  tagline: t.data.tagline,
+  preview: t.data.preview,
+  colors: {
+    primary: t.data.colors.primary,
+    secondary: t.data.colors.secondary,
+    accent: t.data.colors.accent,
+  },
+}));
+
+const categories = [...new Set(themes.map((t) => t.data.category))].sort();
+const years = [...new Set(themes.map((t) => t.data.year))].sort((a, b) => b - a);
 ---
-<BaseLayout title="Home">
-  <div class="mx-auto max-w-6xl px-6 py-12">
-    <h1 class="text-3xl font-bold">themx</h1>
-    <p class="mt-2 text-gray-600">Coming soon.</p>
-  </div>
+<BaseLayout title="Design Themes & AI Prompts">
+  {/* Hero */}
+  <section class="border-b border-gray-200 bg-white">
+    <div class="mx-auto max-w-6xl px-6 py-16 text-center">
+      <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
+        themx
+      </h1>
+      <p class="mx-auto mt-4 max-w-xl text-lg text-gray-500">
+        Discover trending web design styles. Generate ready-to-use prompts for Claude to build your next project in any style.
+      </p>
+    </div>
+  </section>
+
+  {/* Theme catalog */}
+  <section class="mx-auto max-w-6xl px-6 py-12">
+    <ThemeFilter
+      client:load
+      themes={themeData}
+      categories={categories}
+      years={years}
+    />
+  </section>
 </BaseLayout>
