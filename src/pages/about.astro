@@ -1,0 +1,42 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+<BaseLayout title="About" description="What is themx and how to use the generated prompts">
+  <div class="mx-auto max-w-3xl px-6 py-16">
+    <h1 class="text-3xl font-bold text-gray-900">About themx</h1>
+
+    <div class="mt-8 space-y-6 text-gray-600 leading-relaxed">
+      <p>
+        <strong class="text-gray-900">themx</strong> is a curated catalog of web design trends and styles.
+        Each theme includes visual previews, color palettes, typography recommendations, and key
+        characteristics that define the style.
+      </p>
+
+      <p>
+        The real power is in the <strong class="text-gray-900">prompt builder</strong>. Configure your
+        tech stack and desired components, and themx generates a ready-to-use prompt you can paste
+        directly into Claude to build your next project in any design style.
+      </p>
+
+      <h2 class="text-xl font-semibold text-gray-900 pt-4">How to Use</h2>
+
+      <ol class="list-decimal list-inside space-y-2">
+        <li>Browse themes on the homepage or filter by category and year</li>
+        <li>Click a theme to see its details — colors, typography, characteristics</li>
+        <li>Use the prompt builder to select your framework, CSS approach, and components</li>
+        <li>Click "Copy to Clipboard" and paste the prompt into Claude</li>
+        <li>Claude will generate code matching that design style</li>
+      </ol>
+
+      <h2 class="text-xl font-semibold text-gray-900 pt-4">Categories</h2>
+
+      <ul class="space-y-2">
+        <li><strong>Minimalist</strong> — Clean, whitespace-heavy, typography-focused</li>
+        <li><strong>Bold</strong> — High contrast, thick borders, attention-grabbing</li>
+        <li><strong>Elegant</strong> — Refined, luxurious, sophisticated effects</li>
+        <li><strong>Playful</strong> — Fun, colorful, experimental layouts</li>
+        <li><strong>Corporate</strong> — Professional, structured, widely adopted</li>
+      </ul>
+    </div>
+  </div>
+</BaseLayout>
