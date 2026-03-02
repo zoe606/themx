@@ -1,0 +1,50 @@
+<svg width="800" height="450" viewBox="0 0 800 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="skf-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#E8E9EB"/>
+      <stop offset="100%" stop-color="#D1D5DB"/>
+    </linearGradient>
+    <linearGradient id="skf-card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F3F4F6"/>
+    </linearGradient>
+    <linearGradient id="skf-btn" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#60A5FA"/>
+      <stop offset="100%" stop-color="#2563EB"/>
+    </linearGradient>
+    <filter id="skf-shadow">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#000000" flood-opacity="0.15"/>
+    </filter>
+    <filter id="skf-inset">
+      <feDropShadow dx="0" dy="1" stdDeviation="2" flood-color="#000000" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+  <rect width="800" height="450" fill="url(#skf-bg)"/>
+  <!-- Form card -->
+  <rect x="220" y="20" width="360" height="410" rx="12" fill="url(#skf-card)" filter="url(#skf-shadow)"/>
+  <rect x="220" y="20" width="360" height="2" fill="#FFFFFF" opacity="0.6"/>
+  <!-- Header -->
+  <circle cx="400" cy="70" r="24" fill="url(#skf-btn)"/>
+  <text x="400" y="77" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#FFFFFF">U</text>
+  <text x="400" y="115" text-anchor="middle" font-family="Merriweather, serif" font-size="22" font-weight="700" fill="#1F2937">Welcome Back</text>
+  <text x="400" y="138" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#6B7280">Sign in to your account</text>
+  <!-- Email field -->
+  <text x="255" y="175" font-family="sans-serif" font-size="12" font-weight="500" fill="#1F2937">Email</text>
+  <rect x="255" y="183" width="290" height="44" rx="6" fill="#E5E7EB" filter="url(#skf-inset)"/>
+  <rect x="256" y="184" width="288" height="1" fill="#FFFFFF" opacity="0.5"/>
+  <text x="275" y="210" font-family="sans-serif" font-size="13" fill="#9CA3AF">you@example.com</text>
+  <!-- Password field -->
+  <text x="255" y="252" font-family="sans-serif" font-size="12" font-weight="500" fill="#1F2937">Password</text>
+  <rect x="255" y="260" width="290" height="44" rx="6" fill="#E5E7EB" filter="url(#skf-inset)"/>
+  <rect x="256" y="261" width="288" height="1" fill="#FFFFFF" opacity="0.5"/>
+  <text x="275" y="287" font-family="sans-serif" font-size="13" fill="#9CA3AF">Enter password</text>
+  <!-- Forgot password -->
+  <text x="545" y="325" text-anchor="end" font-family="sans-serif" font-size="12" fill="#3B82F6">Forgot password?</text>
+  <!-- Submit -->
+  <rect x="259" y="347" width="290" height="46" rx="8" fill="#1F2937" opacity="0.15"/>
+  <rect x="255" y="343" width="290" height="46" rx="8" fill="url(#skf-btn)" filter="url(#skf-shadow)"/>
+  <rect x="255" y="343" width="290" height="1.5" fill="#FFFFFF" opacity="0.3"/>
+  <text x="400" y="371" text-anchor="middle" font-family="sans-serif" font-size="15" font-weight="600" fill="#FFFFFF">Sign In</text>
+  <!-- Footer -->
+  <text x="400" y="415" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#6B7280">No account? <tspan fill="#3B82F6">Sign up</tspan></text>
+</svg>

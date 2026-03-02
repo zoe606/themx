@@ -1,0 +1,70 @@
+<svg width="800" height="450" viewBox="0 0 800 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="3dc-bg" x1="0" y1="0" x2="0.5" y2="1">
+      <stop offset="0%" stop-color="#020617"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+    <linearGradient id="3dc-card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1E1B4B" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#0F172A" stop-opacity="0.5"/>
+    </linearGradient>
+    <filter id="3dc-shadow-p">
+      <feDropShadow dx="4" dy="8" stdDeviation="10" flood-color="#6366F1" flood-opacity="0.25"/>
+    </filter>
+    <filter id="3dc-shadow-s">
+      <feDropShadow dx="4" dy="8" stdDeviation="10" flood-color="#A855F7" flood-opacity="0.25"/>
+    </filter>
+    <filter id="3dc-shadow-a">
+      <feDropShadow dx="4" dy="8" stdDeviation="10" flood-color="#F43F5E" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+  <rect width="800" height="450" fill="url(#3dc-bg)"/>
+  <circle cx="200" cy="100" r="150" fill="#6366F1" opacity="0.04"/>
+  <circle cx="600" cy="350" r="150" fill="#A855F7" opacity="0.04"/>
+  <text x="400" y="40" text-anchor="middle" font-family="Space Grotesk, sans-serif" font-size="22" font-weight="600" fill="#E2E8F0">Features</text>
+  <!-- Card 1 -->
+  <g transform="translate(40,65)">
+    <rect x="6" y="10" width="225" height="345" rx="14" fill="#6366F1" opacity="0.15"/>
+    <rect width="225" height="345" rx="14" fill="url(#3dc-card)" stroke="#6366F1" stroke-width="1" stroke-opacity="0.3" filter="url(#3dc-shadow-p)"/>
+    <rect y="0" width="225" height="3" rx="1.5" fill="#6366F1"/>
+    <!-- Isometric cube -->
+    <polygon points="112,80 145,97 112,114 79,97" fill="#6366F1" opacity="0.5"/>
+    <polygon points="112,114 145,97 145,130 112,147" fill="#6366F1" opacity="0.3"/>
+    <polygon points="112,114 79,97 79,130 112,147" fill="#6366F1" opacity="0.7"/>
+    <text x="112" y="185" text-anchor="middle" font-family="Space Grotesk, sans-serif" font-size="18" font-weight="600" fill="#E2E8F0">Spatial</text>
+    <text x="112" y="210" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" fill="#E2E8F0" opacity="0.4">3D transforms and</text>
+    <text x="112" y="228" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" fill="#E2E8F0" opacity="0.4">perspective effects.</text>
+    <rect x="42" y="270" width="140" height="36" rx="10" fill="#6366F1" opacity="0.2" stroke="#6366F1" stroke-width="1" stroke-opacity="0.4"/>
+    <text x="112" y="293" text-anchor="middle" font-family="Inter, sans-serif" font-size="13" font-weight="500" fill="#E2E8F0">Explore</text>
+  </g>
+  <!-- Card 2 -->
+  <g transform="translate(287,55)">
+    <rect x="6" y="10" width="225" height="355" rx="14" fill="#A855F7" opacity="0.15"/>
+    <rect width="225" height="355" rx="14" fill="url(#3dc-card)" stroke="#A855F7" stroke-width="1" stroke-opacity="0.3" filter="url(#3dc-shadow-s)"/>
+    <rect y="0" width="225" height="3" rx="1.5" fill="#A855F7"/>
+    <!-- Layered rects -->
+    <rect x="55" y="75" width="90" height="55" rx="6" fill="#A855F7" opacity="0.25"/>
+    <rect x="65" y="85" width="90" height="55" rx="6" fill="#A855F7" opacity="0.4"/>
+    <rect x="75" y="95" width="90" height="55" rx="6" fill="#A855F7" opacity="0.6"/>
+    <text x="112" y="195" text-anchor="middle" font-family="Space Grotesk, sans-serif" font-size="18" font-weight="600" fill="#E2E8F0">Parallax</text>
+    <text x="112" y="220" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" fill="#E2E8F0" opacity="0.4">Depth through layered</text>
+    <text x="112" y="238" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" fill="#E2E8F0" opacity="0.4">scrolling motion.</text>
+    <rect x="42" y="280" width="140" height="36" rx="10" fill="#A855F7" opacity="0.2" stroke="#A855F7" stroke-width="1" stroke-opacity="0.4"/>
+    <text x="112" y="303" text-anchor="middle" font-family="Inter, sans-serif" font-size="13" font-weight="500" fill="#E2E8F0">Explore</text>
+  </g>
+  <!-- Card 3 -->
+  <g transform="translate(535,65)">
+    <rect x="6" y="10" width="225" height="345" rx="14" fill="#F43F5E" opacity="0.15"/>
+    <rect width="225" height="345" rx="14" fill="url(#3dc-card)" stroke="#F43F5E" stroke-width="1" stroke-opacity="0.3" filter="url(#3dc-shadow-a)"/>
+    <rect y="0" width="225" height="3" rx="1.5" fill="#F43F5E"/>
+    <!-- Sphere -->
+    <circle cx="112" cy="100" r="30" fill="none" stroke="#F43F5E" stroke-width="1.5" opacity="0.5"/>
+    <ellipse cx="112" cy="100" rx="30" ry="12" fill="none" stroke="#F43F5E" stroke-width="1" opacity="0.3"/>
+    <ellipse cx="112" cy="100" rx="12" ry="30" fill="none" stroke="#F43F5E" stroke-width="1" opacity="0.3"/>
+    <text x="112" y="185" text-anchor="middle" font-family="Space Grotesk, sans-serif" font-size="18" font-weight="600" fill="#E2E8F0">Interactive</text>
+    <text x="112" y="210" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" fill="#E2E8F0" opacity="0.4">3D hover states and</text>
+    <text x="112" y="228" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" fill="#E2E8F0" opacity="0.4">interactive experiences.</text>
+    <rect x="42" y="270" width="140" height="36" rx="10" fill="#F43F5E" opacity="0.2" stroke="#F43F5E" stroke-width="1" stroke-opacity="0.4"/>
+    <text x="112" y="293" text-anchor="middle" font-family="Inter, sans-serif" font-size="13" font-weight="500" fill="#E2E8F0">Explore</text>
+  </g>
+</svg>

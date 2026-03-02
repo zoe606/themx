@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <radialGradient id="gm-blob1" cx="20%" cy="30%" r="50%">
+      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="gm-blob2" cx="80%" cy="60%" r="50%">
+      <stop offset="0%" stop-color="#EC4899" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#EC4899" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="gm-blob3" cx="50%" cy="80%" r="40%">
+      <stop offset="0%" stop-color="#06B6D4" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#06B6D4" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="gm-glass">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="0.5"/>
+    </filter>
+  </defs>
+  <rect width="800" height="600" fill="#FAFAFA"/>
+  <!-- Mesh gradient blobs -->
+  <rect width="800" height="600" fill="url(#gm-blob1)"/>
+  <rect width="800" height="600" fill="url(#gm-blob2)"/>
+  <rect width="800" height="600" fill="url(#gm-blob3)"/>
+  <!-- Title -->
+  <text x="400" y="80" text-anchor="middle" font-family="sans-serif" font-size="36" font-weight="700" fill="#1E1B4B">Gradient Mesh</text>
+  <text x="400" y="112" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#1E1B4B" opacity="0.7">Flowing colors that captivate</text>
+  <!-- Glass cards -->
+  <rect x="40" y="160" width="220" height="280" rx="16" fill="#FFFFFF" fill-opacity="0.4" stroke="#FFFFFF" stroke-opacity="0.6" stroke-width="1"/>
+  <circle cx="150" cy="230" r="30" fill="#8B5CF6" opacity="0.8"/>
+  <text x="150" y="290" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="600" fill="#1E1B4B">Design</text>
+  <text x="150" y="315" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#1E1B4B" opacity="0.6">Creative solutions</text>
+  <rect x="80" y="360" width="140" height="36" rx="18" fill="#8B5CF6"/>
+  <text x="150" y="383" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="600" fill="#FFFFFF">Explore</text>
+  <rect x="290" y="160" width="220" height="280" rx="16" fill="#FFFFFF" fill-opacity="0.4" stroke="#FFFFFF" stroke-opacity="0.6" stroke-width="1"/>
+  <circle cx="400" cy="230" r="30" fill="#EC4899" opacity="0.8"/>
+  <text x="400" y="290" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="600" fill="#1E1B4B">Develop</text>
+  <text x="400" y="315" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#1E1B4B" opacity="0.6">Build at scale</text>
+  <rect x="330" y="360" width="140" height="36" rx="18" fill="#EC4899"/>
+  <text x="400" y="383" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="600" fill="#FFFFFF">Explore</text>
+  <rect x="540" y="160" width="220" height="280" rx="16" fill="#FFFFFF" fill-opacity="0.4" stroke="#FFFFFF" stroke-opacity="0.6" stroke-width="1"/>
+  <circle cx="650" cy="230" r="30" fill="#06B6D4" opacity="0.8"/>
+  <text x="650" y="290" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="600" fill="#1E1B4B">Deploy</text>
+  <text x="650" y="315" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#1E1B4B" opacity="0.6">Ship with confidence</text>
+  <rect x="580" y="360" width="140" height="36" rx="18" fill="#06B6D4"/>
+  <text x="650" y="383" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="600" fill="#FFFFFF">Explore</text>
+  <!-- Bottom CTA -->
+  <rect x="260" y="500" width="280" height="52" rx="26" fill="#8B5CF6"/>
+  <text x="400" y="532" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="600" fill="#FFFFFF">Get Started Free</text>
+</svg>

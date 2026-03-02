@@ -1,0 +1,51 @@
+<svg width="800" height="450" viewBox="0 0 800 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="3dh-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#020617"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+    <linearGradient id="3dh-btn" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#6366F1"/>
+      <stop offset="100%" stop-color="#A855F7"/>
+    </linearGradient>
+    <filter id="3dh-glow">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="800" height="450" fill="url(#3dh-bg)"/>
+  <!-- Ambient glows -->
+  <circle cx="200" cy="200" r="200" fill="#6366F1" opacity="0.06"/>
+  <circle cx="650" cy="300" r="180" fill="#A855F7" opacity="0.05"/>
+  <!-- Nav -->
+  <text x="40" y="35" font-family="Space Grotesk, sans-serif" font-size="18" font-weight="700" fill="#E2E8F0">Spatial</text>
+  <rect x="700" y="14" width="70" height="30" rx="8" fill="#6366F1" opacity="0.6"/>
+  <text x="735" y="34" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" font-weight="500" fill="#E2E8F0">Enter</text>
+  <!-- Hero text -->
+  <text x="60" y="140" font-family="Space Grotesk, sans-serif" font-size="48" font-weight="700" fill="#E2E8F0">Enter the</text>
+  <text x="60" y="200" font-family="Space Grotesk, sans-serif" font-size="48" font-weight="700" fill="#6366F1">Third Dimension</text>
+  <!-- Subtitle -->
+  <text x="60" y="245" font-family="Inter, sans-serif" font-size="17" fill="#E2E8F0" opacity="0.4">Depth and dimension that pull you in.</text>
+  <text x="60" y="270" font-family="Inter, sans-serif" font-size="17" fill="#E2E8F0" opacity="0.4">CSS 3D transforms meet WebGL magic.</text>
+  <!-- CTA buttons -->
+  <rect x="60" y="300" width="190" height="48" rx="10" fill="url(#3dh-btn)" filter="url(#3dh-glow)"/>
+  <text x="155" y="329" text-anchor="middle" font-family="Space Grotesk, sans-serif" font-size="15" font-weight="600" fill="#E2E8F0">Explore Space</text>
+  <rect x="270" y="300" width="170" height="48" rx="10" fill="#6366F1" opacity="0.15" stroke="#6366F1" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="355" y="329" text-anchor="middle" font-family="Inter, sans-serif" font-size="15" font-weight="500" fill="#E2E8F0">View Demo</text>
+  <!-- 3D floating element on right -->
+  <g transform="translate(550,80)">
+    <!-- Shadow -->
+    <rect x="12" y="16" width="200" height="250" rx="14" fill="#6366F1" opacity="0.15"/>
+    <!-- Card -->
+    <rect width="200" height="250" rx="14" fill="#0F172A" stroke="#6366F1" stroke-width="1" stroke-opacity="0.3"/>
+    <rect y="0" width="200" height="3" rx="1.5" fill="#6366F1"/>
+    <!-- 3D cube -->
+    <polygon points="100,60 140,80 100,100 60,80" fill="#6366F1" opacity="0.5"/>
+    <polygon points="100,100 140,80 140,120 100,140" fill="#A855F7" opacity="0.4"/>
+    <polygon points="100,100 60,80 60,120 100,140" fill="#6366F1" opacity="0.7"/>
+    <text x="100" y="175" text-anchor="middle" font-family="Space Grotesk, sans-serif" font-size="15" font-weight="600" fill="#E2E8F0">3D Object</text>
+    <text x="100" y="198" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#E2E8F0" opacity="0.4">Interactive element</text>
+  </g>
+  <!-- Bottom -->
+  <text x="400" y="400" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" fill="#E2E8F0" opacity="0.25">Powered by Three.js + CSS 3D Transforms</text>
+</svg>

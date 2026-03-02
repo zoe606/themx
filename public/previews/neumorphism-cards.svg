@@ -1,0 +1,50 @@
+<svg width="800" height="450" viewBox="0 0 800 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="nc-outer" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="6" dy="6" stdDeviation="10" flood-color="#B8BEC7" flood-opacity="0.8"/>
+      <feDropShadow dx="-6" dy="-6" stdDeviation="10" flood-color="#FFFFFF" flood-opacity="0.9"/>
+    </filter>
+    <filter id="nc-pressed" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="3" dy="3" stdDeviation="5" flood-color="#B8BEC7" flood-opacity="0.6"/>
+      <feDropShadow dx="-3" dy="-3" stdDeviation="5" flood-color="#FFFFFF" flood-opacity="0.7"/>
+    </filter>
+  </defs>
+  <rect width="800" height="450" fill="#E0E5EC"/>
+  <text x="400" y="45" text-anchor="middle" font-family="Poppins, sans-serif" font-size="22" font-weight="600" fill="#44476A">Featured Cards</text>
+  <!-- Card 1 -->
+  <rect x="40" y="70" width="230" height="340" rx="24" fill="#E0E5EC" filter="url(#nc-outer)"/>
+  <circle cx="155" cy="145" r="40" fill="#E0E5EC" filter="url(#nc-pressed)"/>
+  <circle cx="155" cy="145" r="20" fill="#6C63FF"/>
+  <text x="155" y="215" text-anchor="middle" font-family="Poppins, sans-serif" font-size="18" font-weight="600" fill="#44476A">Analytics</text>
+  <text x="155" y="240" text-anchor="middle" font-family="Rubik, sans-serif" font-size="12" fill="#44476A" opacity="0.6">Track your growth</text>
+  <rect x="70" y="270" width="170" height="12" rx="6" fill="#E0E5EC" filter="url(#nc-pressed)"/>
+  <rect x="70" y="270" width="120" height="12" rx="6" fill="#6C63FF" opacity="0.5"/>
+  <rect x="70" y="300" width="170" height="12" rx="6" fill="#E0E5EC" filter="url(#nc-pressed)"/>
+  <rect x="70" y="300" width="90" height="12" rx="6" fill="#A8A4FF" opacity="0.5"/>
+  <rect x="80" y="340" width="150" height="42" rx="12" fill="#E0E5EC" filter="url(#nc-outer)"/>
+  <text x="155" y="367" text-anchor="middle" font-family="Poppins, sans-serif" font-size="14" font-weight="600" fill="#6C63FF">View</text>
+  <!-- Card 2 -->
+  <rect x="285" y="70" width="230" height="340" rx="24" fill="#E0E5EC" filter="url(#nc-outer)"/>
+  <circle cx="400" cy="145" r="40" fill="#E0E5EC" filter="url(#nc-pressed)"/>
+  <circle cx="400" cy="145" r="20" fill="#A8A4FF"/>
+  <text x="400" y="215" text-anchor="middle" font-family="Poppins, sans-serif" font-size="18" font-weight="600" fill="#44476A">Settings</text>
+  <text x="400" y="240" text-anchor="middle" font-family="Rubik, sans-serif" font-size="12" fill="#44476A" opacity="0.6">Customize preferences</text>
+  <rect x="315" y="270" width="170" height="12" rx="6" fill="#E0E5EC" filter="url(#nc-pressed)"/>
+  <rect x="315" y="270" width="140" height="12" rx="6" fill="#A8A4FF" opacity="0.5"/>
+  <rect x="315" y="300" width="170" height="12" rx="6" fill="#E0E5EC" filter="url(#nc-pressed)"/>
+  <rect x="315" y="300" width="60" height="12" rx="6" fill="#6C63FF" opacity="0.5"/>
+  <rect x="325" y="340" width="150" height="42" rx="12" fill="#E0E5EC" filter="url(#nc-outer)"/>
+  <text x="400" y="367" text-anchor="middle" font-family="Poppins, sans-serif" font-size="14" font-weight="600" fill="#A8A4FF">Edit</text>
+  <!-- Card 3 -->
+  <rect x="530" y="70" width="230" height="340" rx="24" fill="#E0E5EC" filter="url(#nc-outer)"/>
+  <circle cx="645" cy="145" r="40" fill="#E0E5EC" filter="url(#nc-pressed)"/>
+  <circle cx="645" cy="145" r="20" fill="#FF6584"/>
+  <text x="645" y="215" text-anchor="middle" font-family="Poppins, sans-serif" font-size="18" font-weight="600" fill="#44476A">Alerts</text>
+  <text x="645" y="240" text-anchor="middle" font-family="Rubik, sans-serif" font-size="12" fill="#44476A" opacity="0.6">Stay informed</text>
+  <rect x="560" y="270" width="170" height="12" rx="6" fill="#E0E5EC" filter="url(#nc-pressed)"/>
+  <rect x="560" y="270" width="80" height="12" rx="6" fill="#FF6584" opacity="0.5"/>
+  <rect x="560" y="300" width="170" height="12" rx="6" fill="#E0E5EC" filter="url(#nc-pressed)"/>
+  <rect x="560" y="300" width="110" height="12" rx="6" fill="#FF6584" opacity="0.4"/>
+  <rect x="570" y="340" width="150" height="42" rx="12" fill="#E0E5EC" filter="url(#nc-outer)"/>
+  <text x="645" y="367" text-anchor="middle" font-family="Poppins, sans-serif" font-size="14" font-weight="600" fill="#FF6584">Check</text>
+</svg>

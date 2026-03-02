@@ -1,0 +1,28 @@
+<svg width="800" height="450" viewBox="0 0 800 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="450" fill="#FFF7ED"/>
+  <!-- Background blobs -->
+  <ellipse cx="300" cy="100" rx="200" ry="130" fill="#F97316" opacity="0.06" transform="rotate(-10 300 100)"/>
+  <ellipse cx="550" cy="400" rx="180" ry="120" fill="#8B5CF6" opacity="0.06"/>
+  <!-- Form card -->
+  <rect x="220" y="25" width="360" height="400" rx="32" fill="#FFFFFF" stroke="#F97316" stroke-width="1.5" stroke-opacity="0.15"/>
+  <!-- Avatar blob -->
+  <ellipse cx="400" cy="68" rx="28" ry="25" fill="#F97316" opacity="0.15"/>
+  <circle cx="400" cy="68" r="16" fill="#F97316"/>
+  <text x="400" y="115" text-anchor="middle" font-family="DM Sans, sans-serif" font-size="22" font-weight="700" fill="#1C1917">Contact Us</text>
+  <text x="400" y="138" text-anchor="middle" font-family="DM Sans, sans-serif" font-size="13" fill="#1C1917" opacity="0.45">We would love to hear from you</text>
+  <!-- Name field -->
+  <text x="255" y="175" font-family="DM Sans, sans-serif" font-size="12" font-weight="500" fill="#1C1917" opacity="0.6">Name</text>
+  <rect x="255" y="183" width="290" height="44" rx="16" fill="#FFF7ED" stroke="#F97316" stroke-width="1" stroke-opacity="0.2"/>
+  <text x="275" y="210" font-family="DM Sans, sans-serif" font-size="13" fill="#1C1917" opacity="0.3">Your name</text>
+  <!-- Email field -->
+  <text x="255" y="248" font-family="DM Sans, sans-serif" font-size="12" font-weight="500" fill="#1C1917" opacity="0.6">Email</text>
+  <rect x="255" y="256" width="290" height="44" rx="16" fill="#FFF7ED" stroke="#F97316" stroke-width="1" stroke-opacity="0.2"/>
+  <text x="275" y="283" font-family="DM Sans, sans-serif" font-size="13" fill="#1C1917" opacity="0.3">you@example.com</text>
+  <!-- Message field -->
+  <text x="255" y="321" font-family="DM Sans, sans-serif" font-size="12" font-weight="500" fill="#1C1917" opacity="0.6">Message</text>
+  <rect x="255" y="329" width="290" height="44" rx="16" fill="#FFF7ED" stroke="#F97316" stroke-width="1" stroke-opacity="0.2"/>
+  <text x="275" y="356" font-family="DM Sans, sans-serif" font-size="13" fill="#1C1917" opacity="0.3">Tell us about it...</text>
+  <!-- Submit -->
+  <rect x="255" y="390" width="290" height="44" rx="22" fill="#F97316"/>
+  <text x="400" y="417" text-anchor="middle" font-family="DM Sans, sans-serif" font-size="15" font-weight="600" fill="#FFFFFF">Send Message</text>
+</svg>

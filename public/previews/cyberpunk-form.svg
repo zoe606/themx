@@ -1,0 +1,29 @@
+<svg width="800" height="450" viewBox="0 0 800 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="cpf-gg"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="cpf-gp"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="800" height="450" fill="#0D0D0D"/>
+  <!-- Form border -->
+  <rect x="220" y="20" width="360" height="410" fill="none" stroke="#00FF41" stroke-width="1.5" filter="url(#cpf-gg)"/>
+  <rect x="220" y="20" width="360" height="30" fill="#00FF41" opacity="0.08"/>
+  <text x="240" y="41" font-family="Share Tech Mono, monospace" font-size="12" fill="#00FF41">AUTH_TERMINAL v3.0</text>
+  <!-- Title -->
+  <text x="400" y="90" text-anchor="middle" font-family="Rajdhani, sans-serif" font-size="28" font-weight="700" fill="#00FF41" filter="url(#cpf-gg)">AUTHENTICATE</text>
+  <text x="400" y="115" text-anchor="middle" font-family="Share Tech Mono, monospace" font-size="12" fill="#C0C0C0">// Enter credentials to access the grid</text>
+  <!-- ID field -->
+  <text x="255" y="155" font-family="Share Tech Mono, monospace" font-size="11" fill="#00FF41">USER_ID:</text>
+  <rect x="255" y="163" width="290" height="42" fill="#0D0D0D" stroke="#00FF41" stroke-width="1" opacity="0.7"/>
+  <text x="270" y="189" font-family="Share Tech Mono, monospace" font-size="13" fill="#C0C0C0" opacity="0.4">netrunner_2077</text>
+  <!-- Password field -->
+  <text x="255" y="230" font-family="Share Tech Mono, monospace" font-size="11" fill="#00FF41">PASSKEY:</text>
+  <rect x="255" y="238" width="290" height="42" fill="#0D0D0D" stroke="#FF0090" stroke-width="1" opacity="0.7"/>
+  <text x="270" y="264" font-family="Share Tech Mono, monospace" font-size="13" fill="#C0C0C0" opacity="0.4">****************</text>
+  <!-- Access code field -->
+  <text x="255" y="305" font-family="Share Tech Mono, monospace" font-size="11" fill="#00FF41">ACCESS_CODE:</text>
+  <rect x="255" y="313" width="290" height="42" fill="#0D0D0D" stroke="#00D4FF" stroke-width="1" opacity="0.7"/>
+  <text x="270" y="339" font-family="Share Tech Mono, monospace" font-size="13" fill="#C0C0C0" opacity="0.4">XX-XXXX-XX</text>
+  <!-- Submit -->
+  <rect x="255" y="375" width="290" height="42" fill="none" stroke="#00FF41" stroke-width="2" filter="url(#cpf-gg)"/>
+  <text x="400" y="401" text-anchor="middle" font-family="Rajdhani, sans-serif" font-size="18" font-weight="700" fill="#00FF41">JACK IN</text>
+</svg>

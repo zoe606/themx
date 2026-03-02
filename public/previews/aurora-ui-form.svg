@@ -1,0 +1,41 @@
+<svg width="800" height="450" viewBox="0 0 800 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="auf-g1" cx="40%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#7C3AED" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#7C3AED" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="auf-g2" cx="60%" cy="30%" r="40%">
+      <stop offset="0%" stop-color="#F472B6" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#F472B6" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="auf-btn" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7C3AED"/>
+      <stop offset="100%" stop-color="#2DD4BF"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="#0F0B1A"/>
+  <rect width="800" height="450" fill="url(#auf-g1)"/>
+  <rect width="800" height="450" fill="url(#auf-g2)"/>
+  <!-- Form card -->
+  <rect x="220" y="25" width="360" height="400" rx="20" fill="#1A1530" fill-opacity="0.6" stroke="#7C3AED" stroke-width="1" stroke-opacity="0.3"/>
+  <!-- Header -->
+  <circle cx="400" cy="70" r="22" fill="#7C3AED" opacity="0.3"/>
+  <circle cx="400" cy="70" r="10" fill="#2DD4BF"/>
+  <text x="400" y="115" text-anchor="middle" font-family="Plus Jakarta Sans, sans-serif" font-size="22" font-weight="600" fill="#E2E8F0">Welcome Back</text>
+  <text x="400" y="138" text-anchor="middle" font-family="Inter, sans-serif" font-size="13" fill="#E2E8F0" opacity="0.4">Sign in to continue</text>
+  <!-- Email field -->
+  <text x="255" y="175" font-family="Inter, sans-serif" font-size="12" font-weight="500" fill="#E2E8F0" opacity="0.5">Email</text>
+  <rect x="255" y="183" width="290" height="44" rx="12" fill="#0F0B1A" fill-opacity="0.6" stroke="#7C3AED" stroke-width="1" stroke-opacity="0.2"/>
+  <text x="275" y="210" font-family="Inter, sans-serif" font-size="13" fill="#E2E8F0" opacity="0.25">you@example.com</text>
+  <!-- Password field -->
+  <text x="255" y="252" font-family="Inter, sans-serif" font-size="12" font-weight="500" fill="#E2E8F0" opacity="0.5">Password</text>
+  <rect x="255" y="260" width="290" height="44" rx="12" fill="#0F0B1A" fill-opacity="0.6" stroke="#7C3AED" stroke-width="1" stroke-opacity="0.2"/>
+  <text x="275" y="287" font-family="Inter, sans-serif" font-size="13" fill="#E2E8F0" opacity="0.25">Enter password</text>
+  <!-- Forgot password -->
+  <text x="545" y="325" text-anchor="end" font-family="Inter, sans-serif" font-size="12" fill="#2DD4BF" opacity="0.6">Forgot password?</text>
+  <!-- Submit -->
+  <rect x="255" y="345" width="290" height="44" rx="22" fill="url(#auf-btn)"/>
+  <text x="400" y="372" text-anchor="middle" font-family="Plus Jakarta Sans, sans-serif" font-size="15" font-weight="600" fill="#E2E8F0">Sign In</text>
+  <!-- Footer -->
+  <text x="400" y="410" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" fill="#E2E8F0" opacity="0.35">New here? <tspan fill="#F472B6" opacity="1">Create an account</tspan></text>
+</svg>

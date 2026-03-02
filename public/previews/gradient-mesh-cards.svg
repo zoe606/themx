@@ -1,0 +1,43 @@
+<svg width="800" height="450" viewBox="0 0 800 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="gmc-b1" cx="30%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="gmc-b2" cx="70%" cy="40%" r="45%">
+      <stop offset="0%" stop-color="#EC4899" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#EC4899" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="450" fill="#FAFAFA"/>
+  <rect width="800" height="450" fill="url(#gmc-b1)"/>
+  <rect width="800" height="450" fill="url(#gmc-b2)"/>
+  <text x="400" y="45" text-anchor="middle" font-family="sans-serif" font-size="22" font-weight="700" fill="#1E1B4B">Our Services</text>
+  <!-- Card 1 -->
+  <rect x="40" y="70" width="230" height="340" rx="16" fill="#FFFFFF" fill-opacity="0.45" stroke="#FFFFFF" stroke-opacity="0.6"/>
+  <circle cx="155" cy="140" r="30" fill="#8B5CF6" opacity="0.7"/>
+  <text x="155" y="200" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="600" fill="#1E1B4B">Design</text>
+  <text x="155" y="225" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#1E1B4B" opacity="0.6">Creative solutions that</text>
+  <text x="155" y="243" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#1E1B4B" opacity="0.6">inspire and delight.</text>
+  <rect x="75" y="280" width="160" height="40" rx="20" fill="#8B5CF6"/>
+  <text x="155" y="305" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="600" fill="#FFFFFF">Learn More</text>
+  <text x="155" y="355" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#1E1B4B" opacity="0.4">From $2,500/mo</text>
+  <!-- Card 2 -->
+  <rect x="285" y="70" width="230" height="340" rx="16" fill="#FFFFFF" fill-opacity="0.45" stroke="#FFFFFF" stroke-opacity="0.6"/>
+  <circle cx="400" cy="140" r="30" fill="#EC4899" opacity="0.7"/>
+  <text x="400" y="200" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="600" fill="#1E1B4B">Develop</text>
+  <text x="400" y="225" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#1E1B4B" opacity="0.6">Scalable applications built</text>
+  <text x="400" y="243" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#1E1B4B" opacity="0.6">with modern tech.</text>
+  <rect x="320" y="280" width="160" height="40" rx="20" fill="#EC4899"/>
+  <text x="400" y="305" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="600" fill="#FFFFFF">Learn More</text>
+  <text x="400" y="355" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#1E1B4B" opacity="0.4">From $5,000/mo</text>
+  <!-- Card 3 -->
+  <rect x="530" y="70" width="230" height="340" rx="16" fill="#FFFFFF" fill-opacity="0.45" stroke="#FFFFFF" stroke-opacity="0.6"/>
+  <circle cx="645" cy="140" r="30" fill="#06B6D4" opacity="0.7"/>
+  <text x="645" y="200" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="600" fill="#1E1B4B">Deploy</text>
+  <text x="645" y="225" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#1E1B4B" opacity="0.6">Ship with confidence on</text>
+  <text x="645" y="243" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#1E1B4B" opacity="0.6">reliable infrastructure.</text>
+  <rect x="565" y="280" width="160" height="40" rx="20" fill="#06B6D4"/>
+  <text x="645" y="305" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="600" fill="#FFFFFF">Learn More</text>
+  <text x="645" y="355" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#1E1B4B" opacity="0.4">From $1,200/mo</text>
+</svg>

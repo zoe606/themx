@@ -1,0 +1,54 @@
+<svg width="800" height="450" viewBox="0 0 800 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="skh-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#E8E9EB"/>
+      <stop offset="100%" stop-color="#D1D5DB"/>
+    </linearGradient>
+    <linearGradient id="skh-btn" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#60A5FA"/>
+      <stop offset="100%" stop-color="#2563EB"/>
+    </linearGradient>
+    <linearGradient id="skh-card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F3F4F6"/>
+    </linearGradient>
+    <filter id="skh-shadow">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#000000" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+  <rect width="800" height="450" fill="url(#skh-bg)"/>
+  <!-- Nav bar -->
+  <rect x="0" y="0" width="800" height="55" fill="url(#skh-card)" filter="url(#skh-shadow)"/>
+  <rect x="0" y="0" width="800" height="1.5" fill="#FFFFFF" opacity="0.7"/>
+  <text x="40" y="35" font-family="Merriweather, serif" font-size="18" font-weight="700" fill="#1F2937">SkeuoApp</text>
+  <rect x="690" y="14" width="80" height="30" rx="6" fill="url(#skh-btn)" filter="url(#skh-shadow)"/>
+  <rect x="690" y="14" width="80" height="1.5" rx="6" fill="#FFFFFF" opacity="0.3"/>
+  <text x="730" y="34" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="600" fill="#FFFFFF">Sign Up</text>
+  <!-- Hero content -->
+  <text x="60" y="140" font-family="Merriweather, serif" font-size="40" font-weight="700" fill="#1F2937">Tangible Design</text>
+  <text x="60" y="190" font-family="Merriweather, serif" font-size="40" font-weight="700" fill="#3B82F6">That Feels Real</text>
+  <text x="60" y="235" font-family="sans-serif" font-size="16" fill="#6B7280">Realistic textures and dimensional interfaces</text>
+  <text x="60" y="258" font-family="sans-serif" font-size="16" fill="#6B7280">that bring warmth back to digital design.</text>
+  <!-- CTA buttons -->
+  <rect x="64" y="290" width="190" height="48" rx="8" fill="#1F2937" opacity="0.2"/>
+  <rect x="60" y="286" width="190" height="48" rx="8" fill="url(#skh-btn)" filter="url(#skh-shadow)"/>
+  <rect x="60" y="286" width="190" height="1.5" rx="8" fill="#FFFFFF" opacity="0.3"/>
+  <text x="155" y="315" text-anchor="middle" font-family="sans-serif" font-size="15" font-weight="600" fill="#FFFFFF">Get Started</text>
+  <rect x="274" y="290" width="170" height="48" rx="8" fill="#1F2937" opacity="0.1"/>
+  <rect x="270" y="286" width="170" height="48" rx="8" fill="url(#skh-card)" filter="url(#skh-shadow)" stroke="#D1D5DB" stroke-width="1"/>
+  <text x="355" y="315" text-anchor="middle" font-family="sans-serif" font-size="15" font-weight="600" fill="#1F2937">Learn More</text>
+  <!-- Floating card on right -->
+  <rect x="530" y="100" width="230" height="240" rx="12" fill="url(#skh-card)" filter="url(#skh-shadow)"/>
+  <rect x="530" y="100" width="230" height="2" rx="1" fill="#FFFFFF" opacity="0.6"/>
+  <rect x="550" y="120" width="190" height="100" rx="8" fill="#E5E7EB"/>
+  <circle cx="645" cy="170" r="24" fill="url(#skh-btn)"/>
+  <text x="645" y="177" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#FFFFFF">P</text>
+  <text x="645" y="255" text-anchor="middle" font-family="Merriweather, serif" font-size="15" font-weight="700" fill="#1F2937">Craft &amp; Detail</text>
+  <text x="645" y="278" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#6B7280">Textures that delight</text>
+  <rect x="580" y="300" width="130" height="28" rx="6" fill="url(#skh-btn)"/>
+  <rect x="580" y="300" width="130" height="1" fill="#FFFFFF" opacity="0.3"/>
+  <text x="645" y="318" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="600" fill="#FFFFFF">Preview</text>
+  <!-- Bottom bar -->
+  <rect x="60" y="390" width="680" height="1" fill="#9CA3AF" opacity="0.3"/>
+  <text x="400" y="420" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#9CA3AF">Physical metaphors guiding modern UI</text>
+</svg>

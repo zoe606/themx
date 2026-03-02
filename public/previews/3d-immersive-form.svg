@@ -1,0 +1,46 @@
+<svg width="800" height="450" viewBox="0 0 800 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="3df-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#020617"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+    <linearGradient id="3df-btn" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#6366F1"/>
+      <stop offset="100%" stop-color="#A855F7"/>
+    </linearGradient>
+    <filter id="3df-shadow">
+      <feDropShadow dx="4" dy="8" stdDeviation="12" flood-color="#6366F1" flood-opacity="0.2"/>
+    </filter>
+    <filter id="3df-glow">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="800" height="450" fill="url(#3df-bg)"/>
+  <circle cx="400" cy="225" r="250" fill="#6366F1" opacity="0.04"/>
+  <!-- Form card with perspective shadow -->
+  <rect x="226" y="30" width="360" height="400" rx="16" fill="#6366F1" opacity="0.1"/>
+  <rect x="220" y="25" width="360" height="400" rx="16" fill="#0F172A" stroke="#6366F1" stroke-width="1" stroke-opacity="0.3" filter="url(#3df-shadow)"/>
+  <!-- Header -->
+  <!-- 3D cube icon -->
+  <polygon points="400,50 420,62 400,74 380,62" fill="#6366F1" opacity="0.6"/>
+  <polygon points="400,74 420,62 420,82 400,94" fill="#A855F7" opacity="0.4"/>
+  <polygon points="400,74 380,62 380,82 400,94" fill="#6366F1" opacity="0.8"/>
+  <text x="400" y="125" text-anchor="middle" font-family="Space Grotesk, sans-serif" font-size="22" font-weight="600" fill="#E2E8F0">Enter Space</text>
+  <text x="400" y="148" text-anchor="middle" font-family="Inter, sans-serif" font-size="13" fill="#E2E8F0" opacity="0.35">Sign in to the dimension</text>
+  <!-- Email field -->
+  <text x="255" y="185" font-family="Inter, sans-serif" font-size="12" font-weight="500" fill="#E2E8F0" opacity="0.5">Email</text>
+  <rect x="255" y="193" width="290" height="44" rx="10" fill="#020617" stroke="#6366F1" stroke-width="1" stroke-opacity="0.25"/>
+  <text x="275" y="220" font-family="Inter, sans-serif" font-size="13" fill="#E2E8F0" opacity="0.2">you@example.com</text>
+  <!-- Password field -->
+  <text x="255" y="260" font-family="Inter, sans-serif" font-size="12" font-weight="500" fill="#E2E8F0" opacity="0.5">Password</text>
+  <rect x="255" y="268" width="290" height="44" rx="10" fill="#020617" stroke="#6366F1" stroke-width="1" stroke-opacity="0.25"/>
+  <text x="275" y="295" font-family="Inter, sans-serif" font-size="13" fill="#E2E8F0" opacity="0.2">Enter password</text>
+  <!-- Forgot -->
+  <text x="545" y="335" text-anchor="end" font-family="Inter, sans-serif" font-size="12" fill="#A855F7" opacity="0.6">Forgot?</text>
+  <!-- Submit button -->
+  <rect x="255" y="355" width="290" height="44" rx="10" fill="url(#3df-btn)" filter="url(#3df-glow)"/>
+  <text x="400" y="382" text-anchor="middle" font-family="Space Grotesk, sans-serif" font-size="15" font-weight="600" fill="#E2E8F0">Launch</text>
+  <!-- Footer -->
+  <text x="400" y="420" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" fill="#E2E8F0" opacity="0.3">New here? <tspan fill="#F43F5E" opacity="1">Create account</tspan></text>
+</svg>

@@ -1,0 +1,58 @@
+<svg width="800" height="450" viewBox="0 0 800 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="gmd-b1" cx="15%" cy="30%" r="40%">
+      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="gmd-b2" cx="85%" cy="70%" r="35%">
+      <stop offset="0%" stop-color="#EC4899" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#EC4899" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="450" fill="#FAFAFA"/>
+  <rect width="800" height="450" fill="url(#gmd-b1)"/>
+  <rect width="800" height="450" fill="url(#gmd-b2)"/>
+  <!-- Sidebar -->
+  <rect x="0" y="0" width="180" height="450" rx="0" fill="#FFFFFF" fill-opacity="0.4" stroke="#FFFFFF" stroke-opacity="0.5"/>
+  <text x="90" y="35" text-anchor="middle" font-family="sans-serif" font-size="16" font-weight="700" fill="#1E1B4B">MeshApp</text>
+  <rect x="12" y="55" width="156" height="34" rx="12" fill="#8B5CF6" opacity="0.15"/>
+  <text x="90" y="77" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="600" fill="#8B5CF6">Dashboard</text>
+  <text x="90" y="115" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#1E1B4B" opacity="0.5">Analytics</text>
+  <text x="90" y="145" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#1E1B4B" opacity="0.5">Projects</text>
+  <text x="90" y="175" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#1E1B4B" opacity="0.5">Settings</text>
+  <!-- Stat cards -->
+  <rect x="200" y="15" width="185" height="80" rx="14" fill="#FFFFFF" fill-opacity="0.5" stroke="#FFFFFF" stroke-opacity="0.6"/>
+  <text x="292" y="48" text-anchor="middle" font-family="sans-serif" font-size="22" font-weight="700" fill="#8B5CF6">3,241</text>
+  <text x="292" y="70" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#1E1B4B" opacity="0.5">Total Users</text>
+  <rect x="400" y="15" width="185" height="80" rx="14" fill="#FFFFFF" fill-opacity="0.5" stroke="#FFFFFF" stroke-opacity="0.6"/>
+  <text x="492" y="48" text-anchor="middle" font-family="sans-serif" font-size="22" font-weight="700" fill="#EC4899">$12.8k</text>
+  <text x="492" y="70" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#1E1B4B" opacity="0.5">Revenue</text>
+  <rect x="600" y="15" width="180" height="80" rx="14" fill="#FFFFFF" fill-opacity="0.5" stroke="#FFFFFF" stroke-opacity="0.6"/>
+  <text x="690" y="48" text-anchor="middle" font-family="sans-serif" font-size="22" font-weight="700" fill="#06B6D4">98.2%</text>
+  <text x="690" y="70" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#1E1B4B" opacity="0.5">Uptime</text>
+  <!-- Chart panel -->
+  <rect x="200" y="110" width="380" height="320" rx="14" fill="#FFFFFF" fill-opacity="0.45" stroke="#FFFFFF" stroke-opacity="0.5"/>
+  <text x="225" y="140" font-family="sans-serif" font-size="14" font-weight="600" fill="#1E1B4B">Weekly Performance</text>
+  <!-- Chart area with gradient fill -->
+  <polyline points="230,310 280,280 330,290 380,250 430,260 480,220 530,230" stroke="#8B5CF6" stroke-width="2.5" fill="none"/>
+  <polygon points="230,310 280,280 330,290 380,250 430,260 480,220 530,230 530,350 230,350" fill="#8B5CF6" opacity="0.1"/>
+  <!-- Axis labels -->
+  <text x="230" y="370" font-family="sans-serif" font-size="9" fill="#1E1B4B" opacity="0.4">Mon</text>
+  <text x="280" y="370" font-family="sans-serif" font-size="9" fill="#1E1B4B" opacity="0.4">Tue</text>
+  <text x="330" y="370" font-family="sans-serif" font-size="9" fill="#1E1B4B" opacity="0.4">Wed</text>
+  <text x="380" y="370" font-family="sans-serif" font-size="9" fill="#1E1B4B" opacity="0.4">Thu</text>
+  <text x="430" y="370" font-family="sans-serif" font-size="9" fill="#1E1B4B" opacity="0.4">Fri</text>
+  <text x="480" y="370" font-family="sans-serif" font-size="9" fill="#1E1B4B" opacity="0.4">Sat</text>
+  <text x="530" y="370" font-family="sans-serif" font-size="9" fill="#1E1B4B" opacity="0.4">Sun</text>
+  <!-- Activity panel -->
+  <rect x="600" y="110" width="180" height="320" rx="14" fill="#FFFFFF" fill-opacity="0.45" stroke="#FFFFFF" stroke-opacity="0.5"/>
+  <text x="620" y="140" font-family="sans-serif" font-size="13" font-weight="600" fill="#1E1B4B">Activity</text>
+  <circle cx="620" cy="170" r="5" fill="#8B5CF6"/>
+  <text x="635" y="174" font-family="sans-serif" font-size="11" fill="#1E1B4B" opacity="0.6">New signup</text>
+  <circle cx="620" cy="200" r="5" fill="#EC4899"/>
+  <text x="635" y="204" font-family="sans-serif" font-size="11" fill="#1E1B4B" opacity="0.6">Payment</text>
+  <circle cx="620" cy="230" r="5" fill="#06B6D4"/>
+  <text x="635" y="234" font-family="sans-serif" font-size="11" fill="#1E1B4B" opacity="0.6">Deploy</text>
+  <circle cx="620" cy="260" r="5" fill="#8B5CF6"/>
+  <text x="635" y="264" font-family="sans-serif" font-size="11" fill="#1E1B4B" opacity="0.6">Feature ship</text>
+</svg>

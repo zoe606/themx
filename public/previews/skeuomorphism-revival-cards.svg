@@ -1,0 +1,68 @@
+<svg width="800" height="450" viewBox="0 0 800 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="skc-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#E8E9EB"/>
+      <stop offset="100%" stop-color="#D1D5DB"/>
+    </linearGradient>
+    <linearGradient id="skc-card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F3F4F6"/>
+    </linearGradient>
+    <linearGradient id="skc-blue" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#60A5FA"/>
+      <stop offset="100%" stop-color="#2563EB"/>
+    </linearGradient>
+    <linearGradient id="skc-red" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F87171"/>
+      <stop offset="100%" stop-color="#DC2626"/>
+    </linearGradient>
+    <linearGradient id="skc-amber" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FCD34D"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+    <filter id="skc-shadow">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#000000" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+  <rect width="800" height="450" fill="url(#skc-bg)"/>
+  <text x="400" y="40" text-anchor="middle" font-family="Merriweather, serif" font-size="20" font-weight="700" fill="#1F2937">Explore Features</text>
+  <!-- Card 1 -->
+  <rect x="40" y="65" width="230" height="350" rx="12" fill="url(#skc-card)" filter="url(#skc-shadow)"/>
+  <rect x="40" y="65" width="230" height="2" fill="#FFFFFF" opacity="0.6"/>
+  <rect x="60" y="85" width="190" height="110" rx="8" fill="#E5E7EB"/>
+  <circle cx="155" cy="140" r="28" fill="url(#skc-blue)"/>
+  <text x="155" y="147" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#FFFFFF">A</text>
+  <text x="155" y="225" text-anchor="middle" font-family="Merriweather, serif" font-size="16" font-weight="700" fill="#1F2937">Analytics</text>
+  <text x="155" y="248" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#6B7280">Track performance with</text>
+  <text x="155" y="266" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#6B7280">realistic dashboards.</text>
+  <rect x="75" y="300" width="160" height="38" rx="8" fill="url(#skc-blue)" filter="url(#skc-shadow)"/>
+  <rect x="75" y="300" width="160" height="1.5" fill="#FFFFFF" opacity="0.3"/>
+  <text x="155" y="324" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="600" fill="#FFFFFF">Explore</text>
+  <text x="155" y="375" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#9CA3AF">Free plan available</text>
+  <!-- Card 2 -->
+  <rect x="285" y="65" width="230" height="350" rx="12" fill="url(#skc-card)" filter="url(#skc-shadow)"/>
+  <rect x="285" y="65" width="230" height="2" fill="#FFFFFF" opacity="0.6"/>
+  <rect x="305" y="85" width="190" height="110" rx="8" fill="#E5E7EB"/>
+  <circle cx="400" cy="140" r="28" fill="url(#skc-red)"/>
+  <text x="400" y="147" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#FFFFFF">N</text>
+  <text x="400" y="225" text-anchor="middle" font-family="Merriweather, serif" font-size="16" font-weight="700" fill="#1F2937">Notifications</text>
+  <text x="400" y="248" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#6B7280">Stay updated with tactile</text>
+  <text x="400" y="266" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#6B7280">alert experiences.</text>
+  <rect x="320" y="300" width="160" height="38" rx="8" fill="url(#skc-red)" filter="url(#skc-shadow)"/>
+  <rect x="320" y="300" width="160" height="1.5" fill="#FFFFFF" opacity="0.3"/>
+  <text x="400" y="324" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="600" fill="#FFFFFF">Explore</text>
+  <text x="400" y="375" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#9CA3AF">Team plan</text>
+  <!-- Card 3 -->
+  <rect x="530" y="65" width="230" height="350" rx="12" fill="url(#skc-card)" filter="url(#skc-shadow)"/>
+  <rect x="530" y="65" width="230" height="2" fill="#FFFFFF" opacity="0.6"/>
+  <rect x="550" y="85" width="190" height="110" rx="8" fill="#E5E7EB"/>
+  <circle cx="645" cy="140" r="28" fill="url(#skc-amber)"/>
+  <text x="645" y="147" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#FFFFFF">S</text>
+  <text x="645" y="225" text-anchor="middle" font-family="Merriweather, serif" font-size="16" font-weight="700" fill="#1F2937">Settings</text>
+  <text x="645" y="248" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#6B7280">Configure with physical</text>
+  <text x="645" y="266" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#6B7280">metaphor controls.</text>
+  <rect x="565" y="300" width="160" height="38" rx="8" fill="url(#skc-amber)" filter="url(#skc-shadow)"/>
+  <rect x="565" y="300" width="160" height="1.5" fill="#FFFFFF" opacity="0.3"/>
+  <text x="645" y="324" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="600" fill="#FFFFFF">Explore</text>
+  <text x="645" y="375" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#9CA3AF">Enterprise</text>
+</svg>

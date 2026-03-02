@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <filter id="cp-glow-green">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="cp-glow-pink">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="cp-glow-cyan">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="800" height="600" fill="#0D0D0D"/>
+  <!-- Scanlines -->
+  <pattern id="scanlines" width="4" height="4" patternUnits="userSpaceOnUse">
+    <rect width="4" height="2" fill="#FFFFFF" opacity="0.03"/>
+  </pattern>
+  <rect width="800" height="600" fill="url(#scanlines)"/>
+  <!-- Neon heading -->
+  <text x="400" y="100" text-anchor="middle" font-family="Rajdhani, sans-serif" font-size="52" font-weight="700" fill="#00FF41" filter="url(#cp-glow-green)">CYBERPUNK</text>
+  <text x="400" y="135" text-anchor="middle" font-family="Share Tech Mono, monospace" font-size="16" fill="#C0C0C0">HIGH TECH // LOW LIFE</text>
+  <!-- Neon divider -->
+  <line x1="100" y1="160" x2="700" y2="160" stroke="#FF0090" stroke-width="2" filter="url(#cp-glow-pink)"/>
+  <!-- Cards -->
+  <rect x="40" y="200" width="220" height="200" fill="none" stroke="#00FF41" stroke-width="2" filter="url(#cp-glow-green)"/>
+  <rect x="40" y="200" width="220" height="4" fill="#00FF41"/>
+  <text x="150" y="240" text-anchor="middle" font-family="Rajdhani, sans-serif" font-size="22" font-weight="700" fill="#00FF41">SYSTEM</text>
+  <text x="60" y="270" font-family="Share Tech Mono, monospace" font-size="12" fill="#C0C0C0">CPU: 87% [|||||| ]</text>
+  <text x="60" y="295" font-family="Share Tech Mono, monospace" font-size="12" fill="#C0C0C0">MEM: 64% [||||   ]</text>
+  <text x="60" y="320" font-family="Share Tech Mono, monospace" font-size="12" fill="#C0C0C0">NET: ACTIVE</text>
+  <text x="60" y="345" font-family="Share Tech Mono, monospace" font-size="12" fill="#00FF41">STATUS: ONLINE</text>
+  <rect x="290" y="200" width="220" height="200" fill="none" stroke="#FF0090" stroke-width="2" filter="url(#cp-glow-pink)"/>
+  <rect x="290" y="200" width="220" height="4" fill="#FF0090"/>
+  <text x="400" y="240" text-anchor="middle" font-family="Rajdhani, sans-serif" font-size="22" font-weight="700" fill="#FF0090">NEURAL</text>
+  <text x="310" y="270" font-family="Share Tech Mono, monospace" font-size="12" fill="#C0C0C0">SYNC: 99.7%</text>
+  <text x="310" y="295" font-family="Share Tech Mono, monospace" font-size="12" fill="#C0C0C0">LATENCY: 2ms</text>
+  <text x="310" y="320" font-family="Share Tech Mono, monospace" font-size="12" fill="#C0C0C0">NODES: 2,048</text>
+  <text x="310" y="345" font-family="Share Tech Mono, monospace" font-size="12" fill="#FF0090">LINK: STABLE</text>
+  <rect x="540" y="200" width="220" height="200" fill="none" stroke="#00D4FF" stroke-width="2" filter="url(#cp-glow-cyan)"/>
+  <rect x="540" y="200" width="220" height="4" fill="#00D4FF"/>
+  <text x="650" y="240" text-anchor="middle" font-family="Rajdhani, sans-serif" font-size="22" font-weight="700" fill="#00D4FF">CRYPTO</text>
+  <text x="560" y="270" font-family="Share Tech Mono, monospace" font-size="12" fill="#C0C0C0">WALLET: *****7F2A</text>
+  <text x="560" y="295" font-family="Share Tech Mono, monospace" font-size="12" fill="#C0C0C0">BALANCE: 847.3</text>
+  <text x="560" y="320" font-family="Share Tech Mono, monospace" font-size="12" fill="#C0C0C0">TX/DAY: 142</text>
+  <text x="560" y="345" font-family="Share Tech Mono, monospace" font-size="12" fill="#00D4FF">VAULT: LOCKED</text>
+  <!-- Bottom neon button -->
+  <rect x="280" y="460" width="240" height="50" fill="none" stroke="#00FF41" stroke-width="2" filter="url(#cp-glow-green)"/>
+  <text x="400" y="491" text-anchor="middle" font-family="Rajdhani, sans-serif" font-size="20" font-weight="700" fill="#00FF41">JACK IN</text>
+  <!-- Corner decorations -->
+  <line x1="40" y1="560" x2="200" y2="560" stroke="#FF0090" stroke-width="1" opacity="0.5"/>
+  <line x1="600" y1="560" x2="760" y2="560" stroke="#00D4FF" stroke-width="1" opacity="0.5"/>
+</svg>

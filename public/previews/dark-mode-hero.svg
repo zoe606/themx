@@ -1,0 +1,33 @@
+<svg width="800" height="450" viewBox="0 0 800 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="450" fill="#121212"/>
+  <!-- Nav bar -->
+  <rect x="0" y="0" width="800" height="56" fill="#1E1E1E"/>
+  <text x="40" y="35" font-family="Inter, sans-serif" font-size="18" font-weight="700" fill="#E1E1E1">DarkUI</text>
+  <text x="500" y="35" font-family="Inter, sans-serif" font-size="14" fill="#9E9E9E">Features</text>
+  <text x="580" y="35" font-family="Inter, sans-serif" font-size="14" fill="#9E9E9E">Pricing</text>
+  <text x="650" y="35" font-family="Inter, sans-serif" font-size="14" fill="#9E9E9E">Docs</text>
+  <rect x="710" y="16" width="60" height="28" rx="6" fill="#BB86FC"/>
+  <text x="740" y="35" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#121212">Login</text>
+  <!-- Hero -->
+  <text x="60" y="150" font-family="Inter, sans-serif" font-size="48" font-weight="700" fill="#E1E1E1">Design in the</text>
+  <text x="60" y="210" font-family="Inter, sans-serif" font-size="48" font-weight="700" fill="#BB86FC">Dark Side</text>
+  <text x="60" y="260" font-family="Inter, sans-serif" font-size="18" fill="#9E9E9E">Easy on the eyes. Hard to look away.</text>
+  <text x="60" y="286" font-family="Inter, sans-serif" font-size="18" fill="#9E9E9E">Built for accessibility and comfort.</text>
+  <!-- CTA buttons -->
+  <rect x="60" y="315" width="180" height="48" rx="8" fill="#BB86FC"/>
+  <text x="150" y="344" text-anchor="middle" font-family="Inter, sans-serif" font-size="15" font-weight="600" fill="#121212">Get Started</text>
+  <rect x="260" y="315" width="180" height="48" rx="8" fill="none" stroke="#9E9E9E" stroke-width="1"/>
+  <text x="350" y="344" text-anchor="middle" font-family="Inter, sans-serif" font-size="15" font-weight="500" fill="#E1E1E1">Learn More</text>
+  <!-- Right side floating card -->
+  <rect x="540" y="110" width="220" height="240" rx="12" fill="#1E1E1E"/>
+  <rect x="560" y="130" width="180" height="100" rx="8" fill="#2C2C2C"/>
+  <circle cx="650" cy="180" r="20" fill="#BB86FC" opacity="0.3"/>
+  <circle cx="650" cy="180" r="10" fill="#BB86FC"/>
+  <text x="560" y="260" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="#E1E1E1">Elevated surface</text>
+  <text x="560" y="282" font-family="Inter, sans-serif" font-size="12" fill="#9E9E9E">Lighter shades for depth</text>
+  <rect x="560" y="310" width="100" height="24" rx="6" fill="#03DAC6"/>
+  <text x="610" y="326" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" font-weight="600" fill="#121212">Details</text>
+  <!-- Bottom bar -->
+  <rect x="60" y="400" width="680" height="1" fill="#2C2C2C"/>
+  <text x="60" y="430" font-family="Inter, sans-serif" font-size="12" fill="#9E9E9E">Carefully crafted contrast ratios meeting WCAG standards</text>
+</svg>

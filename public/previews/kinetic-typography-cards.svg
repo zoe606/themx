@@ -1,0 +1,32 @@
+<svg width="800" height="450" viewBox="0 0 800 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="450" fill="#FFFFFF"/>
+  <text x="400" y="40" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="700" fill="#111111" letter-spacing="4">FEATURED WORK</text>
+  <line x1="40" y1="55" x2="760" y2="55" stroke="#000000" stroke-width="2"/>
+  <!-- Card 1 -->
+  <rect x="40" y="75" width="230" height="340" fill="#FFFFFF" stroke="#000000" stroke-width="2"/>
+  <text x="55" y="115" font-family="sans-serif" font-size="64" font-weight="900" fill="#000000">01</text>
+  <line x1="55" y1="130" x2="255" y2="130" stroke="#000000" stroke-width="1"/>
+  <text x="55" y="165" font-family="sans-serif" font-size="22" font-weight="900" fill="#000000">Editorial</text>
+  <text x="55" y="190" font-family="sans-serif" font-size="13" font-weight="300" fill="#111111">Magazine-inspired layouts</text>
+  <text x="55" y="208" font-family="sans-serif" font-size="13" font-weight="300" fill="#111111">that let words shine.</text>
+  <rect x="55" y="340" width="120" height="36" fill="#FF3366"/>
+  <text x="115" y="363" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="700" fill="#FFFFFF">View</text>
+  <!-- Card 2 -->
+  <rect x="285" y="75" width="230" height="340" fill="#000000"/>
+  <text x="300" y="115" font-family="sans-serif" font-size="64" font-weight="900" fill="#FFFFFF">02</text>
+  <line x1="300" y1="130" x2="500" y2="130" stroke="#FFFFFF" stroke-width="1"/>
+  <text x="300" y="165" font-family="sans-serif" font-size="22" font-weight="900" fill="#FFFFFF">Expressive</text>
+  <text x="300" y="190" font-family="sans-serif" font-size="13" font-weight="300" fill="#FFFFFF" opacity="0.7">Type that carries emotion</text>
+  <text x="300" y="208" font-family="sans-serif" font-size="13" font-weight="300" fill="#FFFFFF" opacity="0.7">and meaning through form.</text>
+  <rect x="300" y="340" width="120" height="36" fill="#FF3366"/>
+  <text x="360" y="363" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="700" fill="#FFFFFF">View</text>
+  <!-- Card 3 -->
+  <rect x="530" y="75" width="230" height="340" fill="#FFFFFF" stroke="#000000" stroke-width="2"/>
+  <text x="545" y="115" font-family="sans-serif" font-size="64" font-weight="900" fill="#000000">03</text>
+  <line x1="545" y1="130" x2="745" y2="130" stroke="#000000" stroke-width="1"/>
+  <text x="545" y="165" font-family="sans-serif" font-size="22" font-weight="900" fill="#3366FF">Kinetic</text>
+  <text x="545" y="190" font-family="sans-serif" font-size="13" font-weight="300" fill="#111111">Motion and rhythm in</text>
+  <text x="545" y="208" font-family="sans-serif" font-size="13" font-weight="300" fill="#111111">every letterform.</text>
+  <rect x="545" y="340" width="120" height="36" fill="#3366FF"/>
+  <text x="605" y="363" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="700" fill="#FFFFFF">View</text>
+</svg>

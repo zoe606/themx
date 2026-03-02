@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <rect width="800" height="600" fill="#FFF7ED"/>
+  <!-- Background blobs -->
+  <ellipse cx="650" cy="120" rx="200" ry="150" fill="#F97316" opacity="0.12" transform="rotate(-15 650 120)"/>
+  <ellipse cx="150" cy="500" rx="180" ry="130" fill="#8B5CF6" opacity="0.1" transform="rotate(10 150 500)"/>
+  <ellipse cx="500" cy="480" rx="140" ry="100" fill="#22D3EE" opacity="0.1"/>
+  <!-- Title -->
+  <text x="400" y="80" text-anchor="middle" font-family="DM Sans, sans-serif" font-size="36" font-weight="700" fill="#1C1917">Organic Shapes</text>
+  <text x="400" y="112" text-anchor="middle" font-family="DM Sans, sans-serif" font-size="15" fill="#1C1917" opacity="0.6">Nature-inspired forms that breathe life into UI</text>
+  <!-- Blob cards -->
+  <rect x="40" y="160" width="220" height="260" rx="28" fill="#FFFFFF" stroke="#F97316" stroke-width="2" stroke-opacity="0.3"/>
+  <circle cx="150" cy="230" r="34" fill="#F97316" opacity="0.15"/>
+  <circle cx="150" cy="230" r="18" fill="#F97316"/>
+  <text x="150" y="295" text-anchor="middle" font-family="DM Sans, sans-serif" font-size="18" font-weight="700" fill="#1C1917">Create</text>
+  <text x="150" y="318" text-anchor="middle" font-family="DM Sans, sans-serif" font-size="13" fill="#1C1917" opacity="0.5">Beautiful designs</text>
+  <rect x="80" y="350" width="140" height="38" rx="19" fill="#F97316"/>
+  <text x="150" y="374" text-anchor="middle" font-family="DM Sans, sans-serif" font-size="14" font-weight="600" fill="#FFFFFF">Learn More</text>
+  <rect x="290" y="160" width="220" height="260" rx="28" fill="#FFFFFF" stroke="#8B5CF6" stroke-width="2" stroke-opacity="0.3"/>
+  <circle cx="400" cy="230" r="34" fill="#8B5CF6" opacity="0.15"/>
+  <circle cx="400" cy="230" r="18" fill="#8B5CF6"/>
+  <text x="400" y="295" text-anchor="middle" font-family="DM Sans, sans-serif" font-size="18" font-weight="700" fill="#1C1917">Explore</text>
+  <text x="400" y="318" text-anchor="middle" font-family="DM Sans, sans-serif" font-size="13" fill="#1C1917" opacity="0.5">Fluid interactions</text>
+  <rect x="330" y="350" width="140" height="38" rx="19" fill="#8B5CF6"/>
+  <text x="400" y="374" text-anchor="middle" font-family="DM Sans, sans-serif" font-size="14" font-weight="600" fill="#FFFFFF">Learn More</text>
+  <rect x="540" y="160" width="220" height="260" rx="28" fill="#FFFFFF" stroke="#22D3EE" stroke-width="2" stroke-opacity="0.3"/>
+  <circle cx="650" cy="230" r="34" fill="#22D3EE" opacity="0.15"/>
+  <circle cx="650" cy="230" r="18" fill="#22D3EE"/>
+  <text x="650" y="295" text-anchor="middle" font-family="DM Sans, sans-serif" font-size="18" font-weight="700" fill="#1C1917">Grow</text>
+  <text x="650" y="318" text-anchor="middle" font-family="DM Sans, sans-serif" font-size="13" fill="#1C1917" opacity="0.5">Natural solutions</text>
+  <rect x="580" y="350" width="140" height="38" rx="19" fill="#22D3EE"/>
+  <text x="650" y="374" text-anchor="middle" font-family="DM Sans, sans-serif" font-size="14" font-weight="600" fill="#FFFFFF">Learn More</text>
+  <!-- Wavy divider -->
+  <path d="M0 470 Q100 450 200 470 T400 470 T600 470 T800 470 L800 475 Q700 495 600 475 T400 475 T200 475 T0 475 Z" fill="#F97316" opacity="0.15"/>
+  <!-- Bottom text -->
+  <text x="400" y="530" text-anchor="middle" font-family="DM Sans, sans-serif" font-size="20" font-weight="700" fill="#1C1917">Start your journey</text>
+  <rect x="310" y="545" width="180" height="38" rx="19" fill="#F97316"/>
+  <text x="400" y="569" text-anchor="middle" font-family="DM Sans, sans-serif" font-size="14" font-weight="600" fill="#FFFFFF">Get Started</text>
+</svg>

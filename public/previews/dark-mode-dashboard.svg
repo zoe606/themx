@@ -1,0 +1,62 @@
+<svg width="800" height="450" viewBox="0 0 800 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="450" fill="#121212"/>
+  <!-- Sidebar -->
+  <rect x="0" y="0" width="180" height="450" fill="#1E1E1E"/>
+  <text x="90" y="35" text-anchor="middle" font-family="Inter, sans-serif" font-size="16" font-weight="700" fill="#E1E1E1">DarkUI</text>
+  <rect x="0" y="50" width="180" height="1" fill="#2C2C2C"/>
+  <rect x="12" y="65" width="156" height="36" rx="8" fill="#BB86FC" opacity="0.15"/>
+  <text x="90" y="88" text-anchor="middle" font-family="Inter, sans-serif" font-size="13" font-weight="500" fill="#BB86FC">Dashboard</text>
+  <text x="90" y="128" text-anchor="middle" font-family="Inter, sans-serif" font-size="13" fill="#9E9E9E">Analytics</text>
+  <text x="90" y="160" text-anchor="middle" font-family="Inter, sans-serif" font-size="13" fill="#9E9E9E">Reports</text>
+  <text x="90" y="192" text-anchor="middle" font-family="Inter, sans-serif" font-size="13" fill="#9E9E9E">Settings</text>
+  <!-- Top stat cards -->
+  <rect x="200" y="15" width="185" height="90" rx="10" fill="#1E1E1E"/>
+  <rect x="200" y="15" width="185" height="3" rx="1.5" fill="#BB86FC"/>
+  <text x="292" y="52" text-anchor="middle" font-family="Inter, sans-serif" font-size="24" font-weight="700" fill="#BB86FC">2.4k</text>
+  <text x="292" y="75" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#9E9E9E">Active Users</text>
+  <rect x="400" y="15" width="185" height="90" rx="10" fill="#1E1E1E"/>
+  <rect x="400" y="15" width="185" height="3" rx="1.5" fill="#03DAC6"/>
+  <text x="492" y="52" text-anchor="middle" font-family="Inter, sans-serif" font-size="24" font-weight="700" fill="#03DAC6">$8.7k</text>
+  <text x="492" y="75" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#9E9E9E">Revenue</text>
+  <rect x="600" y="15" width="180" height="90" rx="10" fill="#1E1E1E"/>
+  <rect x="600" y="15" width="180" height="3" rx="1.5" fill="#CF6679"/>
+  <text x="690" y="52" text-anchor="middle" font-family="Inter, sans-serif" font-size="24" font-weight="700" fill="#CF6679">94%</text>
+  <text x="690" y="75" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#9E9E9E">Uptime</text>
+  <!-- Main chart panel -->
+  <rect x="200" y="120" width="380" height="310" rx="10" fill="#1E1E1E"/>
+  <text x="225" y="150" font-family="Inter, sans-serif" font-size="15" font-weight="600" fill="#E1E1E1">Performance</text>
+  <!-- Chart bars -->
+  <rect x="230" y="175" width="36" height="130" rx="4" fill="#2C2C2C"/>
+  <rect x="230" y="225" width="36" height="80" rx="4" fill="#BB86FC" opacity="0.7"/>
+  <rect x="284" y="175" width="36" height="130" rx="4" fill="#2C2C2C"/>
+  <rect x="284" y="200" width="36" height="105" rx="4" fill="#BB86FC" opacity="0.7"/>
+  <rect x="338" y="175" width="36" height="130" rx="4" fill="#2C2C2C"/>
+  <rect x="338" y="185" width="36" height="120" rx="4" fill="#03DAC6" opacity="0.7"/>
+  <rect x="392" y="175" width="36" height="130" rx="4" fill="#2C2C2C"/>
+  <rect x="392" y="210" width="36" height="95" rx="4" fill="#03DAC6" opacity="0.7"/>
+  <rect x="446" y="175" width="36" height="130" rx="4" fill="#2C2C2C"/>
+  <rect x="446" y="195" width="36" height="110" rx="4" fill="#BB86FC" opacity="0.7"/>
+  <rect x="500" y="175" width="36" height="130" rx="4" fill="#2C2C2C"/>
+  <rect x="500" y="220" width="36" height="85" rx="4" fill="#BB86FC" opacity="0.7"/>
+  <!-- Labels -->
+  <text x="248" y="330" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#666666">Mon</text>
+  <text x="302" y="330" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#666666">Tue</text>
+  <text x="356" y="330" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#666666">Wed</text>
+  <text x="410" y="330" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#666666">Thu</text>
+  <text x="464" y="330" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#666666">Fri</text>
+  <text x="518" y="330" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#666666">Sat</text>
+  <!-- Activity panel -->
+  <rect x="600" y="120" width="180" height="310" rx="10" fill="#1E1E1E"/>
+  <text x="620" y="150" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="#E1E1E1">Activity</text>
+  <rect x="612" y="165" width="156" height="1" fill="#2C2C2C"/>
+  <circle cx="625" cy="190" r="5" fill="#BB86FC"/>
+  <text x="638" y="194" font-family="Inter, sans-serif" font-size="11" fill="#9E9E9E">User signup</text>
+  <circle cx="625" cy="220" r="5" fill="#03DAC6"/>
+  <text x="638" y="224" font-family="Inter, sans-serif" font-size="11" fill="#9E9E9E">Payment</text>
+  <circle cx="625" cy="250" r="5" fill="#CF6679"/>
+  <text x="638" y="254" font-family="Inter, sans-serif" font-size="11" fill="#9E9E9E">Error alert</text>
+  <circle cx="625" cy="280" r="5" fill="#BB86FC"/>
+  <text x="638" y="284" font-family="Inter, sans-serif" font-size="11" fill="#9E9E9E">Deploy</text>
+  <circle cx="625" cy="310" r="5" fill="#03DAC6"/>
+  <text x="638" y="314" font-family="Inter, sans-serif" font-size="11" fill="#9E9E9E">API call</text>
+</svg>

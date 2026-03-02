@@ -1,0 +1,73 @@
+<svg width="800" height="450" viewBox="0 0 800 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="skd-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#E8E9EB"/>
+      <stop offset="100%" stop-color="#D1D5DB"/>
+    </linearGradient>
+    <linearGradient id="skd-card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F3F4F6"/>
+    </linearGradient>
+    <linearGradient id="skd-blue" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#60A5FA"/>
+      <stop offset="100%" stop-color="#2563EB"/>
+    </linearGradient>
+    <filter id="skd-shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.12"/>
+    </filter>
+    <filter id="skd-inset">
+      <feDropShadow dx="0" dy="1" stdDeviation="2" flood-color="#000000" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+  <rect width="800" height="450" fill="url(#skd-bg)"/>
+  <!-- Sidebar -->
+  <rect x="0" y="0" width="180" height="450" fill="url(#skd-card)" filter="url(#skd-shadow)"/>
+  <rect x="0" y="0" width="180" height="1.5" fill="#FFFFFF" opacity="0.5"/>
+  <text x="90" y="35" text-anchor="middle" font-family="Merriweather, serif" font-size="15" font-weight="700" fill="#1F2937">SkeuoApp</text>
+  <rect x="10" y="52" width="160" height="34" rx="6" fill="url(#skd-blue)" filter="url(#skd-shadow)"/>
+  <rect x="10" y="52" width="160" height="1" fill="#FFFFFF" opacity="0.3"/>
+  <text x="90" y="74" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="600" fill="#FFFFFF">Dashboard</text>
+  <text x="90" y="110" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#6B7280">Analytics</text>
+  <text x="90" y="138" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#6B7280">Reports</text>
+  <text x="90" y="166" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#6B7280">Settings</text>
+  <!-- Stat cards -->
+  <rect x="200" y="12" width="185" height="80" rx="10" fill="url(#skd-card)" filter="url(#skd-shadow)"/>
+  <rect x="200" y="12" width="185" height="1.5" fill="#FFFFFF" opacity="0.5"/>
+  <text x="292" y="48" text-anchor="middle" font-family="Merriweather, serif" font-size="22" font-weight="700" fill="#3B82F6">2,481</text>
+  <text x="292" y="70" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#6B7280">Users</text>
+  <rect x="400" y="12" width="185" height="80" rx="10" fill="url(#skd-card)" filter="url(#skd-shadow)"/>
+  <rect x="400" y="12" width="185" height="1.5" fill="#FFFFFF" opacity="0.5"/>
+  <text x="492" y="48" text-anchor="middle" font-family="Merriweather, serif" font-size="22" font-weight="700" fill="#EF4444">$9.4k</text>
+  <text x="492" y="70" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#6B7280">Revenue</text>
+  <rect x="600" y="12" width="180" height="80" rx="10" fill="url(#skd-card)" filter="url(#skd-shadow)"/>
+  <rect x="600" y="12" width="180" height="1.5" fill="#FFFFFF" opacity="0.5"/>
+  <text x="690" y="48" text-anchor="middle" font-family="Merriweather, serif" font-size="22" font-weight="700" fill="#F59E0B">96%</text>
+  <text x="690" y="70" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#6B7280">Uptime</text>
+  <!-- Main chart -->
+  <rect x="200" y="107" width="380" height="325" rx="10" fill="url(#skd-card)" filter="url(#skd-shadow)"/>
+  <rect x="200" y="107" width="380" height="1.5" fill="#FFFFFF" opacity="0.5"/>
+  <text x="225" y="140" font-family="Merriweather, serif" font-size="14" font-weight="700" fill="#1F2937">Performance</text>
+  <!-- Bars -->
+  <rect x="240" y="170" width="38" height="155" rx="4" fill="#E5E7EB" filter="url(#skd-inset)"/>
+  <rect x="240" y="225" width="38" height="100" rx="4" fill="url(#skd-blue)"/>
+  <rect x="305" y="170" width="38" height="155" rx="4" fill="#E5E7EB" filter="url(#skd-inset)"/>
+  <rect x="305" y="200" width="38" height="125" rx="4" fill="url(#skd-blue)"/>
+  <rect x="370" y="170" width="38" height="155" rx="4" fill="#E5E7EB" filter="url(#skd-inset)"/>
+  <rect x="370" y="185" width="38" height="140" rx="4" fill="url(#skd-blue)"/>
+  <rect x="435" y="170" width="38" height="155" rx="4" fill="#E5E7EB" filter="url(#skd-inset)"/>
+  <rect x="435" y="210" width="38" height="115" rx="4" fill="url(#skd-blue)"/>
+  <rect x="500" y="170" width="38" height="155" rx="4" fill="#E5E7EB" filter="url(#skd-inset)"/>
+  <rect x="500" y="195" width="38" height="130" rx="4" fill="url(#skd-blue)"/>
+  <!-- Activity -->
+  <rect x="600" y="107" width="180" height="325" rx="10" fill="url(#skd-card)" filter="url(#skd-shadow)"/>
+  <rect x="600" y="107" width="180" height="1.5" fill="#FFFFFF" opacity="0.5"/>
+  <text x="620" y="140" font-family="Merriweather, serif" font-size="13" font-weight="700" fill="#1F2937">Activity</text>
+  <circle cx="620" cy="170" r="5" fill="#3B82F6"/>
+  <text x="635" y="174" font-family="sans-serif" font-size="11" fill="#6B7280">New signup</text>
+  <circle cx="620" cy="200" r="5" fill="#EF4444"/>
+  <text x="635" y="204" font-family="sans-serif" font-size="11" fill="#6B7280">Payment</text>
+  <circle cx="620" cy="230" r="5" fill="#F59E0B"/>
+  <text x="635" y="234" font-family="sans-serif" font-size="11" fill="#6B7280">Report</text>
+  <circle cx="620" cy="260" r="5" fill="#3B82F6"/>
+  <text x="635" y="264" font-family="sans-serif" font-size="11" fill="#6B7280">Feature</text>
+</svg>

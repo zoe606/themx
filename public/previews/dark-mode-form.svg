@@ -1,0 +1,27 @@
+<svg width="800" height="450" viewBox="0 0 800 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="450" fill="#121212"/>
+  <!-- Form card -->
+  <rect x="220" y="30" width="360" height="390" rx="12" fill="#1E1E1E"/>
+  <!-- Header -->
+  <text x="400" y="75" text-anchor="middle" font-family="Inter, sans-serif" font-size="24" font-weight="700" fill="#E1E1E1">Welcome Back</text>
+  <text x="400" y="100" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" fill="#9E9E9E">Sign in to your account</text>
+  <!-- Email field -->
+  <text x="255" y="140" font-family="Inter, sans-serif" font-size="12" font-weight="500" fill="#9E9E9E">Email</text>
+  <rect x="255" y="150" width="290" height="44" rx="8" fill="#2C2C2C" stroke="#383838" stroke-width="1"/>
+  <text x="275" y="177" font-family="Inter, sans-serif" font-size="14" fill="#666666">you@example.com</text>
+  <!-- Password field -->
+  <text x="255" y="218" font-family="Inter, sans-serif" font-size="12" font-weight="500" fill="#9E9E9E">Password</text>
+  <rect x="255" y="228" width="290" height="44" rx="8" fill="#2C2C2C" stroke="#383838" stroke-width="1"/>
+  <text x="275" y="255" font-family="Inter, sans-serif" font-size="14" fill="#666666">Enter password</text>
+  <!-- Forgot password -->
+  <text x="545" y="295" text-anchor="end" font-family="Inter, sans-serif" font-size="12" fill="#BB86FC">Forgot password?</text>
+  <!-- Sign in button -->
+  <rect x="255" y="315" width="290" height="44" rx="8" fill="#BB86FC"/>
+  <text x="400" y="342" text-anchor="middle" font-family="Inter, sans-serif" font-size="15" font-weight="600" fill="#121212">Sign In</text>
+  <!-- Divider -->
+  <line x1="255" y1="380" x2="365" y2="380" stroke="#383838" stroke-width="1"/>
+  <text x="400" y="384" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" fill="#666666">or</text>
+  <line x1="435" y1="380" x2="545" y2="380" stroke="#383838" stroke-width="1"/>
+  <!-- Sign up link -->
+  <text x="400" y="410" text-anchor="middle" font-family="Inter, sans-serif" font-size="13" fill="#9E9E9E">No account? <tspan fill="#03DAC6">Sign up</tspan></text>
+</svg>
