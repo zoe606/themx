@@ -1,0 +1,40 @@
+<svg width="800" height="450" viewBox="0 0 800 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="450" fill="#FFFFFF"/>
+  <!-- Grid lines -->
+  <line x1="60" y1="0" x2="60" y2="450" stroke="#E5E5E5" stroke-width="0.5"/>
+  <line x1="280" y1="0" x2="280" y2="450" stroke="#E5E5E5" stroke-width="0.5"/>
+  <line x1="520" y1="0" x2="520" y2="450" stroke="#E5E5E5" stroke-width="0.5"/>
+  <line x1="740" y1="0" x2="740" y2="450" stroke="#E5E5E5" stroke-width="0.5"/>
+  <!-- Section heading -->
+  <text x="60" y="45" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11" font-weight="500" fill="#FF0000" letter-spacing="2">FEATURES</text>
+  <line x1="60" y1="60" x2="740" y2="60" stroke="#1A1A1A" stroke-width="1"/>
+  <!-- Card 1 -->
+  <rect x="60" y="60" width="6" height="320" fill="#FF0000"/>
+  <text x="80" y="110" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="64" font-weight="700" fill="#000000" fill-opacity="0.08">01</text>
+  <text x="80" y="160" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="22" font-weight="700" fill="#000000">Typography</text>
+  <text x="80" y="190" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="14" fill="#1A1A1A">Hierarchy through scale,</text>
+  <text x="80" y="210" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="14" fill="#1A1A1A">not decoration. Let the</text>
+  <text x="80" y="230" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="14" fill="#1A1A1A">type do the work.</text>
+  <line x1="80" y1="260" x2="260" y2="260" stroke="#E5E5E5" stroke-width="1"/>
+  <text x="80" y="282" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" font-weight="500" fill="#0057B7">Read more</text>
+  <!-- Card 2 -->
+  <line x1="300" y1="70" x2="300" y2="380" stroke="#E5E5E5" stroke-width="1"/>
+  <text x="310" y="110" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="64" font-weight="700" fill="#000000" fill-opacity="0.08">02</text>
+  <text x="310" y="160" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="22" font-weight="700" fill="#000000">Grid System</text>
+  <text x="310" y="190" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="14" fill="#1A1A1A">Mathematical precision</text>
+  <text x="310" y="210" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="14" fill="#1A1A1A">guides every placement.</text>
+  <text x="310" y="230" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="14" fill="#1A1A1A">Nothing is arbitrary.</text>
+  <line x1="310" y1="260" x2="500" y2="260" stroke="#E5E5E5" stroke-width="1"/>
+  <text x="310" y="282" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" font-weight="500" fill="#0057B7">Read more</text>
+  <!-- Card 3 -->
+  <line x1="540" y1="70" x2="540" y2="380" stroke="#E5E5E5" stroke-width="1"/>
+  <text x="550" y="110" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="64" font-weight="700" fill="#000000" fill-opacity="0.08">03</text>
+  <text x="550" y="160" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="22" font-weight="700" fill="#000000">Whitespace</text>
+  <text x="550" y="190" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="14" fill="#1A1A1A">Space is an active design</text>
+  <text x="550" y="210" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="14" fill="#1A1A1A">element. Let content</text>
+  <text x="550" y="230" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="14" fill="#1A1A1A">breathe and speak.</text>
+  <line x1="550" y1="260" x2="720" y2="260" stroke="#E5E5E5" stroke-width="1"/>
+  <text x="550" y="282" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" font-weight="500" fill="#0057B7">Read more</text>
+  <!-- Bottom rule -->
+  <line x1="60" y1="400" x2="740" y2="400" stroke="#1A1A1A" stroke-width="1"/>
+</svg>

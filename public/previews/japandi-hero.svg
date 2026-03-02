@@ -1,0 +1,22 @@
+<svg width="800" height="450" viewBox="0 0 800 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="450" fill="#F5F0EB"/>
+  <!-- Organic shape decoration -->
+  <ellipse cx="650" cy="200" rx="140" ry="160" fill="#8B7355" fill-opacity="0.06"/>
+  <ellipse cx="680" cy="220" rx="100" ry="120" fill="#6B8E7B" fill-opacity="0.06"/>
+  <!-- Heading -->
+  <text x="80" y="140" font-family="Cormorant Garamond, Georgia, serif" font-size="52" font-weight="400" fill="#2C2420">Where Zen Meets</text>
+  <text x="80" y="200" font-family="Cormorant Garamond, Georgia, serif" font-size="52" font-weight="400" fill="#8B7355">Warmth.</text>
+  <!-- Subtitle -->
+  <text x="80" y="255" font-family="Source Sans 3, sans-serif" font-size="17" fill="#2C2420" fill-opacity="0.6">Intentional design inspired by Japanese minimalism</text>
+  <text x="80" y="280" font-family="Source Sans 3, sans-serif" font-size="17" fill="#2C2420" fill-opacity="0.6">and Scandinavian warmth.</text>
+  <!-- CTA buttons — organic rounded -->
+  <rect x="80" y="310" width="150" height="46" rx="23" fill="#8B7355"/>
+  <text x="155" y="339" font-family="Source Sans 3, sans-serif" font-size="15" font-weight="500" fill="#F5F0EB" text-anchor="middle">Explore</text>
+  <rect x="248" y="310" width="120" height="46" rx="23" fill="none" stroke="#8B7355" stroke-width="1"/>
+  <text x="308" y="339" font-family="Source Sans 3, sans-serif" font-size="15" font-weight="500" fill="#8B7355" text-anchor="middle">Learn</text>
+  <!-- Organic accent line -->
+  <path d="M80 390 Q200 380 400 395 Q600 410 720 385" stroke="#C4956A" stroke-width="1" fill="none" stroke-opacity="0.3"/>
+  <!-- Small leaf-like shape -->
+  <ellipse cx="720" cy="380" rx="20" ry="8" fill="#6B8E7B" fill-opacity="0.2" transform="rotate(-30 720 380)"/>
+  <ellipse cx="730" cy="370" rx="15" ry="6" fill="#6B8E7B" fill-opacity="0.15" transform="rotate(15 730 370)"/>
+</svg>

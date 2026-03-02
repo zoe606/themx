@@ -1,0 +1,16 @@
+<svg width="800" height="450" viewBox="0 0 800 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="450" fill="#FFFFFF"/>
+  <!-- Clean, airy layout -->
+  <text x="400" y="140" font-family="Inter, sans-serif" font-size="48" font-weight="600" fill="#0F172A" text-anchor="middle">Beautiful Things</text>
+  <text x="400" y="195" font-family="Inter, sans-serif" font-size="48" font-weight="600" fill="#2563EB" text-anchor="middle">That Work.</text>
+  <!-- Subtitle with generous space -->
+  <text x="400" y="250" font-family="Inter, sans-serif" font-size="17" fill="#64748B" text-anchor="middle">Clean, functional design that prioritizes usability.</text>
+  <text x="400" y="275" font-family="Inter, sans-serif" font-size="17" fill="#64748B" text-anchor="middle">Every element serves a purpose.</text>
+  <!-- CTA buttons -->
+  <rect x="300" y="310" width="120" height="44" rx="8" fill="#2563EB"/>
+  <text x="360" y="338" font-family="Inter, sans-serif" font-size="15" font-weight="500" fill="#FFFFFF" text-anchor="middle">Start</text>
+  <rect x="436" y="310" width="100" height="44" rx="8" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="486" y="338" font-family="Inter, sans-serif" font-size="15" font-weight="500" fill="#0F172A" text-anchor="middle">Docs</text>
+  <!-- Subtle bottom accent -->
+  <line x1="350" y1="400" x2="450" y2="400" stroke="#E2E8F0" stroke-width="1"/>
+</svg>

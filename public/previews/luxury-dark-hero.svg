@@ -1,0 +1,35 @@
+<svg width="800" height="450" viewBox="0 0 800 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="450" fill="#0A0A0A"/>
+  <!-- Subtle gradient overlay -->
+  <defs>
+    <linearGradient id="lh-grad" x1="0" y1="0" x2="800" y2="450">
+      <stop offset="0%" stop-color="#D4AF37" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#0A0A0A" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#lh-grad)"/>
+  <!-- Thin gold line -->
+  <line x1="80" y1="80" x2="80" y2="260" stroke="#D4AF37" stroke-width="1" stroke-opacity="0.5"/>
+  <!-- Heading with serif -->
+  <text x="110" y="135" font-family="Playfair Display, Georgia, serif" font-size="52" font-weight="400" fill="#E5E5E5" letter-spacing="2">Understated</text>
+  <text x="110" y="195" font-family="Playfair Display, Georgia, serif" font-size="52" font-weight="400" fill="#D4AF37" letter-spacing="2">Opulence</text>
+  <!-- Subtitle -->
+  <text x="110" y="245" font-family="Lato, sans-serif" font-size="16" fill="#C0C0C0" letter-spacing="1">Premium design that whispers sophistication.</text>
+  <text x="110" y="270" font-family="Lato, sans-serif" font-size="16" fill="#C0C0C0" letter-spacing="1">Every detail curated with intention.</text>
+  <!-- CTA buttons -->
+  <rect x="110" y="300" width="180" height="48" rx="0" fill="none" stroke="#D4AF37" stroke-width="1"/>
+  <text x="200" y="330" font-family="Lato, sans-serif" font-size="13" font-weight="400" fill="#D4AF37" text-anchor="middle" letter-spacing="2">EXPLORE</text>
+  <text x="330" y="330" font-family="Lato, sans-serif" font-size="13" font-weight="400" fill="#C0C0C0" letter-spacing="2">LEARN MORE</text>
+  <!-- Right decorative element -->
+  <line x1="550" y1="80" x2="750" y2="80" stroke="#D4AF37" stroke-width="0.5" stroke-opacity="0.3"/>
+  <line x1="750" y1="80" x2="750" y2="370" stroke="#D4AF37" stroke-width="0.5" stroke-opacity="0.3"/>
+  <line x1="550" y1="370" x2="750" y2="370" stroke="#D4AF37" stroke-width="0.5" stroke-opacity="0.3"/>
+  <line x1="550" y1="80" x2="550" y2="370" stroke="#D4AF37" stroke-width="0.5" stroke-opacity="0.3"/>
+  <!-- Diamond shape -->
+  <polygon points="650,160 690,225 650,290 610,225" fill="none" stroke="#D4AF37" stroke-width="0.5" stroke-opacity="0.4"/>
+  <polygon points="650,185 670,225 650,265 630,225" fill="#D4AF37" fill-opacity="0.05" stroke="#D4AF37" stroke-width="0.5" stroke-opacity="0.3"/>
+  <!-- Bottom gold line -->
+  <line x1="80" y1="400" x2="720" y2="400" stroke="#D4AF37" stroke-width="0.5" stroke-opacity="0.3"/>
+  <text x="80" y="430" font-family="Lato, sans-serif" font-size="10" fill="#C0C0C0" fill-opacity="0.5" letter-spacing="3">LUXURY DARK</text>
+  <text x="720" y="430" font-family="Lato, sans-serif" font-size="10" fill="#C0C0C0" fill-opacity="0.5" letter-spacing="3" text-anchor="end">MMXXVI</text>
+</svg>

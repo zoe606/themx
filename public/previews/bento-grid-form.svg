@@ -1,0 +1,29 @@
+<svg width="800" height="450" viewBox="0 0 800 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="450" fill="#FAFAFA"/>
+  <!-- Left bento cells (decorative) -->
+  <rect x="40" y="40" width="280" height="170" rx="16" fill="#3B82F6"/>
+  <text x="180" y="110" font-family="Inter, sans-serif" font-size="24" font-weight="700" fill="#FFFFFF" text-anchor="middle">Welcome back</text>
+  <text x="180" y="140" font-family="Inter, sans-serif" font-size="14" fill="#FFFFFF" fill-opacity="0.8" text-anchor="middle">Sign in to continue</text>
+  <rect x="40" y="226" width="135" height="184" rx="16" fill="#F59E0B"/>
+  <text x="107" y="310" font-family="Inter, sans-serif" font-size="28" font-weight="700" fill="#18181B" text-anchor="middle">24/7</text>
+  <text x="107" y="340" font-family="Inter, sans-serif" font-size="12" fill="#18181B" fill-opacity="0.6" text-anchor="middle">Support</text>
+  <rect x="191" y="226" width="129" height="184" rx="16" fill="#18181B"/>
+  <text x="255" y="310" font-family="Inter, sans-serif" font-size="28" font-weight="700" fill="#FFFFFF" text-anchor="middle">99%</text>
+  <text x="255" y="340" font-family="Inter, sans-serif" font-size="12" fill="#FFFFFF" fill-opacity="0.6" text-anchor="middle">Uptime</text>
+  <!-- Form card -->
+  <rect x="340" y="40" width="420" height="370" rx="16" fill="#FFFFFF"/>
+  <text x="550" y="85" font-family="Inter, sans-serif" font-size="24" font-weight="700" fill="#18181B" text-anchor="middle">Log In</text>
+  <!-- Email -->
+  <text x="380" y="125" font-family="Inter, sans-serif" font-size="13" font-weight="500" fill="#18181B">Email</text>
+  <rect x="380" y="135" width="340" height="44" rx="10" fill="#FAFAFA"/>
+  <text x="400" y="163" font-family="Inter, sans-serif" font-size="14" fill="#18181B" fill-opacity="0.35">you@example.com</text>
+  <!-- Password -->
+  <text x="380" y="208" font-family="Inter, sans-serif" font-size="13" font-weight="500" fill="#18181B">Password</text>
+  <rect x="380" y="218" width="340" height="44" rx="10" fill="#FAFAFA"/>
+  <text x="400" y="246" font-family="Inter, sans-serif" font-size="14" fill="#18181B" fill-opacity="0.35">Enter password</text>
+  <!-- Submit -->
+  <rect x="380" y="290" width="340" height="44" rx="10" fill="#18181B"/>
+  <text x="550" y="318" font-family="Inter, sans-serif" font-size="15" font-weight="500" fill="#FFFFFF" text-anchor="middle">Sign In</text>
+  <!-- Footer -->
+  <text x="550" y="370" font-family="Inter, sans-serif" font-size="13" fill="#18181B" fill-opacity="0.5" text-anchor="middle">No account? <tspan fill="#3B82F6">Create one</tspan></text>
+</svg>

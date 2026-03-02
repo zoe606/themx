@@ -1,0 +1,57 @@
+<svg width="800" height="450" viewBox="0 0 800 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="450" fill="#1A0033"/>
+  <defs>
+    <pattern id="rd-scan" patternUnits="userSpaceOnUse" width="800" height="4">
+      <rect width="800" height="2" fill="white" fill-opacity="0.02"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="450" fill="url(#rd-scan)"/>
+  <!-- Sidebar -->
+  <rect x="0" y="0" width="180" height="450" fill="#1A0033" stroke="#FF00FF" stroke-width="1"/>
+  <line x1="180" y1="0" x2="180" y2="450" stroke="#FF00FF" stroke-width="1"/>
+  <text x="24" y="36" font-family="Orbitron, monospace" font-size="14" font-weight="700" fill="#00FFFF" letter-spacing="2">PANEL</text>
+  <line x1="16" y1="48" x2="164" y2="48" stroke="#00FFFF" stroke-width="0.5" stroke-opacity="0.3"/>
+  <rect x="8" y="60" width="164" height="30" fill="#FF00FF" fill-opacity="0.15" stroke="#FF00FF" stroke-width="1"/>
+  <text x="24" y="80" font-family="Space Mono, monospace" font-size="11" fill="#FF00FF">Dashboard</text>
+  <text x="24" y="112" font-family="Space Mono, monospace" font-size="11" fill="#E0E0FF" fill-opacity="0.4">Analytics</text>
+  <text x="24" y="140" font-family="Space Mono, monospace" font-size="11" fill="#E0E0FF" fill-opacity="0.4">Users</text>
+  <text x="24" y="168" font-family="Space Mono, monospace" font-size="11" fill="#E0E0FF" fill-opacity="0.4">Settings</text>
+  <!-- Header -->
+  <text x="210" y="34" font-family="Orbitron, monospace" font-size="18" font-weight="700" fill="#E0E0FF" letter-spacing="2">DASHBOARD</text>
+  <!-- Stat cards -->
+  <rect x="210" y="52" width="178" height="88" fill="none" stroke="#FF00FF" stroke-width="1"/>
+  <text x="226" y="76" font-family="Space Mono, monospace" font-size="10" fill="#FFFF00" letter-spacing="1">USERS</text>
+  <text x="226" y="116" font-family="Orbitron, monospace" font-size="28" font-weight="700" fill="#FF00FF">12,847</text>
+  <rect x="404" y="52" width="178" height="88" fill="none" stroke="#00FFFF" stroke-width="1"/>
+  <text x="420" y="76" font-family="Space Mono, monospace" font-size="10" fill="#FFFF00" letter-spacing="1">REVENUE</text>
+  <text x="420" y="116" font-family="Orbitron, monospace" font-size="28" font-weight="700" fill="#00FFFF">$48.2K</text>
+  <rect x="598" y="52" width="178" height="88" fill="none" stroke="#FFFF00" stroke-width="1"/>
+  <text x="614" y="76" font-family="Space Mono, monospace" font-size="10" fill="#FF00FF" letter-spacing="1">GROWTH</text>
+  <text x="614" y="116" font-family="Orbitron, monospace" font-size="28" font-weight="700" fill="#FFFF00">+24%</text>
+  <!-- Chart area -->
+  <rect x="210" y="160" width="372" height="270" fill="none" stroke="#FF00FF" stroke-width="1"/>
+  <text x="226" y="188" font-family="Orbitron, monospace" font-size="12" fill="#FFFF00" letter-spacing="2">ACTIVITY</text>
+  <!-- Neon bar chart -->
+  <rect x="246" y="350" width="24" height="60" fill="#FF00FF" fill-opacity="0.3" stroke="#FF00FF" stroke-width="1"/>
+  <rect x="286" y="310" width="24" height="100" fill="#00FFFF" fill-opacity="0.3" stroke="#00FFFF" stroke-width="1"/>
+  <rect x="326" y="270" width="24" height="130" fill="#FF00FF" fill-opacity="0.4" stroke="#FF00FF" stroke-width="1"/>
+  <rect x="366" y="320" width="24" height="80" fill="#FFFF00" fill-opacity="0.3" stroke="#FFFF00" stroke-width="1"/>
+  <rect x="406" y="250" width="24" height="150" fill="#00FFFF" fill-opacity="0.4" stroke="#00FFFF" stroke-width="1"/>
+  <rect x="446" y="290" width="24" height="110" fill="#FF00FF" fill-opacity="0.3" stroke="#FF00FF" stroke-width="1"/>
+  <rect x="486" y="230" width="24" height="170" fill="#FFFF00" fill-opacity="0.4" stroke="#FFFF00" stroke-width="1"/>
+  <rect x="526" y="260" width="24" height="140" fill="#00FFFF" fill-opacity="0.3" stroke="#00FFFF" stroke-width="1"/>
+  <line x1="236" y1="410" x2="560" y2="410" stroke="#E0E0FF" stroke-width="0.5" stroke-opacity="0.3"/>
+  <!-- Right panel -->
+  <rect x="598" y="160" width="178" height="270" fill="none" stroke="#00FFFF" stroke-width="1"/>
+  <text x="614" y="188" font-family="Orbitron, monospace" font-size="12" fill="#00FFFF" letter-spacing="2">RECENT</text>
+  <line x1="606" y1="200" x2="768" y2="200" stroke="#00FFFF" stroke-width="0.5" stroke-opacity="0.2"/>
+  <text x="614" y="222" font-family="Space Mono, monospace" font-size="10" fill="#E0E0FF">New signup</text>
+  <line x1="606" y1="234" x2="768" y2="234" stroke="#FF00FF" stroke-width="0.5" stroke-opacity="0.15"/>
+  <text x="614" y="256" font-family="Space Mono, monospace" font-size="10" fill="#E0E0FF">Payment in</text>
+  <line x1="606" y1="268" x2="768" y2="268" stroke="#FF00FF" stroke-width="0.5" stroke-opacity="0.15"/>
+  <text x="614" y="290" font-family="Space Mono, monospace" font-size="10" fill="#E0E0FF">Order shipped</text>
+  <line x1="606" y1="302" x2="768" y2="302" stroke="#FF00FF" stroke-width="0.5" stroke-opacity="0.15"/>
+  <text x="614" y="324" font-family="Space Mono, monospace" font-size="10" fill="#E0E0FF">Bug reported</text>
+  <line x1="606" y1="336" x2="768" y2="336" stroke="#FF00FF" stroke-width="0.5" stroke-opacity="0.15"/>
+  <text x="614" y="358" font-family="Space Mono, monospace" font-size="10" fill="#E0E0FF">Deploy done</text>
+</svg>

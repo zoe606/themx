@@ -1,0 +1,61 @@
+<svg width="800" height="450" viewBox="0 0 800 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="450" fill="#FFFFFF"/>
+  <!-- Sidebar -->
+  <rect x="4" y="4" width="180" height="446" fill="#2D2D2D"/>
+  <rect x="0" y="0" width="180" height="450" fill="#2D2D2D" stroke="#2D2D2D" stroke-width="3"/>
+  <!-- Sidebar logo -->
+  <rect x="24" y="24" width="36" height="36" fill="#FF6B6B" stroke="#FFFFFF" stroke-width="2"/>
+  <text x="70" y="50" font-family="Space Grotesk, sans-serif" font-size="18" font-weight="700" fill="#FFFFFF">PANEL</text>
+  <!-- Sidebar menu items -->
+  <rect x="16" y="84" width="148" height="36" fill="#FF6B6B"/>
+  <text x="32" y="108" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="#FFFFFF">Dashboard</text>
+  <text x="32" y="148" font-family="Inter, sans-serif" font-size="14" fill="#E5E5E5">Analytics</text>
+  <text x="32" y="180" font-family="Inter, sans-serif" font-size="14" fill="#E5E5E5">Users</text>
+  <text x="32" y="212" font-family="Inter, sans-serif" font-size="14" fill="#E5E5E5">Settings</text>
+  <!-- Main content area -->
+  <!-- Top bar -->
+  <text x="210" y="40" font-family="Space Grotesk, sans-serif" font-size="24" font-weight="700" fill="#2D2D2D">Dashboard</text>
+  <!-- Stat cards row -->
+  <!-- Card 1 -->
+  <rect x="214" y="64" width="175" height="90" fill="#2D2D2D"/>
+  <rect x="210" y="60" width="175" height="90" fill="#FF6B6B" stroke="#2D2D2D" stroke-width="3"/>
+  <text x="230" y="90" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#FFFFFF">Total Users</text>
+  <text x="230" y="126" font-family="Space Grotesk, sans-serif" font-size="32" font-weight="700" fill="#FFFFFF">12,847</text>
+  <!-- Card 2 -->
+  <rect x="414" y="64" width="175" height="90" fill="#2D2D2D"/>
+  <rect x="410" y="60" width="175" height="90" fill="#4ECDC4" stroke="#2D2D2D" stroke-width="3"/>
+  <text x="430" y="90" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#2D2D2D">Revenue</text>
+  <text x="430" y="126" font-family="Space Grotesk, sans-serif" font-size="32" font-weight="700" fill="#2D2D2D">$48.2K</text>
+  <!-- Card 3 -->
+  <rect x="614" y="64" width="175" height="90" fill="#2D2D2D"/>
+  <rect x="610" y="60" width="175" height="90" fill="#FFE66D" stroke="#2D2D2D" stroke-width="3"/>
+  <text x="630" y="90" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#2D2D2D">Growth</text>
+  <text x="630" y="126" font-family="Space Grotesk, sans-serif" font-size="32" font-weight="700" fill="#2D2D2D">+24%</text>
+  <!-- Chart area -->
+  <rect x="214" y="174" width="375" height="256" fill="#2D2D2D"/>
+  <rect x="210" y="170" width="375" height="256" fill="#FFFFFF" stroke="#2D2D2D" stroke-width="3"/>
+  <text x="230" y="200" font-family="Space Grotesk, sans-serif" font-size="16" font-weight="700" fill="#2D2D2D">Activity</text>
+  <!-- Bar chart -->
+  <rect x="250" y="340" width="30" height="60" fill="#FF6B6B" stroke="#2D2D2D" stroke-width="2"/>
+  <rect x="295" y="300" width="30" height="100" fill="#4ECDC4" stroke="#2D2D2D" stroke-width="2"/>
+  <rect x="340" y="280" width="30" height="120" fill="#FF6B6B" stroke="#2D2D2D" stroke-width="2"/>
+  <rect x="385" y="320" width="30" height="80" fill="#FFE66D" stroke="#2D2D2D" stroke-width="2"/>
+  <rect x="430" y="260" width="30" height="140" fill="#4ECDC4" stroke="#2D2D2D" stroke-width="2"/>
+  <rect x="475" y="290" width="30" height="110" fill="#FF6B6B" stroke="#2D2D2D" stroke-width="2"/>
+  <rect x="520" y="240" width="30" height="160" fill="#FFE66D" stroke="#2D2D2D" stroke-width="2"/>
+  <line x1="240" y1="400" x2="560" y2="400" stroke="#2D2D2D" stroke-width="2"/>
+  <!-- Right panel -->
+  <rect x="614" y="174" width="175" height="256" fill="#2D2D2D"/>
+  <rect x="610" y="170" width="175" height="256" fill="#FFFFFF" stroke="#2D2D2D" stroke-width="3"/>
+  <text x="630" y="200" font-family="Space Grotesk, sans-serif" font-size="16" font-weight="700" fill="#2D2D2D">Recent</text>
+  <rect x="625" y="215" width="145" height="30" fill="#F5F5F5" stroke="#2D2D2D" stroke-width="2"/>
+  <text x="635" y="235" font-family="Inter, sans-serif" font-size="11" fill="#2D2D2D">New signup</text>
+  <rect x="625" y="255" width="145" height="30" fill="#F5F5F5" stroke="#2D2D2D" stroke-width="2"/>
+  <text x="635" y="275" font-family="Inter, sans-serif" font-size="11" fill="#2D2D2D">Payment received</text>
+  <rect x="625" y="295" width="145" height="30" fill="#F5F5F5" stroke="#2D2D2D" stroke-width="2"/>
+  <text x="635" y="315" font-family="Inter, sans-serif" font-size="11" fill="#2D2D2D">Order shipped</text>
+  <rect x="625" y="335" width="145" height="30" fill="#F5F5F5" stroke="#2D2D2D" stroke-width="2"/>
+  <text x="635" y="355" font-family="Inter, sans-serif" font-size="11" fill="#2D2D2D">Bug reported</text>
+  <rect x="625" y="375" width="145" height="30" fill="#F5F5F5" stroke="#2D2D2D" stroke-width="2"/>
+  <text x="635" y="395" font-family="Inter, sans-serif" font-size="11" fill="#2D2D2D">Deploy complete</text>
+</svg>

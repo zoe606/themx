@@ -1,0 +1,34 @@
+<svg width="800" height="450" viewBox="0 0 800 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="450" fill="#FFF7ED"/>
+  <!-- Background chaos -->
+  <circle cx="100" cy="100" r="80" fill="#E11D48" fill-opacity="0.08"/>
+  <circle cx="700" cy="350" r="100" fill="#7C3AED" fill-opacity="0.08"/>
+  <rect x="600" y="30" width="60" height="60" fill="#F97316" fill-opacity="0.15" transform="rotate(20 630 60)"/>
+  <path d="M30 300 Q50 280 70 300 Q90 320 110 300" stroke="#F97316" stroke-width="3" fill="none"/>
+  <polygon points="720,80 723,88 731,88 725,93 727,101 720,96 713,101 715,93 709,88 717,88" fill="#E11D48" fill-opacity="0.3"/>
+  <!-- Form container — tilted slightly -->
+  <g transform="rotate(-1 400 225)">
+    <rect x="200" y="25" width="400" height="400" fill="#7C3AED"/>
+    <rect x="205" y="30" width="390" height="390" fill="#FFF7ED" stroke="#1C1917" stroke-width="2"/>
+  </g>
+  <!-- Form content (on top, straight) -->
+  <text x="400" y="80" font-family="Archivo Black, sans-serif" font-size="32" font-weight="900" fill="#E11D48" text-anchor="middle">LOG IN!</text>
+  <path d="M310 88 Q400 98 490 88" stroke="#F97316" stroke-width="3" fill="none"/>
+  <!-- Email -->
+  <text x="260" y="135" font-family="DM Sans, sans-serif" font-size="14" font-weight="700" fill="#1C1917">EMAIL</text>
+  <rect x="255" y="145" width="290" height="44" fill="#FFFFFF" stroke="#1C1917" stroke-width="2"/>
+  <text x="272" y="173" font-family="DM Sans, sans-serif" font-size="14" fill="#1C1917" fill-opacity="0.3">you@example.com</text>
+  <!-- Password -->
+  <text x="260" y="218" font-family="DM Sans, sans-serif" font-size="14" font-weight="700" fill="#1C1917">PASSWORD</text>
+  <rect x="255" y="228" width="290" height="44" fill="#FFFFFF" stroke="#1C1917" stroke-width="2"/>
+  <text x="272" y="256" font-family="DM Sans, sans-serif" font-size="14" fill="#1C1917" fill-opacity="0.3">Enter password</text>
+  <!-- Submit — overlapping buttons -->
+  <rect x="258" y="300" width="290" height="50" fill="#E11D48" stroke="#1C1917" stroke-width="2"/>
+  <text x="403" y="332" font-family="Archivo Black, sans-serif" font-size="18" fill="#FFFFFF" text-anchor="middle">LET'S GO!</text>
+  <!-- Footer -->
+  <text x="400" y="385" font-family="DM Sans, sans-serif" font-size="13" fill="#1C1917" text-anchor="middle">No account? <tspan fill="#7C3AED" font-weight="700">SIGN UP NOW!</tspan></text>
+  <!-- Arrow pointing at button -->
+  <line x1="580" y1="330" x2="555" y2="325" stroke="#F97316" stroke-width="2"/>
+  <polygon points="555,325 562,320 560,330" fill="#F97316"/>
+  <text x="590" y="335" font-family="Archivo Black, sans-serif" font-size="11" fill="#F97316" transform="rotate(-8 590 335)">CLICK!</text>
+</svg>

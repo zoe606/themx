@@ -1,0 +1,21 @@
+<svg width="800" height="450" viewBox="0 0 800 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="450" fill="#FFFFFF"/>
+  <!-- Form container - very clean -->
+  <rect x="262" y="50" width="276" height="350" rx="16" fill="#FFFFFF"/>
+  <!-- Title -->
+  <text x="400" y="100" font-family="SF Pro Display, -apple-system, Helvetica Neue, sans-serif" font-size="26" font-weight="600" fill="#1D1D1F" text-anchor="middle">Sign In</text>
+  <text x="400" y="125" font-family="SF Pro Text, -apple-system, Helvetica Neue, sans-serif" font-size="14" fill="#86868B" text-anchor="middle">Welcome back</text>
+  <!-- Email -->
+  <text x="300" y="165" font-family="SF Pro Text, -apple-system, Helvetica Neue, sans-serif" font-size="13" fill="#1D1D1F">Email</text>
+  <rect x="295" y="174" width="210" height="40" rx="10" fill="#F5F5F7"/>
+  <text x="312" y="200" font-family="SF Pro Text, -apple-system, Helvetica Neue, sans-serif" font-size="14" fill="#86868B" fill-opacity="0.5">you@example.com</text>
+  <!-- Password -->
+  <text x="300" y="238" font-family="SF Pro Text, -apple-system, Helvetica Neue, sans-serif" font-size="13" fill="#1D1D1F">Password</text>
+  <rect x="295" y="247" width="210" height="40" rx="10" fill="#F5F5F7"/>
+  <text x="312" y="273" font-family="SF Pro Text, -apple-system, Helvetica Neue, sans-serif" font-size="14" fill="#86868B" fill-opacity="0.5">Enter password</text>
+  <!-- Submit -->
+  <rect x="295" y="312" width="210" height="40" rx="20" fill="#0071E3"/>
+  <text x="400" y="338" font-family="SF Pro Text, -apple-system, Helvetica Neue, sans-serif" font-size="15" fill="#FFFFFF" text-anchor="middle">Sign In</text>
+  <!-- Footer -->
+  <text x="400" y="382" font-family="SF Pro Text, -apple-system, Helvetica Neue, sans-serif" font-size="13" fill="#86868B" text-anchor="middle">No account? <tspan fill="#0071E3">Create one</tspan></text>
+</svg>

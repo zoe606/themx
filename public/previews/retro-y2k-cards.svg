@@ -1,0 +1,45 @@
+<svg width="800" height="450" viewBox="0 0 800 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="450" fill="#1A0033"/>
+  <defs>
+    <pattern id="rc-scan" patternUnits="userSpaceOnUse" width="800" height="4">
+      <rect width="800" height="2" fill="white" fill-opacity="0.02"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="450" fill="url(#rc-scan)"/>
+  <!-- Title -->
+  <text x="400" y="42" font-family="Orbitron, monospace" font-size="18" fill="#FFFF00" text-anchor="middle" letter-spacing="4">FEATURES</text>
+  <line x1="300" y1="52" x2="500" y2="52" stroke="#FFFF00" stroke-width="1" stroke-opacity="0.3"/>
+  <!-- Card 1 -->
+  <rect x="50" y="75" width="220" height="310" fill="none" stroke="#FF00FF" stroke-width="2"/>
+  <line x1="50" y1="180" x2="270" y2="180" stroke="#FF00FF" stroke-width="1" stroke-opacity="0.3"/>
+  <text x="160" y="135" font-family="Orbitron, monospace" font-size="36" font-weight="700" fill="#FF00FF" text-anchor="middle">01</text>
+  <text x="160" y="215" font-family="Orbitron, monospace" font-size="16" fill="#00FFFF" text-anchor="middle">SPEED</text>
+  <text x="160" y="245" font-family="Space Mono, monospace" font-size="11" fill="#E0E0FF" text-anchor="middle">Blazing fast with</text>
+  <text x="160" y="262" font-family="Space Mono, monospace" font-size="11" fill="#E0E0FF" text-anchor="middle">zero compromise on</text>
+  <text x="160" y="279" font-family="Space Mono, monospace" font-size="11" fill="#E0E0FF" text-anchor="middle">performance.</text>
+  <rect x="100" y="320" width="120" height="34" fill="none" stroke="#FF00FF" stroke-width="1"/>
+  <text x="160" y="342" font-family="Orbitron, monospace" font-size="10" fill="#FF00FF" text-anchor="middle" letter-spacing="2">ENTER</text>
+  <!-- Card 2 -->
+  <rect x="290" y="75" width="220" height="310" fill="none" stroke="#00FFFF" stroke-width="2"/>
+  <line x1="290" y1="180" x2="510" y2="180" stroke="#00FFFF" stroke-width="1" stroke-opacity="0.3"/>
+  <text x="400" y="135" font-family="Orbitron, monospace" font-size="36" font-weight="700" fill="#00FFFF" text-anchor="middle">02</text>
+  <text x="400" y="215" font-family="Orbitron, monospace" font-size="16" fill="#FFFF00" text-anchor="middle">STYLE</text>
+  <text x="400" y="245" font-family="Space Mono, monospace" font-size="11" fill="#E0E0FF" text-anchor="middle">Neon aesthetics from</text>
+  <text x="400" y="262" font-family="Space Mono, monospace" font-size="11" fill="#E0E0FF" text-anchor="middle">the millennium for</text>
+  <text x="400" y="279" font-family="Space Mono, monospace" font-size="11" fill="#E0E0FF" text-anchor="middle">the modern web.</text>
+  <rect x="340" y="320" width="120" height="34" fill="none" stroke="#00FFFF" stroke-width="1"/>
+  <text x="400" y="342" font-family="Orbitron, monospace" font-size="10" fill="#00FFFF" text-anchor="middle" letter-spacing="2">ENTER</text>
+  <!-- Card 3 -->
+  <rect x="530" y="75" width="220" height="310" fill="none" stroke="#FFFF00" stroke-width="2"/>
+  <line x1="530" y1="180" x2="750" y2="180" stroke="#FFFF00" stroke-width="1" stroke-opacity="0.3"/>
+  <text x="640" y="135" font-family="Orbitron, monospace" font-size="36" font-weight="700" fill="#FFFF00" text-anchor="middle">03</text>
+  <text x="640" y="215" font-family="Orbitron, monospace" font-size="16" fill="#FF00FF" text-anchor="middle">POWER</text>
+  <text x="640" y="245" font-family="Space Mono, monospace" font-size="11" fill="#E0E0FF" text-anchor="middle">Full control over</text>
+  <text x="640" y="262" font-family="Space Mono, monospace" font-size="11" fill="#E0E0FF" text-anchor="middle">every pixel and</text>
+  <text x="640" y="279" font-family="Space Mono, monospace" font-size="11" fill="#E0E0FF" text-anchor="middle">every interaction.</text>
+  <rect x="580" y="320" width="120" height="34" fill="none" stroke="#FFFF00" stroke-width="1"/>
+  <text x="640" y="342" font-family="Orbitron, monospace" font-size="10" fill="#FFFF00" text-anchor="middle" letter-spacing="2">ENTER</text>
+  <!-- Stars -->
+  <polygon points="40,420 43,430 53,430 45,436 48,446 40,440 32,446 35,436 27,430 37,430" fill="#FF00FF" fill-opacity="0.3"/>
+  <polygon points="760,420 763,430 773,430 765,436 768,446 760,440 752,446 755,436 747,430 757,430" fill="#00FFFF" fill-opacity="0.3"/>
+</svg>

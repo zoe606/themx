@@ -1,0 +1,54 @@
+<svg width="800" height="450" viewBox="0 0 800 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="450" fill="#FFFFFF"/>
+  <!-- Sidebar -->
+  <rect x="0" y="0" width="180" height="450" fill="#FFFFFF"/>
+  <line x1="180" y1="0" x2="180" y2="450" stroke="#1A1A1A" stroke-width="1"/>
+  <!-- Red accent on active -->
+  <rect x="0" y="70" width="4" height="28" fill="#FF0000"/>
+  <text x="20" y="36" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#000000">PANEL</text>
+  <line x1="20" y1="52" x2="160" y2="52" stroke="#E5E5E5" stroke-width="1"/>
+  <text x="20" y="90" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#000000">Dashboard</text>
+  <text x="20" y="122" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" fill="#999999">Analytics</text>
+  <text x="20" y="150" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" fill="#999999">Users</text>
+  <text x="20" y="178" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" fill="#999999">Settings</text>
+  <!-- Main area -->
+  <text x="210" y="36" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11" font-weight="500" fill="#FF0000" letter-spacing="2">OVERVIEW</text>
+  <!-- Stat cards -->
+  <rect x="210" y="55" width="180" height="90" fill="#FFFFFF"/>
+  <line x1="210" y1="55" x2="390" y2="55" stroke="#1A1A1A" stroke-width="1"/>
+  <text x="210" y="80" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11" fill="#999999" letter-spacing="1">USERS</text>
+  <text x="210" y="120" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="32" font-weight="700" fill="#000000">12,847</text>
+  <rect x="410" y="55" width="180" height="90" fill="#FFFFFF"/>
+  <line x1="410" y1="55" x2="590" y2="55" stroke="#1A1A1A" stroke-width="1"/>
+  <text x="410" y="80" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11" fill="#999999" letter-spacing="1">REVENUE</text>
+  <text x="410" y="120" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="32" font-weight="700" fill="#000000">$48.2K</text>
+  <rect x="610" y="55" width="170" height="90" fill="#FFFFFF"/>
+  <line x1="610" y1="55" x2="780" y2="55" stroke="#1A1A1A" stroke-width="1"/>
+  <text x="610" y="80" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11" fill="#999999" letter-spacing="1">GROWTH</text>
+  <text x="610" y="120" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="32" font-weight="700" fill="#000000">+24%</text>
+  <!-- Chart area -->
+  <line x1="210" y1="170" x2="590" y2="170" stroke="#1A1A1A" stroke-width="1"/>
+  <rect x="210" y="170" width="4" height="250" fill="#FF0000"/>
+  <text x="228" y="195" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11" fill="#999999" letter-spacing="1">ACTIVITY</text>
+  <!-- Minimal bar chart -->
+  <rect x="240" y="350" width="36" height="50" fill="#000000"/>
+  <rect x="290" y="310" width="36" height="90" fill="#000000"/>
+  <rect x="340" y="280" width="36" height="120" fill="#FF0000"/>
+  <rect x="390" y="330" width="36" height="70" fill="#000000"/>
+  <rect x="440" y="260" width="36" height="140" fill="#000000"/>
+  <rect x="490" y="300" width="36" height="100" fill="#000000"/>
+  <rect x="540" y="240" width="36" height="160" fill="#000000"/>
+  <line x1="228" y1="400" x2="590" y2="400" stroke="#1A1A1A" stroke-width="1"/>
+  <!-- Right panel -->
+  <line x1="610" y1="170" x2="780" y2="170" stroke="#1A1A1A" stroke-width="1"/>
+  <text x="610" y="195" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11" fill="#999999" letter-spacing="1">RECENT</text>
+  <text x="610" y="225" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" fill="#1A1A1A">New signup</text>
+  <line x1="610" y1="236" x2="780" y2="236" stroke="#E5E5E5" stroke-width="0.5"/>
+  <text x="610" y="258" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" fill="#1A1A1A">Payment received</text>
+  <line x1="610" y1="269" x2="780" y2="269" stroke="#E5E5E5" stroke-width="0.5"/>
+  <text x="610" y="291" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" fill="#1A1A1A">Order shipped</text>
+  <line x1="610" y1="302" x2="780" y2="302" stroke="#E5E5E5" stroke-width="0.5"/>
+  <text x="610" y="324" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" fill="#1A1A1A">Bug reported</text>
+  <line x1="610" y1="335" x2="780" y2="335" stroke="#E5E5E5" stroke-width="0.5"/>
+  <text x="610" y="357" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" fill="#1A1A1A">Deploy complete</text>
+</svg>

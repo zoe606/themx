@@ -1,0 +1,30 @@
+<svg width="800" height="450" viewBox="0 0 800 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="450" fill="#FFFFFF"/>
+  <!-- Scattered shapes -->
+  <circle cx="100" cy="80" r="30" fill="#FF6B6B" fill-opacity="0.15" stroke="#2D2D2D" stroke-width="2"/>
+  <polygon points="700,60 720,30 740,60" fill="#4ECDC4" fill-opacity="0.3" stroke="#2D2D2D" stroke-width="2"/>
+  <rect x="80" y="350" width="40" height="40" fill="#FFE66D" fill-opacity="0.3" stroke="#2D2D2D" stroke-width="2" transform="rotate(15 100 370)"/>
+  <path d="M650 350 Q670 330 690 350 Q710 370 730 350" stroke="#FF6B6B" stroke-width="3" fill="none"/>
+  <circle cx="680" cy="200" r="5" fill="#4ECDC4"/>
+  <circle cx="700" cy="200" r="5" fill="#4ECDC4"/>
+  <circle cx="680" cy="220" r="5" fill="#4ECDC4"/>
+  <circle cx="700" cy="220" r="5" fill="#4ECDC4"/>
+  <!-- Form container -->
+  <rect x="225" y="30" width="350" height="390" rx="24" fill="#FFFFFF" stroke="#2D2D2D" stroke-width="3"/>
+  <!-- Title -->
+  <text x="400" y="80" font-family="Fredoka One, sans-serif" font-size="30" fill="#FF6B6B" text-anchor="middle">Log In!</text>
+  <path d="M340 88 Q400 98 460 88" stroke="#4ECDC4" stroke-width="3" fill="none"/>
+  <!-- Email -->
+  <text x="275" y="135" font-family="Quicksand, sans-serif" font-size="14" font-weight="600" fill="#2D2D2D">Email</text>
+  <rect x="270" y="145" width="260" height="44" rx="14" fill="#FFFFFF" stroke="#2D2D2D" stroke-width="2"/>
+  <text x="290" y="173" font-family="Quicksand, sans-serif" font-size="14" fill="#2D2D2D" fill-opacity="0.3">you@example.com</text>
+  <!-- Password -->
+  <text x="275" y="218" font-family="Quicksand, sans-serif" font-size="14" font-weight="600" fill="#2D2D2D">Password</text>
+  <rect x="270" y="228" width="260" height="44" rx="14" fill="#FFFFFF" stroke="#2D2D2D" stroke-width="2"/>
+  <text x="290" y="256" font-family="Quicksand, sans-serif" font-size="14" fill="#2D2D2D" fill-opacity="0.3">Enter password</text>
+  <!-- Submit -->
+  <rect x="270" y="300" width="260" height="48" rx="24" fill="#FF6B6B" stroke="#2D2D2D" stroke-width="3"/>
+  <text x="400" y="330" font-family="Fredoka One, sans-serif" font-size="18" fill="#FFFFFF" text-anchor="middle">Sign In</text>
+  <!-- Footer -->
+  <text x="400" y="385" font-family="Quicksand, sans-serif" font-size="13" fill="#2D2D2D" text-anchor="middle">No account? <tspan fill="#4ECDC4" font-weight="700">Sign Up!</tspan></text>
+</svg>

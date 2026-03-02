@@ -1,0 +1,34 @@
+<svg width="800" height="450" viewBox="0 0 800 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="450" fill="#FFFFFF"/>
+  <!-- Scattered geometric shapes -->
+  <circle cx="680" cy="80" r="40" fill="#FF6B6B" fill-opacity="0.3"/>
+  <circle cx="700" cy="100" r="25" fill="#4ECDC4" fill-opacity="0.3"/>
+  <polygon points="100,350 130,300 160,350" fill="#FFE66D" stroke="#2D2D2D" stroke-width="2"/>
+  <rect x="620" y="280" width="50" height="50" fill="#4ECDC4" stroke="#2D2D2D" stroke-width="2" transform="rotate(15 645 305)"/>
+  <circle cx="150" cy="100" r="20" fill="none" stroke="#FF6B6B" stroke-width="3"/>
+  <!-- Squiggly lines -->
+  <path d="M50 200 Q70 180 90 200 Q110 220 130 200 Q150 180 170 200" stroke="#4ECDC4" stroke-width="3" fill="none"/>
+  <path d="M630 380 Q650 360 670 380 Q690 400 710 380" stroke="#FF6B6B" stroke-width="3" fill="none"/>
+  <!-- Dots pattern -->
+  <circle cx="720" cy="200" r="4" fill="#FFE66D"/>
+  <circle cx="740" cy="200" r="4" fill="#FFE66D"/>
+  <circle cx="720" cy="220" r="4" fill="#FFE66D"/>
+  <circle cx="740" cy="220" r="4" fill="#FFE66D"/>
+  <circle cx="720" cy="240" r="4" fill="#FFE66D"/>
+  <circle cx="740" cy="240" r="4" fill="#FFE66D"/>
+  <!-- Main heading -->
+  <text x="80" y="140" font-family="Fredoka One, sans-serif" font-size="64" font-weight="400" fill="#FF6B6B">Play Bold,</text>
+  <text x="80" y="215" font-family="Fredoka One, sans-serif" font-size="64" font-weight="400" fill="#4ECDC4">Stay Fun!</text>
+  <!-- Subtitle -->
+  <text x="85" y="260" font-family="Quicksand, sans-serif" font-size="18" fill="#2D2D2D">Geometric shapes, clashing colors, and pure joy.</text>
+  <!-- Buttons with thick outlines -->
+  <rect x="80" y="290" width="180" height="48" rx="24" fill="#FF6B6B" stroke="#2D2D2D" stroke-width="3"/>
+  <text x="170" y="320" font-family="Fredoka One, sans-serif" font-size="16" fill="#FFFFFF" text-anchor="middle">Get Started</text>
+  <rect x="280" y="290" width="140" height="48" rx="24" fill="#FFE66D" stroke="#2D2D2D" stroke-width="3"/>
+  <text x="350" y="320" font-family="Fredoka One, sans-serif" font-size="16" fill="#2D2D2D" text-anchor="middle">Explore</text>
+  <!-- More scattered shapes -->
+  <polygon points="500,100 510,80 520,100" fill="#FF6B6B" stroke="#2D2D2D" stroke-width="2"/>
+  <rect x="540" y="350" width="30" height="30" fill="#FFE66D" stroke="#2D2D2D" stroke-width="2"/>
+  <!-- Zigzag -->
+  <path d="M80 400 L100 380 L120 400 L140 380 L160 400 L180 380 L200 400 L220 380 L240 400 L260 380 L280 400" stroke="#4ECDC4" stroke-width="3" fill="none"/>
+</svg>

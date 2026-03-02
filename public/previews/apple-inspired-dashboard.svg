@@ -1,0 +1,48 @@
+<svg width="800" height="450" viewBox="0 0 800 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="450" fill="#FFFFFF"/>
+  <!-- Sidebar -->
+  <rect x="0" y="0" width="180" height="450" fill="#F5F5F7"/>
+  <text x="24" y="36" font-family="SF Pro Display, -apple-system, Helvetica Neue, sans-serif" font-size="16" font-weight="600" fill="#1D1D1F">Panel</text>
+  <rect x="10" y="52" width="160" height="34" rx="8" fill="#0071E3" fill-opacity="0.08"/>
+  <text x="26" y="74" font-family="SF Pro Text, -apple-system, Helvetica Neue, sans-serif" font-size="13" font-weight="500" fill="#0071E3">Dashboard</text>
+  <text x="26" y="110" font-family="SF Pro Text, -apple-system, Helvetica Neue, sans-serif" font-size="13" fill="#86868B">Analytics</text>
+  <text x="26" y="140" font-family="SF Pro Text, -apple-system, Helvetica Neue, sans-serif" font-size="13" fill="#86868B">Users</text>
+  <text x="26" y="170" font-family="SF Pro Text, -apple-system, Helvetica Neue, sans-serif" font-size="13" fill="#86868B">Settings</text>
+  <!-- Main content -->
+  <text x="210" y="36" font-family="SF Pro Display, -apple-system, Helvetica Neue, sans-serif" font-size="22" font-weight="600" fill="#1D1D1F">Dashboard</text>
+  <!-- Stat cards — Apple's squircle style -->
+  <rect x="210" y="56" width="180" height="90" rx="12" fill="#F5F5F7"/>
+  <text x="228" y="80" font-family="SF Pro Text, -apple-system, Helvetica Neue, sans-serif" font-size="12" fill="#86868B">Total Users</text>
+  <text x="228" y="118" font-family="SF Pro Display, -apple-system, Helvetica Neue, sans-serif" font-size="28" font-weight="600" fill="#1D1D1F">12,847</text>
+  <rect x="406" y="56" width="180" height="90" rx="12" fill="#F5F5F7"/>
+  <text x="424" y="80" font-family="SF Pro Text, -apple-system, Helvetica Neue, sans-serif" font-size="12" fill="#86868B">Revenue</text>
+  <text x="424" y="118" font-family="SF Pro Display, -apple-system, Helvetica Neue, sans-serif" font-size="28" font-weight="600" fill="#1D1D1F">$48.2K</text>
+  <rect x="602" y="56" width="178" height="90" rx="12" fill="#F5F5F7"/>
+  <text x="620" y="80" font-family="SF Pro Text, -apple-system, Helvetica Neue, sans-serif" font-size="12" fill="#86868B">Growth</text>
+  <text x="620" y="118" font-family="SF Pro Display, -apple-system, Helvetica Neue, sans-serif" font-size="28" font-weight="600" fill="#1D1D1F">+24%</text>
+  <!-- Chart area -->
+  <rect x="210" y="166" width="376" height="264" rx="12" fill="#F5F5F7"/>
+  <text x="230" y="196" font-family="SF Pro Text, -apple-system, Helvetica Neue, sans-serif" font-size="14" font-weight="600" fill="#1D1D1F">Activity</text>
+  <!-- Clean rounded bars -->
+  <rect x="250" y="350" width="26" height="60" rx="6" fill="#0071E3" fill-opacity="0.12"/>
+  <rect x="292" y="310" width="26" height="100" rx="6" fill="#0071E3" fill-opacity="0.2"/>
+  <rect x="334" y="280" width="26" height="130" rx="6" fill="#0071E3"/>
+  <rect x="376" y="320" width="26" height="90" rx="6" fill="#0071E3" fill-opacity="0.2"/>
+  <rect x="418" y="260" width="26" height="150" rx="6" fill="#0071E3"/>
+  <rect x="460" y="300" width="26" height="110" rx="6" fill="#0071E3" fill-opacity="0.15"/>
+  <rect x="502" y="240" width="26" height="170" rx="6" fill="#AC39FF"/>
+  <rect x="544" y="270" width="26" height="140" rx="6" fill="#0071E3" fill-opacity="0.25"/>
+  <!-- Right panel -->
+  <rect x="602" y="166" width="178" height="264" rx="12" fill="#F5F5F7"/>
+  <text x="620" y="196" font-family="SF Pro Text, -apple-system, Helvetica Neue, sans-serif" font-size="14" font-weight="600" fill="#1D1D1F">Recent</text>
+  <rect x="612" y="212" width="158" height="34" rx="8" fill="#FFFFFF"/>
+  <text x="624" y="234" font-family="SF Pro Text, -apple-system, Helvetica Neue, sans-serif" font-size="12" fill="#86868B">New signup</text>
+  <rect x="612" y="254" width="158" height="34" rx="8" fill="#FFFFFF"/>
+  <text x="624" y="276" font-family="SF Pro Text, -apple-system, Helvetica Neue, sans-serif" font-size="12" fill="#86868B">Payment received</text>
+  <rect x="612" y="296" width="158" height="34" rx="8" fill="#FFFFFF"/>
+  <text x="624" y="318" font-family="SF Pro Text, -apple-system, Helvetica Neue, sans-serif" font-size="12" fill="#86868B">Order shipped</text>
+  <rect x="612" y="338" width="158" height="34" rx="8" fill="#FFFFFF"/>
+  <text x="624" y="360" font-family="SF Pro Text, -apple-system, Helvetica Neue, sans-serif" font-size="12" fill="#86868B">Bug reported</text>
+  <rect x="612" y="380" width="158" height="34" rx="8" fill="#FFFFFF"/>
+  <text x="624" y="402" font-family="SF Pro Text, -apple-system, Helvetica Neue, sans-serif" font-size="12" fill="#86868B">Deploy complete</text>
+</svg>

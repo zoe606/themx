@@ -1,0 +1,47 @@
+<svg width="800" height="450" viewBox="0 0 800 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="450" fill="#1A0033"/>
+  <!-- Scanline overlay effect -->
+  <defs>
+    <pattern id="rh-scan" patternUnits="userSpaceOnUse" width="800" height="4">
+      <rect width="800" height="2" fill="white" fill-opacity="0.02"/>
+    </pattern>
+    <linearGradient id="rh-glow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FF00FF" stop-opacity="0.1"/>
+      <stop offset="50%" stop-color="#00FFFF" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#FFFF00" stop-opacity="0.1"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#rh-scan)"/>
+  <rect width="800" height="450" fill="url(#rh-glow)"/>
+  <!-- Grid lines background -->
+  <line x1="0" y1="400" x2="400" y2="200" stroke="#FF00FF" stroke-width="0.5" stroke-opacity="0.1"/>
+  <line x1="800" y1="400" x2="400" y2="200" stroke="#00FFFF" stroke-width="0.5" stroke-opacity="0.1"/>
+  <line x1="200" y1="450" x2="400" y2="200" stroke="#FF00FF" stroke-width="0.5" stroke-opacity="0.08"/>
+  <line x1="600" y1="450" x2="400" y2="200" stroke="#00FFFF" stroke-width="0.5" stroke-opacity="0.08"/>
+  <!-- Main heading with neon glow feel -->
+  <text x="400" y="130" font-family="Orbitron, monospace" font-size="54" font-weight="700" fill="#FF00FF" text-anchor="middle">THE FUTURE</text>
+  <text x="400" y="130" font-family="Orbitron, monospace" font-size="54" font-weight="700" fill="#FF00FF" text-anchor="middle" fill-opacity="0.3" transform="translate(2,2)">THE FUTURE</text>
+  <text x="400" y="195" font-family="Orbitron, monospace" font-size="54" font-weight="700" fill="#00FFFF" text-anchor="middle">IS NOW</text>
+  <text x="400" y="195" font-family="Orbitron, monospace" font-size="54" font-weight="700" fill="#00FFFF" text-anchor="middle" fill-opacity="0.3" transform="translate(2,2)">IS NOW</text>
+  <!-- Subtitle -->
+  <text x="400" y="240" font-family="Space Mono, monospace" font-size="14" fill="#E0E0FF" text-anchor="middle" letter-spacing="4">WELCOME TO THE MILLENNIUM</text>
+  <!-- CTA Buttons -->
+  <rect x="270" y="270" width="140" height="42" rx="0" fill="none" stroke="#FF00FF" stroke-width="2"/>
+  <text x="340" y="296" font-family="Orbitron, monospace" font-size="12" fill="#FF00FF" text-anchor="middle" letter-spacing="2">ENTER</text>
+  <rect x="430" y="270" width="120" height="42" rx="0" fill="none" stroke="#00FFFF" stroke-width="2"/>
+  <text x="490" y="296" font-family="Orbitron, monospace" font-size="12" fill="#00FFFF" text-anchor="middle" letter-spacing="2">DOCS</text>
+  <!-- Decorative elements -->
+  <circle cx="100" cy="80" r="30" fill="none" stroke="#FFFF00" stroke-width="1" stroke-opacity="0.3"/>
+  <circle cx="100" cy="80" r="20" fill="none" stroke="#FFFF00" stroke-width="0.5" stroke-opacity="0.2"/>
+  <polygon points="700,60 710,85 735,85 715,100 722,125 700,110 678,125 685,100 665,85 690,85" fill="none" stroke="#FF00FF" stroke-width="1" stroke-opacity="0.3"/>
+  <!-- Bottom wireframe horizon -->
+  <line x1="0" y1="380" x2="800" y2="380" stroke="#FF00FF" stroke-width="0.5" stroke-opacity="0.2"/>
+  <line x1="0" y1="400" x2="800" y2="400" stroke="#00FFFF" stroke-width="0.5" stroke-opacity="0.15"/>
+  <line x1="0" y1="420" x2="800" y2="420" stroke="#FF00FF" stroke-width="0.5" stroke-opacity="0.1"/>
+  <line x1="0" y1="440" x2="800" y2="440" stroke="#00FFFF" stroke-width="0.5" stroke-opacity="0.05"/>
+  <!-- Vertical perspective lines on horizon -->
+  <line x1="100" y1="380" x2="200" y2="450" stroke="#FF00FF" stroke-width="0.5" stroke-opacity="0.1"/>
+  <line x1="300" y1="380" x2="320" y2="450" stroke="#00FFFF" stroke-width="0.5" stroke-opacity="0.1"/>
+  <line x1="500" y1="380" x2="480" y2="450" stroke="#FF00FF" stroke-width="0.5" stroke-opacity="0.1"/>
+  <line x1="700" y1="380" x2="600" y2="450" stroke="#00FFFF" stroke-width="0.5" stroke-opacity="0.1"/>
+</svg>

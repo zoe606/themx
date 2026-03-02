@@ -1,0 +1,23 @@
+<svg width="800" height="450" viewBox="0 0 800 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="450" fill="#F8FAFC"/>
+  <!-- Form card -->
+  <rect x="250" y="40" width="300" height="370" rx="4" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+  <!-- Title -->
+  <text x="400" y="84" font-family="Inter, sans-serif" font-size="20" font-weight="600" fill="#0F172A" text-anchor="middle">Sign In</text>
+  <text x="400" y="106" font-family="Inter, sans-serif" font-size="13" fill="#475569" text-anchor="middle">Enter your credentials</text>
+  <!-- Email -->
+  <text x="290" y="144" font-family="Inter, sans-serif" font-size="13" font-weight="500" fill="#0F172A">Email</text>
+  <rect x="285" y="152" width="230" height="38" rx="4" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="298" y="176" font-family="Inter, sans-serif" font-size="13" fill="#94A3B8">you@company.com</text>
+  <!-- Password -->
+  <text x="290" y="214" font-family="Inter, sans-serif" font-size="13" font-weight="500" fill="#0F172A">Password</text>
+  <rect x="285" y="222" width="230" height="38" rx="4" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="298" y="246" font-family="Inter, sans-serif" font-size="13" fill="#94A3B8">Enter password</text>
+  <!-- Submit -->
+  <rect x="285" y="286" width="230" height="38" rx="4" fill="#2563EB"/>
+  <text x="400" y="310" font-family="Inter, sans-serif" font-size="14" font-weight="500" fill="#FFFFFF" text-anchor="middle">Sign In</text>
+  <!-- Divider -->
+  <line x1="285" y1="345" x2="515" y2="345" stroke="#E2E8F0" stroke-width="1"/>
+  <!-- Footer -->
+  <text x="400" y="375" font-family="Inter, sans-serif" font-size="13" fill="#475569" text-anchor="middle">No account? <tspan fill="#2563EB">Register</tspan></text>
+</svg>

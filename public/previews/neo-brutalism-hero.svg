@@ -1,0 +1,26 @@
+<svg width="800" height="450" viewBox="0 0 800 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="450" fill="#FFFFFF"/>
+  <!-- Background accent blocks -->
+  <rect x="580" y="30" width="180" height="180" fill="#FFE66D" stroke="#2D2D2D" stroke-width="3"/>
+  <rect x="620" y="60" width="180" height="180" fill="#4ECDC4" stroke="#2D2D2D" stroke-width="3"/>
+  <!-- Heading -->
+  <text x="60" y="140" font-family="Space Grotesk, sans-serif" font-size="56" font-weight="700" fill="#2D2D2D">Build Something</text>
+  <text x="60" y="200" font-family="Space Grotesk, sans-serif" font-size="56" font-weight="700" fill="#2D2D2D">
+    <tspan fill="#FF6B6B">Bold</tspan> Today
+  </text>
+  <!-- Subtitle -->
+  <text x="60" y="250" font-family="Inter, sans-serif" font-size="20" fill="#2D2D2D">Raw, unapologetic design that refuses to blend in.</text>
+  <text x="60" y="278" font-family="Inter, sans-serif" font-size="20" fill="#2D2D2D">No gradients. No apologies.</text>
+  <!-- CTA Button with offset shadow -->
+  <rect x="64" y="314" width="220" height="56" fill="#2D2D2D" rx="0"/>
+  <rect x="60" y="310" width="220" height="56" fill="#FF6B6B" stroke="#2D2D2D" stroke-width="3" rx="0"/>
+  <text x="115" y="345" font-family="Space Grotesk, sans-serif" font-size="20" font-weight="700" fill="#FFFFFF">Get Started</text>
+  <!-- Secondary button -->
+  <rect x="304" y="314" width="180" height="56" fill="#2D2D2D" rx="0"/>
+  <rect x="300" y="310" width="180" height="56" fill="#FFE66D" stroke="#2D2D2D" stroke-width="3" rx="0"/>
+  <text x="340" y="345" font-family="Space Grotesk, sans-serif" font-size="20" font-weight="700" fill="#2D2D2D">Learn More</text>
+  <!-- Decorative elements -->
+  <rect x="60" y="400" width="680" height="4" fill="#2D2D2D"/>
+  <circle cx="720" cy="380" r="30" fill="#FF6B6B" stroke="#2D2D2D" stroke-width="3"/>
+  <rect x="650" y="300" width="40" height="40" fill="#4ECDC4" stroke="#2D2D2D" stroke-width="3" transform="rotate(15 670 320)"/>
+</svg>

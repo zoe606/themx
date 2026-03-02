@@ -1,0 +1,35 @@
+<svg width="800" height="450" viewBox="0 0 800 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="450" fill="#FAFAFA"/>
+  <!-- Title -->
+  <text x="400" y="40" font-family="Inter, sans-serif" font-size="24" font-weight="700" fill="#18181B" text-anchor="middle">Features</text>
+  <!-- Card 1 -->
+  <rect x="40" y="65" width="230" height="340" rx="16" fill="#FFFFFF"/>
+  <rect x="60" y="90" width="50" height="50" rx="12" fill="#3B82F6" fill-opacity="0.1"/>
+  <circle cx="85" cy="115" r="14" fill="#3B82F6"/>
+  <text x="60" y="175" font-family="Inter, sans-serif" font-size="18" font-weight="600" fill="#18181B">Fast Setup</text>
+  <text x="60" y="200" font-family="Inter, sans-serif" font-size="13" fill="#18181B" fill-opacity="0.5">Get up and running in</text>
+  <text x="60" y="220" font-family="Inter, sans-serif" font-size="13" fill="#18181B" fill-opacity="0.5">minutes with our simple</text>
+  <text x="60" y="240" font-family="Inter, sans-serif" font-size="13" fill="#18181B" fill-opacity="0.5">configuration system.</text>
+  <rect x="60" y="340" width="120" height="38" rx="10" fill="#18181B"/>
+  <text x="120" y="364" font-family="Inter, sans-serif" font-size="13" font-weight="500" fill="#FFFFFF" text-anchor="middle">Read More</text>
+  <!-- Card 2 -->
+  <rect x="286" y="65" width="230" height="340" rx="16" fill="#FFFFFF"/>
+  <rect x="306" y="90" width="50" height="50" rx="12" fill="#F59E0B" fill-opacity="0.1"/>
+  <circle cx="331" cy="115" r="14" fill="#F59E0B"/>
+  <text x="306" y="175" font-family="Inter, sans-serif" font-size="18" font-weight="600" fill="#18181B">Customizable</text>
+  <text x="306" y="200" font-family="Inter, sans-serif" font-size="13" fill="#18181B" fill-opacity="0.5">Adapt every aspect to</text>
+  <text x="306" y="220" font-family="Inter, sans-serif" font-size="13" fill="#18181B" fill-opacity="0.5">match your brand with</text>
+  <text x="306" y="240" font-family="Inter, sans-serif" font-size="13" fill="#18181B" fill-opacity="0.5">full theme controls.</text>
+  <rect x="306" y="340" width="120" height="38" rx="10" fill="#18181B"/>
+  <text x="366" y="364" font-family="Inter, sans-serif" font-size="13" font-weight="500" fill="#FFFFFF" text-anchor="middle">Read More</text>
+  <!-- Card 3 -->
+  <rect x="532" y="65" width="230" height="340" rx="16" fill="#FFFFFF"/>
+  <rect x="552" y="90" width="50" height="50" rx="12" fill="#18181B" fill-opacity="0.06"/>
+  <circle cx="577" cy="115" r="14" fill="#18181B"/>
+  <text x="552" y="175" font-family="Inter, sans-serif" font-size="18" font-weight="600" fill="#18181B">Open Source</text>
+  <text x="552" y="200" font-family="Inter, sans-serif" font-size="13" fill="#18181B" fill-opacity="0.5">Free forever with a</text>
+  <text x="552" y="220" font-family="Inter, sans-serif" font-size="13" fill="#18181B" fill-opacity="0.5">growing community of</text>
+  <text x="552" y="240" font-family="Inter, sans-serif" font-size="13" fill="#18181B" fill-opacity="0.5">contributors.</text>
+  <rect x="552" y="340" width="120" height="38" rx="10" fill="#18181B"/>
+  <text x="612" y="364" font-family="Inter, sans-serif" font-size="13" font-weight="500" fill="#FFFFFF" text-anchor="middle">Read More</text>
+</svg>

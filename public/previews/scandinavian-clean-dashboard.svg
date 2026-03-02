@@ -1,0 +1,47 @@
+<svg width="800" height="450" viewBox="0 0 800 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="450" fill="#FFFFFF"/>
+  <!-- Sidebar -->
+  <rect x="0" y="0" width="180" height="450" fill="#FFFFFF"/>
+  <line x1="180" y1="0" x2="180" y2="450" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="24" y="36" font-family="Inter, sans-serif" font-size="16" font-weight="600" fill="#0F172A">Panel</text>
+  <rect x="12" y="52" width="156" height="36" rx="6" fill="#2563EB" fill-opacity="0.06"/>
+  <text x="28" y="76" font-family="Inter, sans-serif" font-size="13" font-weight="500" fill="#2563EB">Dashboard</text>
+  <text x="28" y="112" font-family="Inter, sans-serif" font-size="13" fill="#64748B">Analytics</text>
+  <text x="28" y="144" font-family="Inter, sans-serif" font-size="13" fill="#64748B">Users</text>
+  <text x="28" y="176" font-family="Inter, sans-serif" font-size="13" fill="#64748B">Settings</text>
+  <!-- Header -->
+  <text x="210" y="36" font-family="Inter, sans-serif" font-size="20" font-weight="600" fill="#0F172A">Dashboard</text>
+  <!-- Stat cards -->
+  <rect x="210" y="56" width="180" height="90" rx="8" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="228" y="80" font-family="Inter, sans-serif" font-size="12" fill="#64748B">Total Users</text>
+  <text x="228" y="118" font-family="Inter, sans-serif" font-size="28" font-weight="600" fill="#0F172A">12,847</text>
+  <rect x="406" y="56" width="180" height="90" rx="8" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="424" y="80" font-family="Inter, sans-serif" font-size="12" fill="#64748B">Revenue</text>
+  <text x="424" y="118" font-family="Inter, sans-serif" font-size="28" font-weight="600" fill="#0F172A">$48.2K</text>
+  <rect x="602" y="56" width="178" height="90" rx="8" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="620" y="80" font-family="Inter, sans-serif" font-size="12" fill="#64748B">Growth</text>
+  <text x="620" y="118" font-family="Inter, sans-serif" font-size="28" font-weight="600" fill="#059669">+24%</text>
+  <!-- Chart area -->
+  <rect x="210" y="166" width="376" height="264" rx="8" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="228" y="196" font-family="Inter, sans-serif" font-size="14" font-weight="500" fill="#0F172A">Activity</text>
+  <!-- Clean bar chart -->
+  <rect x="248" y="350" width="28" height="60" rx="4" fill="#2563EB" fill-opacity="0.15"/>
+  <rect x="292" y="310" width="28" height="100" rx="4" fill="#2563EB" fill-opacity="0.25"/>
+  <rect x="336" y="280" width="28" height="130" rx="4" fill="#2563EB"/>
+  <rect x="380" y="320" width="28" height="90" rx="4" fill="#2563EB" fill-opacity="0.25"/>
+  <rect x="424" y="260" width="28" height="150" rx="4" fill="#2563EB"/>
+  <rect x="468" y="300" width="28" height="110" rx="4" fill="#2563EB" fill-opacity="0.2"/>
+  <rect x="512" y="240" width="28" height="170" rx="4" fill="#F97316"/>
+  <!-- Right panel -->
+  <rect x="602" y="166" width="178" height="264" rx="8" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="620" y="196" font-family="Inter, sans-serif" font-size="14" font-weight="500" fill="#0F172A">Recent</text>
+  <text x="620" y="226" font-family="Inter, sans-serif" font-size="12" fill="#64748B">New signup</text>
+  <line x1="614" y1="238" x2="768" y2="238" stroke="#F1F5F9" stroke-width="1"/>
+  <text x="620" y="258" font-family="Inter, sans-serif" font-size="12" fill="#64748B">Payment received</text>
+  <line x1="614" y1="270" x2="768" y2="270" stroke="#F1F5F9" stroke-width="1"/>
+  <text x="620" y="290" font-family="Inter, sans-serif" font-size="12" fill="#64748B">Order shipped</text>
+  <line x1="614" y1="302" x2="768" y2="302" stroke="#F1F5F9" stroke-width="1"/>
+  <text x="620" y="322" font-family="Inter, sans-serif" font-size="12" fill="#64748B">Bug reported</text>
+  <line x1="614" y1="334" x2="768" y2="334" stroke="#F1F5F9" stroke-width="1"/>
+  <text x="620" y="354" font-family="Inter, sans-serif" font-size="12" fill="#64748B">Deploy complete</text>
+</svg>

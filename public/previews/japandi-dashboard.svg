@@ -1,0 +1,48 @@
+<svg width="800" height="450" viewBox="0 0 800 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="450" fill="#F5F0EB"/>
+  <!-- Sidebar -->
+  <rect x="0" y="0" width="180" height="450" fill="#FFFFFF" fill-opacity="0.5"/>
+  <text x="24" y="38" font-family="Cormorant Garamond, Georgia, serif" font-size="20" fill="#2C2420">Panel</text>
+  <line x1="24" y1="50" x2="156" y2="50" stroke="#C4956A" stroke-width="0.5" stroke-opacity="0.3"/>
+  <rect x="12" y="64" width="156" height="34" rx="12" fill="#8B7355" fill-opacity="0.08"/>
+  <text x="28" y="86" font-family="Source Sans 3, sans-serif" font-size="13" fill="#8B7355">Dashboard</text>
+  <text x="28" y="118" font-family="Source Sans 3, sans-serif" font-size="13" fill="#2C2420" fill-opacity="0.35">Analytics</text>
+  <text x="28" y="148" font-family="Source Sans 3, sans-serif" font-size="13" fill="#2C2420" fill-opacity="0.35">Users</text>
+  <text x="28" y="178" font-family="Source Sans 3, sans-serif" font-size="13" fill="#2C2420" fill-opacity="0.35">Settings</text>
+  <!-- Header -->
+  <text x="210" y="38" font-family="Cormorant Garamond, Georgia, serif" font-size="22" fill="#2C2420">Dashboard</text>
+  <!-- Stat cards -->
+  <rect x="210" y="58" width="180" height="90" rx="16" fill="#FFFFFF" fill-opacity="0.5"/>
+  <text x="228" y="82" font-family="Source Sans 3, sans-serif" font-size="12" fill="#2C2420" fill-opacity="0.5">Users</text>
+  <text x="228" y="120" font-family="Cormorant Garamond, Georgia, serif" font-size="30" fill="#8B7355">12,847</text>
+  <rect x="406" y="58" width="180" height="90" rx="16" fill="#FFFFFF" fill-opacity="0.5"/>
+  <text x="424" y="82" font-family="Source Sans 3, sans-serif" font-size="12" fill="#2C2420" fill-opacity="0.5">Revenue</text>
+  <text x="424" y="120" font-family="Cormorant Garamond, Georgia, serif" font-size="30" fill="#2C2420">$48.2K</text>
+  <rect x="602" y="58" width="178" height="90" rx="16" fill="#FFFFFF" fill-opacity="0.5"/>
+  <text x="620" y="82" font-family="Source Sans 3, sans-serif" font-size="12" fill="#2C2420" fill-opacity="0.5">Growth</text>
+  <text x="620" y="120" font-family="Cormorant Garamond, Georgia, serif" font-size="30" fill="#6B8E7B">+24%</text>
+  <!-- Chart area -->
+  <rect x="210" y="168" width="376" height="262" rx="16" fill="#FFFFFF" fill-opacity="0.5"/>
+  <text x="228" y="198" font-family="Cormorant Garamond, Georgia, serif" font-size="16" fill="#2C2420">Activity</text>
+  <!-- Organic rounded bars -->
+  <rect x="248" y="350" width="28" height="60" rx="6" fill="#8B7355" fill-opacity="0.15"/>
+  <rect x="292" y="310" width="28" height="100" rx="6" fill="#8B7355" fill-opacity="0.25"/>
+  <rect x="336" y="280" width="28" height="130" rx="6" fill="#8B7355"/>
+  <rect x="380" y="320" width="28" height="90" rx="6" fill="#6B8E7B" fill-opacity="0.3"/>
+  <rect x="424" y="260" width="28" height="150" rx="6" fill="#6B8E7B"/>
+  <rect x="468" y="300" width="28" height="110" rx="6" fill="#8B7355" fill-opacity="0.25"/>
+  <rect x="512" y="240" width="28" height="170" rx="6" fill="#C4956A"/>
+  <!-- Right panel -->
+  <rect x="602" y="168" width="178" height="262" rx="16" fill="#FFFFFF" fill-opacity="0.5"/>
+  <text x="620" y="198" font-family="Cormorant Garamond, Georgia, serif" font-size="16" fill="#2C2420">Recent</text>
+  <line x1="614" y1="216" x2="768" y2="216" stroke="#C4956A" stroke-width="0.5" stroke-opacity="0.2"/>
+  <text x="620" y="236" font-family="Source Sans 3, sans-serif" font-size="11" fill="#2C2420" fill-opacity="0.6">New signup</text>
+  <line x1="614" y1="250" x2="768" y2="250" stroke="#C4956A" stroke-width="0.5" stroke-opacity="0.2"/>
+  <text x="620" y="270" font-family="Source Sans 3, sans-serif" font-size="11" fill="#2C2420" fill-opacity="0.6">Payment received</text>
+  <line x1="614" y1="284" x2="768" y2="284" stroke="#C4956A" stroke-width="0.5" stroke-opacity="0.2"/>
+  <text x="620" y="304" font-family="Source Sans 3, sans-serif" font-size="11" fill="#2C2420" fill-opacity="0.6">Order shipped</text>
+  <line x1="614" y1="318" x2="768" y2="318" stroke="#C4956A" stroke-width="0.5" stroke-opacity="0.2"/>
+  <text x="620" y="338" font-family="Source Sans 3, sans-serif" font-size="11" fill="#2C2420" fill-opacity="0.6">Bug reported</text>
+  <line x1="614" y1="352" x2="768" y2="352" stroke="#C4956A" stroke-width="0.5" stroke-opacity="0.2"/>
+  <text x="620" y="372" font-family="Source Sans 3, sans-serif" font-size="11" fill="#2C2420" fill-opacity="0.6">Deploy complete</text>
+</svg>

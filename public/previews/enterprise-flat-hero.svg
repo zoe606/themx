@@ -1,0 +1,50 @@
+<svg width="800" height="450" viewBox="0 0 800 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="450" fill="#F8FAFC"/>
+  <!-- Clean content area -->
+  <rect x="0" y="0" width="800" height="200" fill="#FFFFFF"/>
+  <line x1="0" y1="200" x2="800" y2="200" stroke="#E2E8F0" stroke-width="1"/>
+  <!-- Heading -->
+  <text x="400" y="80" font-family="Inter, sans-serif" font-size="36" font-weight="600" fill="#0F172A" text-anchor="middle">Enterprise-Grade Tools</text>
+  <text x="400" y="120" font-family="Inter, sans-serif" font-size="16" fill="#475569" text-anchor="middle">Professional interfaces built for productivity. No decorations, just function.</text>
+  <!-- CTA buttons -->
+  <rect x="310" y="145" width="110" height="36" rx="4" fill="#2563EB"/>
+  <text x="365" y="168" font-family="Inter, sans-serif" font-size="14" font-weight="500" fill="#FFFFFF" text-anchor="middle">Get Started</text>
+  <rect x="432" y="145" width="90" height="36" rx="4" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="477" y="168" font-family="Inter, sans-serif" font-size="14" font-weight="500" fill="#0F172A" text-anchor="middle">Docs</text>
+  <!-- Metric cards row -->
+  <rect x="60" y="224" width="160" height="80" rx="4" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="78" y="250" font-family="Inter, sans-serif" font-size="12" fill="#475569">Active Users</text>
+  <text x="78" y="282" font-family="Inter, sans-serif" font-size="24" font-weight="600" fill="#0F172A">12,847</text>
+  <text x="165" y="282" font-family="Inter, sans-serif" font-size="12" fill="#059669">+12.5%</text>
+  <rect x="240" y="224" width="160" height="80" rx="4" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="258" y="250" font-family="Inter, sans-serif" font-size="12" fill="#475569">Revenue</text>
+  <text x="258" y="282" font-family="Inter, sans-serif" font-size="24" font-weight="600" fill="#0F172A">$48.2K</text>
+  <text x="342" y="282" font-family="Inter, sans-serif" font-size="12" fill="#059669">+8.3%</text>
+  <rect x="420" y="224" width="160" height="80" rx="4" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="438" y="250" font-family="Inter, sans-serif" font-size="12" fill="#475569">Conversion</text>
+  <text x="438" y="282" font-family="Inter, sans-serif" font-size="24" font-weight="600" fill="#0F172A">3.24%</text>
+  <text x="512" y="282" font-family="Inter, sans-serif" font-size="12" fill="#DC2626">-0.4%</text>
+  <rect x="600" y="224" width="160" height="80" rx="4" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="618" y="250" font-family="Inter, sans-serif" font-size="12" fill="#475569">Uptime</text>
+  <text x="618" y="282" font-family="Inter, sans-serif" font-size="24" font-weight="600" fill="#0F172A">99.9%</text>
+  <text x="700" y="282" font-family="Inter, sans-serif" font-size="12" fill="#059669">Stable</text>
+  <!-- Table preview -->
+  <rect x="60" y="324" width="700" height="106" rx="4" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+  <rect x="60" y="324" width="700" height="32" rx="4" fill="#F8FAFC"/>
+  <text x="78" y="345" font-family="Inter, sans-serif" font-size="12" font-weight="500" fill="#475569">Name</text>
+  <text x="250" y="345" font-family="Inter, sans-serif" font-size="12" font-weight="500" fill="#475569">Status</text>
+  <text x="400" y="345" font-family="Inter, sans-serif" font-size="12" font-weight="500" fill="#475569">Role</text>
+  <text x="550" y="345" font-family="Inter, sans-serif" font-size="12" font-weight="500" fill="#475569">Last Active</text>
+  <line x1="60" y1="356" x2="760" y2="356" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="78" y="378" font-family="Inter, sans-serif" font-size="13" fill="#0F172A">John Smith</text>
+  <rect x="250" y="366" width="48" height="18" rx="4" fill="#059669" fill-opacity="0.1"/>
+  <text x="258" y="379" font-family="Inter, sans-serif" font-size="11" fill="#059669">Active</text>
+  <text x="400" y="378" font-family="Inter, sans-serif" font-size="13" fill="#475569">Admin</text>
+  <text x="550" y="378" font-family="Inter, sans-serif" font-size="13" fill="#475569">2 min ago</text>
+  <line x1="60" y1="392" x2="760" y2="392" stroke="#F1F5F9" stroke-width="1"/>
+  <text x="78" y="414" font-family="Inter, sans-serif" font-size="13" fill="#0F172A">Jane Doe</text>
+  <rect x="250" y="402" width="48" height="18" rx="4" fill="#059669" fill-opacity="0.1"/>
+  <text x="258" y="415" font-family="Inter, sans-serif" font-size="11" fill="#059669">Active</text>
+  <text x="400" y="414" font-family="Inter, sans-serif" font-size="13" fill="#475569">Editor</text>
+  <text x="550" y="414" font-family="Inter, sans-serif" font-size="13" fill="#475569">5 min ago</text>
+</svg>

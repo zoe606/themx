@@ -1,0 +1,36 @@
+<svg width="800" height="450" viewBox="0 0 800 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="ch-shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#6366F1" flood-opacity="0.15"/>
+    </filter>
+    <filter id="ch-inner" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#6366F1" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+  <rect width="800" height="450" fill="#F1F5F9"/>
+  <!-- Main panel with clay effect -->
+  <rect x="60" y="50" width="500" height="300" rx="28" fill="#FFFFFF" filter="url(#ch-shadow)"/>
+  <!-- Inner highlight -->
+  <rect x="64" y="54" width="492" height="4" rx="2" fill="white" fill-opacity="0.8"/>
+  <!-- Content -->
+  <text x="100" y="120" font-family="Nunito, sans-serif" font-size="44" font-weight="700" fill="#334155">Soft, Squishy &amp;</text>
+  <text x="100" y="175" font-family="Nunito, sans-serif" font-size="44" font-weight="700" fill="#6366F1">Delightful.</text>
+  <text x="100" y="220" font-family="Nunito, sans-serif" font-size="16" fill="#334155" fill-opacity="0.6">Tactile interfaces that invite interaction.</text>
+  <text x="100" y="245" font-family="Nunito, sans-serif" font-size="16" fill="#334155" fill-opacity="0.6">Everything feels pressable and playful.</text>
+  <!-- Buttons with clay effect -->
+  <rect x="100" y="275" width="160" height="48" rx="24" fill="#6366F1" filter="url(#ch-inner)"/>
+  <rect x="102" y="277" width="156" height="4" rx="2" fill="white" fill-opacity="0.3"/>
+  <text x="180" y="305" font-family="Nunito, sans-serif" font-size="16" font-weight="600" fill="#FFFFFF" text-anchor="middle">Get Started</text>
+  <rect x="280" y="275" width="130" height="48" rx="24" fill="#EC4899" filter="url(#ch-inner)"/>
+  <rect x="282" y="277" width="126" height="4" rx="2" fill="white" fill-opacity="0.3"/>
+  <text x="345" y="305" font-family="Nunito, sans-serif" font-size="16" font-weight="600" fill="#FFFFFF" text-anchor="middle">Docs</text>
+  <!-- Floating clay shapes -->
+  <circle cx="660" cy="120" r="50" fill="#EC4899" fill-opacity="0.15" filter="url(#ch-shadow)"/>
+  <circle cx="662" cy="118" r="48" fill="#EC4899" fill-opacity="0.1"/>
+  <rect x="610" y="220" width="120" height="80" rx="20" fill="#F59E0B" fill-opacity="0.15" filter="url(#ch-shadow)"/>
+  <circle cx="720" cy="320" r="40" fill="#6366F1" fill-opacity="0.1" filter="url(#ch-shadow)"/>
+  <!-- Small floating pills -->
+  <rect x="100" y="380" width="80" height="30" rx="15" fill="#6366F1" fill-opacity="0.08"/>
+  <rect x="200" y="385" width="60" height="30" rx="15" fill="#EC4899" fill-opacity="0.08"/>
+  <rect x="280" y="380" width="90" height="30" rx="15" fill="#F59E0B" fill-opacity="0.08"/>
+</svg>

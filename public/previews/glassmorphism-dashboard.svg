@@ -1,0 +1,57 @@
+<svg width="800" height="450" viewBox="0 0 800 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gd-bg" x1="0" y1="0" x2="800" y2="450">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#1E1B4B"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#gd-bg)"/>
+  <!-- Background orbs -->
+  <circle cx="100" cy="200" r="150" fill="#7C3AED" opacity="0.15"/>
+  <circle cx="500" cy="100" r="120" fill="#EC4899" opacity="0.12"/>
+  <circle cx="700" cy="350" r="100" fill="#06B6D4" opacity="0.12"/>
+  <!-- Sidebar glass panel -->
+  <rect x="0" y="0" width="180" height="450" fill="white" fill-opacity="0.06" stroke-right="white" stroke-opacity="0.1"/>
+  <line x1="180" y1="0" x2="180" y2="450" stroke="white" stroke-opacity="0.15" stroke-width="1"/>
+  <!-- Sidebar content -->
+  <text x="24" y="40" font-family="Poppins, sans-serif" font-size="18" font-weight="600" fill="#F8FAFC">Panel</text>
+  <rect x="12" y="60" width="156" height="36" rx="8" fill="white" fill-opacity="0.1"/>
+  <text x="28" y="84" font-family="Inter, sans-serif" font-size="13" fill="#F8FAFC">Dashboard</text>
+  <text x="28" y="120" font-family="Inter, sans-serif" font-size="13" fill="#F8FAFC" fill-opacity="0.5">Analytics</text>
+  <text x="28" y="150" font-family="Inter, sans-serif" font-size="13" fill="#F8FAFC" fill-opacity="0.5">Users</text>
+  <text x="28" y="180" font-family="Inter, sans-serif" font-size="13" fill="#F8FAFC" fill-opacity="0.5">Settings</text>
+  <!-- Header -->
+  <text x="210" y="40" font-family="Poppins, sans-serif" font-size="22" font-weight="600" fill="#F8FAFC">Dashboard</text>
+  <!-- Stat cards -->
+  <rect x="210" y="60" width="180" height="100" rx="14" fill="white" fill-opacity="0.08" stroke="white" stroke-opacity="0.15" stroke-width="1"/>
+  <text x="230" y="90" font-family="Inter, sans-serif" font-size="12" fill="#F8FAFC" fill-opacity="0.6">Total Users</text>
+  <text x="230" y="125" font-family="Poppins, sans-serif" font-size="28" font-weight="600" fill="#F8FAFC">12,847</text>
+  <text x="230" y="145" font-family="Inter, sans-serif" font-size="11" fill="#06B6D4">+12.5%</text>
+  <rect x="405" y="60" width="180" height="100" rx="14" fill="white" fill-opacity="0.08" stroke="white" stroke-opacity="0.15" stroke-width="1"/>
+  <text x="425" y="90" font-family="Inter, sans-serif" font-size="12" fill="#F8FAFC" fill-opacity="0.6">Revenue</text>
+  <text x="425" y="125" font-family="Poppins, sans-serif" font-size="28" font-weight="600" fill="#F8FAFC">$48.2K</text>
+  <text x="425" y="145" font-family="Inter, sans-serif" font-size="11" fill="#06B6D4">+8.3%</text>
+  <rect x="600" y="60" width="180" height="100" rx="14" fill="white" fill-opacity="0.08" stroke="white" stroke-opacity="0.15" stroke-width="1"/>
+  <text x="620" y="90" font-family="Inter, sans-serif" font-size="12" fill="#F8FAFC" fill-opacity="0.6">Conversion</text>
+  <text x="620" y="125" font-family="Poppins, sans-serif" font-size="28" font-weight="600" fill="#F8FAFC">3.24%</text>
+  <text x="620" y="145" font-family="Inter, sans-serif" font-size="11" fill="#EC4899">-0.4%</text>
+  <!-- Chart panel -->
+  <rect x="210" y="180" width="375" height="250" rx="14" fill="white" fill-opacity="0.08" stroke="white" stroke-opacity="0.15" stroke-width="1"/>
+  <text x="230" y="210" font-family="Poppins, sans-serif" font-size="16" font-weight="600" fill="#F8FAFC">Activity Overview</text>
+  <!-- Line chart simulation -->
+  <polyline points="240,380 290,340 340,360 390,300 440,320 490,270 540,290" stroke="#7C3AED" stroke-width="2" fill="none"/>
+  <polyline points="240,390 290,370 340,380 390,350 440,360 490,330 540,340" stroke="#EC4899" stroke-width="2" fill="none" stroke-dasharray="4,4"/>
+  <!-- Right panel -->
+  <rect x="600" y="180" width="180" height="250" rx="14" fill="white" fill-opacity="0.08" stroke="white" stroke-opacity="0.15" stroke-width="1"/>
+  <text x="620" y="210" font-family="Poppins, sans-serif" font-size="14" font-weight="600" fill="#F8FAFC">Recent</text>
+  <rect x="612" y="225" width="156" height="32" rx="6" fill="white" fill-opacity="0.06"/>
+  <text x="624" y="246" font-family="Inter, sans-serif" font-size="11" fill="#F8FAFC" fill-opacity="0.7">New signup</text>
+  <rect x="612" y="265" width="156" height="32" rx="6" fill="white" fill-opacity="0.06"/>
+  <text x="624" y="286" font-family="Inter, sans-serif" font-size="11" fill="#F8FAFC" fill-opacity="0.7">Payment received</text>
+  <rect x="612" y="305" width="156" height="32" rx="6" fill="white" fill-opacity="0.06"/>
+  <text x="624" y="326" font-family="Inter, sans-serif" font-size="11" fill="#F8FAFC" fill-opacity="0.7">Order shipped</text>
+  <rect x="612" y="345" width="156" height="32" rx="6" fill="white" fill-opacity="0.06"/>
+  <text x="624" y="366" font-family="Inter, sans-serif" font-size="11" fill="#F8FAFC" fill-opacity="0.7">Bug reported</text>
+  <rect x="612" y="385" width="156" height="32" rx="6" fill="white" fill-opacity="0.06"/>
+  <text x="624" y="406" font-family="Inter, sans-serif" font-size="11" fill="#F8FAFC" fill-opacity="0.7">Deploy complete</text>
+</svg>

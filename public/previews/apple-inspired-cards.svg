@@ -1,0 +1,31 @@
+<svg width="800" height="450" viewBox="0 0 800 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="450" fill="#FFFFFF"/>
+  <text x="400" y="46" font-family="SF Pro Display, -apple-system, Helvetica Neue, sans-serif" font-size="28" font-weight="600" fill="#1D1D1F" text-anchor="middle">Features</text>
+  <!-- Card 1 -->
+  <rect x="50" y="76" width="220" height="320" rx="16" fill="#F5F5F7"/>
+  <rect x="80" y="110" width="48" height="48" rx="12" fill="#0071E3" fill-opacity="0.08"/>
+  <circle cx="104" cy="134" r="12" fill="#0071E3" fill-opacity="0.15"/>
+  <text x="80" y="194" font-family="SF Pro Display, -apple-system, Helvetica Neue, sans-serif" font-size="18" font-weight="600" fill="#1D1D1F">Fast Setup</text>
+  <text x="80" y="218" font-family="SF Pro Text, -apple-system, Helvetica Neue, sans-serif" font-size="14" fill="#86868B">Get up and running in</text>
+  <text x="80" y="238" font-family="SF Pro Text, -apple-system, Helvetica Neue, sans-serif" font-size="14" fill="#86868B">minutes with a simple</text>
+  <text x="80" y="258" font-family="SF Pro Text, -apple-system, Helvetica Neue, sans-serif" font-size="14" fill="#86868B">configuration.</text>
+  <text x="80" y="342" font-family="SF Pro Text, -apple-system, Helvetica Neue, sans-serif" font-size="14" fill="#0071E3">Learn more</text>
+  <!-- Card 2 -->
+  <rect x="290" y="76" width="220" height="320" rx="16" fill="#F5F5F7"/>
+  <rect x="320" y="110" width="48" height="48" rx="12" fill="#AC39FF" fill-opacity="0.08"/>
+  <circle cx="344" cy="134" r="12" fill="#AC39FF" fill-opacity="0.15"/>
+  <text x="320" y="194" font-family="SF Pro Display, -apple-system, Helvetica Neue, sans-serif" font-size="18" font-weight="600" fill="#1D1D1F">Customizable</text>
+  <text x="320" y="218" font-family="SF Pro Text, -apple-system, Helvetica Neue, sans-serif" font-size="14" fill="#86868B">Adapt every detail to</text>
+  <text x="320" y="238" font-family="SF Pro Text, -apple-system, Helvetica Neue, sans-serif" font-size="14" fill="#86868B">match your brand with</text>
+  <text x="320" y="258" font-family="SF Pro Text, -apple-system, Helvetica Neue, sans-serif" font-size="14" fill="#86868B">full control.</text>
+  <text x="320" y="342" font-family="SF Pro Text, -apple-system, Helvetica Neue, sans-serif" font-size="14" fill="#0071E3">Learn more</text>
+  <!-- Card 3 -->
+  <rect x="530" y="76" width="220" height="320" rx="16" fill="#F5F5F7"/>
+  <rect x="560" y="110" width="48" height="48" rx="12" fill="#86868B" fill-opacity="0.08"/>
+  <circle cx="584" cy="134" r="12" fill="#86868B" fill-opacity="0.15"/>
+  <text x="560" y="194" font-family="SF Pro Display, -apple-system, Helvetica Neue, sans-serif" font-size="18" font-weight="600" fill="#1D1D1F">Open Source</text>
+  <text x="560" y="218" font-family="SF Pro Text, -apple-system, Helvetica Neue, sans-serif" font-size="14" fill="#86868B">Free forever with a</text>
+  <text x="560" y="238" font-family="SF Pro Text, -apple-system, Helvetica Neue, sans-serif" font-size="14" fill="#86868B">growing community</text>
+  <text x="560" y="258" font-family="SF Pro Text, -apple-system, Helvetica Neue, sans-serif" font-size="14" fill="#86868B">of contributors.</text>
+  <text x="560" y="342" font-family="SF Pro Text, -apple-system, Helvetica Neue, sans-serif" font-size="14" fill="#0071E3">Learn more</text>
+</svg>

@@ -1,0 +1,50 @@
+<svg width="800" height="450" viewBox="0 0 800 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="450" fill="#F8FAFC"/>
+  <!-- Sidebar -->
+  <rect x="0" y="0" width="180" height="450" fill="#FFFFFF"/>
+  <line x1="180" y1="0" x2="180" y2="450" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="20" y="32" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="#0F172A">Panel</text>
+  <line x1="12" y1="44" x2="168" y2="44" stroke="#F1F5F9" stroke-width="1"/>
+  <rect x="8" y="52" width="164" height="32" rx="4" fill="#2563EB" fill-opacity="0.06"/>
+  <text x="24" y="73" font-family="Inter, sans-serif" font-size="13" font-weight="500" fill="#2563EB">Dashboard</text>
+  <text x="24" y="105" font-family="Inter, sans-serif" font-size="13" fill="#475569">Analytics</text>
+  <text x="24" y="133" font-family="Inter, sans-serif" font-size="13" fill="#475569">Users</text>
+  <text x="24" y="161" font-family="Inter, sans-serif" font-size="13" fill="#475569">Settings</text>
+  <!-- Header -->
+  <text x="204" y="32" font-family="Inter, sans-serif" font-size="18" font-weight="600" fill="#0F172A">Dashboard</text>
+  <!-- Stat cards -->
+  <rect x="204" y="48" width="186" height="80" rx="4" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="220" y="70" font-family="Inter, sans-serif" font-size="12" fill="#475569">Total Users</text>
+  <text x="220" y="104" font-family="Inter, sans-serif" font-size="26" font-weight="600" fill="#0F172A">12,847</text>
+  <rect x="402" y="48" width="186" height="80" rx="4" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="418" y="70" font-family="Inter, sans-serif" font-size="12" fill="#475569">Revenue</text>
+  <text x="418" y="104" font-family="Inter, sans-serif" font-size="26" font-weight="600" fill="#0F172A">$48.2K</text>
+  <rect x="600" y="48" width="180" height="80" rx="4" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="616" y="70" font-family="Inter, sans-serif" font-size="12" fill="#475569">Growth</text>
+  <text x="616" y="104" font-family="Inter, sans-serif" font-size="26" font-weight="600" fill="#059669">+24%</text>
+  <!-- Chart area -->
+  <rect x="204" y="144" width="384" height="286" rx="4" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="220" y="172" font-family="Inter, sans-serif" font-size="14" font-weight="500" fill="#0F172A">Activity</text>
+  <!-- Flat bar chart -->
+  <rect x="240" y="360" width="28" height="50" fill="#2563EB" fill-opacity="0.15"/>
+  <rect x="284" y="320" width="28" height="90" fill="#2563EB" fill-opacity="0.25"/>
+  <rect x="328" y="280" width="28" height="130" fill="#2563EB"/>
+  <rect x="372" y="320" width="28" height="90" fill="#2563EB" fill-opacity="0.25"/>
+  <rect x="416" y="260" width="28" height="150" fill="#2563EB"/>
+  <rect x="460" y="300" width="28" height="110" fill="#2563EB" fill-opacity="0.2"/>
+  <rect x="504" y="240" width="28" height="170" fill="#059669"/>
+  <rect x="548" y="270" width="28" height="140" fill="#2563EB" fill-opacity="0.3"/>
+  <line x1="232" y1="410" x2="576" y2="410" stroke="#E2E8F0" stroke-width="1"/>
+  <!-- Right panel -->
+  <rect x="600" y="144" width="180" height="286" rx="4" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="616" y="172" font-family="Inter, sans-serif" font-size="14" font-weight="500" fill="#0F172A">Recent</text>
+  <text x="616" y="202" font-family="Inter, sans-serif" font-size="12" fill="#475569">New signup</text>
+  <line x1="608" y1="214" x2="772" y2="214" stroke="#F1F5F9" stroke-width="1"/>
+  <text x="616" y="234" font-family="Inter, sans-serif" font-size="12" fill="#475569">Payment received</text>
+  <line x1="608" y1="246" x2="772" y2="246" stroke="#F1F5F9" stroke-width="1"/>
+  <text x="616" y="266" font-family="Inter, sans-serif" font-size="12" fill="#475569">Order shipped</text>
+  <line x1="608" y1="278" x2="772" y2="278" stroke="#F1F5F9" stroke-width="1"/>
+  <text x="616" y="298" font-family="Inter, sans-serif" font-size="12" fill="#475569">Bug reported</text>
+  <line x1="608" y1="310" x2="772" y2="310" stroke="#F1F5F9" stroke-width="1"/>
+  <text x="616" y="330" font-family="Inter, sans-serif" font-size="12" fill="#475569">Deploy complete</text>
+</svg>

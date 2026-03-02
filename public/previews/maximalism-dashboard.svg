@@ -1,0 +1,54 @@
+<svg width="800" height="450" viewBox="0 0 800 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="450" fill="#FFF7ED"/>
+  <!-- Top bar -->
+  <rect x="0" y="0" width="800" height="6" fill="#E11D48"/>
+  <!-- Sidebar -->
+  <rect x="0" y="6" width="180" height="444" fill="#7C3AED"/>
+  <text x="24" y="40" font-family="Archivo Black, sans-serif" font-size="18" fill="#FFFFFF">PANEL!</text>
+  <rect x="12" y="56" width="156" height="36" fill="#E11D48"/>
+  <text x="28" y="80" font-family="DM Sans, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF">Dashboard</text>
+  <text x="28" y="116" font-family="DM Sans, sans-serif" font-size="13" fill="#FFFFFF" fill-opacity="0.6">Analytics</text>
+  <text x="28" y="148" font-family="DM Sans, sans-serif" font-size="13" fill="#FFFFFF" fill-opacity="0.6">Users</text>
+  <text x="28" y="180" font-family="DM Sans, sans-serif" font-size="13" fill="#FFFFFF" fill-opacity="0.6">Settings</text>
+  <!-- Squiggle in sidebar -->
+  <path d="M30 220 Q50 200 70 220 Q90 240 110 220 Q130 200 150 220" stroke="#F97316" stroke-width="2" fill="none"/>
+  <!-- Main header -->
+  <text x="210" y="40" font-family="Archivo Black, sans-serif" font-size="22" fill="#1C1917">DASHBOARD</text>
+  <!-- Stat cards — different colors, overlapping slightly -->
+  <rect x="214" y="58" width="176" height="92" fill="#E11D48" stroke="#1C1917" stroke-width="2"/>
+  <text x="230" y="84" font-family="DM Sans, sans-serif" font-size="11" font-weight="700" fill="#FFFFFF">USERS</text>
+  <text x="230" y="126" font-family="Archivo Black, sans-serif" font-size="36" fill="#FFFFFF">12,847</text>
+  <rect x="404" y="54" width="176" height="92" fill="#F97316" stroke="#1C1917" stroke-width="2" transform="rotate(1 492 100)"/>
+  <text x="420" y="84" font-family="DM Sans, sans-serif" font-size="11" font-weight="700" fill="#FFFFFF">REVENUE</text>
+  <text x="420" y="126" font-family="Archivo Black, sans-serif" font-size="36" fill="#FFFFFF">$48.2K</text>
+  <rect x="596" y="58" width="176" height="92" fill="#7C3AED" stroke="#1C1917" stroke-width="2"/>
+  <text x="612" y="84" font-family="DM Sans, sans-serif" font-size="11" font-weight="700" fill="#FFFFFF">GROWTH</text>
+  <text x="612" y="126" font-family="Archivo Black, sans-serif" font-size="36" fill="#FFFFFF">+24%</text>
+  <!-- Chart area -->
+  <rect x="210" y="170" width="370" height="260" fill="#FFFFFF" stroke="#1C1917" stroke-width="2"/>
+  <text x="228" y="198" font-family="Archivo Black, sans-serif" font-size="14" fill="#1C1917">ACTIVITY!</text>
+  <!-- Colorful bars -->
+  <rect x="246" y="350" width="32" height="60" fill="#E11D48" stroke="#1C1917" stroke-width="1"/>
+  <rect x="290" y="310" width="32" height="100" fill="#7C3AED" stroke="#1C1917" stroke-width="1"/>
+  <rect x="334" y="270" width="32" height="130" fill="#F97316" stroke="#1C1917" stroke-width="1"/>
+  <rect x="378" y="320" width="32" height="80" fill="#E11D48" stroke="#1C1917" stroke-width="1"/>
+  <rect x="422" y="250" width="32" height="150" fill="#7C3AED" stroke="#1C1917" stroke-width="1"/>
+  <rect x="466" y="290" width="32" height="110" fill="#F97316" stroke="#1C1917" stroke-width="1"/>
+  <rect x="510" y="230" width="32" height="170" fill="#E11D48" stroke="#1C1917" stroke-width="1"/>
+  <line x1="236" y1="410" x2="556" y2="410" stroke="#1C1917" stroke-width="2"/>
+  <!-- Right panel -->
+  <rect x="596" y="170" width="180" height="260" fill="#FFFFFF" stroke="#1C1917" stroke-width="2"/>
+  <text x="612" y="198" font-family="Archivo Black, sans-serif" font-size="14" fill="#E11D48">RECENT</text>
+  <rect x="608" y="210" width="156" height="30" fill="#E11D48" fill-opacity="0.1" stroke="#1C1917" stroke-width="1"/>
+  <text x="618" y="230" font-family="DM Sans, sans-serif" font-size="11" fill="#1C1917">New signup!</text>
+  <rect x="608" y="248" width="156" height="30" fill="#7C3AED" fill-opacity="0.1" stroke="#1C1917" stroke-width="1"/>
+  <text x="618" y="268" font-family="DM Sans, sans-serif" font-size="11" fill="#1C1917">Payment in!</text>
+  <rect x="608" y="286" width="156" height="30" fill="#F97316" fill-opacity="0.1" stroke="#1C1917" stroke-width="1"/>
+  <text x="618" y="306" font-family="DM Sans, sans-serif" font-size="11" fill="#1C1917">Order shipped</text>
+  <rect x="608" y="324" width="156" height="30" fill="#E11D48" fill-opacity="0.1" stroke="#1C1917" stroke-width="1"/>
+  <text x="618" y="344" font-family="DM Sans, sans-serif" font-size="11" fill="#1C1917">Bug reported</text>
+  <rect x="608" y="362" width="156" height="30" fill="#7C3AED" fill-opacity="0.1" stroke="#1C1917" stroke-width="1"/>
+  <text x="618" y="382" font-family="DM Sans, sans-serif" font-size="11" fill="#1C1917">Deploy done!</text>
+  <!-- Star decorations -->
+  <polygon points="770,12 772,18 778,18 773,22 775,28 770,24 765,28 767,22 762,18 768,18" fill="#F97316"/>
+</svg>

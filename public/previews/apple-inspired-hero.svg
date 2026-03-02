@@ -1,0 +1,18 @@
+<svg width="800" height="450" viewBox="0 0 800 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="450" fill="#FFFFFF"/>
+  <!-- Lots of whitespace — Apple style -->
+  <!-- Heading -->
+  <text x="400" y="150" font-family="SF Pro Display, -apple-system, Helvetica Neue, sans-serif" font-size="56" font-weight="600" fill="#1D1D1F" text-anchor="middle">Refined Simplicity.</text>
+  <!-- Subtitle -->
+  <text x="400" y="200" font-family="SF Pro Text, -apple-system, Helvetica Neue, sans-serif" font-size="19" fill="#86868B" text-anchor="middle">Inspired by the precision and elegance of Cupertino.</text>
+  <text x="400" y="228" font-family="SF Pro Text, -apple-system, Helvetica Neue, sans-serif" font-size="19" fill="#86868B" text-anchor="middle">Every detail considered. Every pixel intentional.</text>
+  <!-- CTA buttons - Apple style rounded rects -->
+  <rect x="305" y="270" width="110" height="40" rx="20" fill="#0071E3"/>
+  <text x="360" y="296" font-family="SF Pro Text, -apple-system, Helvetica Neue, sans-serif" font-size="15" fill="#FFFFFF" text-anchor="middle">Learn More</text>
+  <text x="460" y="296" font-family="SF Pro Text, -apple-system, Helvetica Neue, sans-serif" font-size="15" fill="#0071E3">Watch the film</text>
+  <!-- Minimal product preview -->
+  <rect x="250" y="340" width="300" height="80" rx="16" fill="#F5F5F7"/>
+  <rect x="270" y="356" width="48" height="48" rx="12" fill="#E8E8ED"/>
+  <text x="335" y="376" font-family="SF Pro Display, -apple-system, Helvetica Neue, sans-serif" font-size="15" font-weight="600" fill="#1D1D1F">New Features</text>
+  <text x="335" y="396" font-family="SF Pro Text, -apple-system, Helvetica Neue, sans-serif" font-size="13" fill="#86868B">Explore what's possible</text>
+</svg>

@@ -1,0 +1,58 @@
+<svg width="800" height="450" viewBox="0 0 800 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="cd-shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#94A3B8" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+  <rect width="800" height="450" fill="#F1F5F9"/>
+  <!-- Sidebar -->
+  <rect x="0" y="0" width="180" height="450" rx="0" fill="#FFFFFF" filter="url(#cd-shadow)"/>
+  <rect x="2" y="2" width="176" height="4" rx="2" fill="white" fill-opacity="0.9"/>
+  <text x="24" y="38" font-family="Nunito, sans-serif" font-size="18" font-weight="700" fill="#334155">Panel</text>
+  <rect x="12" y="56" width="156" height="38" rx="12" fill="#6366F1" fill-opacity="0.1"/>
+  <text x="28" y="80" font-family="Nunito, sans-serif" font-size="13" font-weight="600" fill="#6366F1">Dashboard</text>
+  <text x="28" y="118" font-family="Nunito, sans-serif" font-size="13" fill="#334155" fill-opacity="0.4">Analytics</text>
+  <text x="28" y="150" font-family="Nunito, sans-serif" font-size="13" fill="#334155" fill-opacity="0.4">Users</text>
+  <text x="28" y="182" font-family="Nunito, sans-serif" font-size="13" fill="#334155" fill-opacity="0.4">Settings</text>
+  <!-- Header -->
+  <text x="210" y="38" font-family="Nunito, sans-serif" font-size="20" font-weight="700" fill="#334155">Dashboard</text>
+  <!-- Stat cards -->
+  <rect x="210" y="58" width="180" height="94" rx="20" fill="#FFFFFF" filter="url(#cd-shadow)"/>
+  <rect x="212" y="60" width="176" height="3" rx="1.5" fill="white"/>
+  <text x="228" y="84" font-family="Nunito, sans-serif" font-size="12" fill="#334155" fill-opacity="0.5">Total Users</text>
+  <text x="228" y="122" font-family="Nunito, sans-serif" font-size="28" font-weight="700" fill="#6366F1">12,847</text>
+  <rect x="406" y="58" width="180" height="94" rx="20" fill="#FFFFFF" filter="url(#cd-shadow)"/>
+  <rect x="408" y="60" width="176" height="3" rx="1.5" fill="white"/>
+  <text x="424" y="84" font-family="Nunito, sans-serif" font-size="12" fill="#334155" fill-opacity="0.5">Revenue</text>
+  <text x="424" y="122" font-family="Nunito, sans-serif" font-size="28" font-weight="700" fill="#EC4899">$48.2K</text>
+  <rect x="602" y="58" width="178" height="94" rx="20" fill="#FFFFFF" filter="url(#cd-shadow)"/>
+  <rect x="604" y="60" width="174" height="3" rx="1.5" fill="white"/>
+  <text x="620" y="84" font-family="Nunito, sans-serif" font-size="12" fill="#334155" fill-opacity="0.5">Growth</text>
+  <text x="620" y="122" font-family="Nunito, sans-serif" font-size="28" font-weight="700" fill="#F59E0B">+24%</text>
+  <!-- Chart card -->
+  <rect x="210" y="172" width="376" height="258" rx="20" fill="#FFFFFF" filter="url(#cd-shadow)"/>
+  <rect x="212" y="174" width="372" height="3" rx="1.5" fill="white"/>
+  <text x="230" y="202" font-family="Nunito, sans-serif" font-size="15" font-weight="700" fill="#334155">Activity</text>
+  <!-- Rounded soft bars -->
+  <rect x="248" y="350" width="28" height="60" rx="14" fill="#6366F1" fill-opacity="0.15"/>
+  <rect x="292" y="310" width="28" height="100" rx="14" fill="#6366F1" fill-opacity="0.3"/>
+  <rect x="336" y="280" width="28" height="130" rx="14" fill="#6366F1"/>
+  <rect x="380" y="320" width="28" height="90" rx="14" fill="#EC4899" fill-opacity="0.3"/>
+  <rect x="424" y="260" width="28" height="150" rx="14" fill="#EC4899"/>
+  <rect x="468" y="300" width="28" height="110" rx="14" fill="#6366F1" fill-opacity="0.25"/>
+  <rect x="512" y="240" width="28" height="170" rx="14" fill="#F59E0B"/>
+  <!-- Right panel -->
+  <rect x="602" y="172" width="178" height="258" rx="20" fill="#FFFFFF" filter="url(#cd-shadow)"/>
+  <rect x="604" y="174" width="174" height="3" rx="1.5" fill="white"/>
+  <text x="620" y="202" font-family="Nunito, sans-serif" font-size="15" font-weight="700" fill="#334155">Recent</text>
+  <rect x="614" y="216" width="154" height="34" rx="12" fill="#6366F1" fill-opacity="0.05"/>
+  <text x="626" y="238" font-family="Nunito, sans-serif" font-size="11" fill="#334155" fill-opacity="0.6">New signup</text>
+  <rect x="614" y="258" width="154" height="34" rx="12" fill="#EC4899" fill-opacity="0.05"/>
+  <text x="626" y="280" font-family="Nunito, sans-serif" font-size="11" fill="#334155" fill-opacity="0.6">Payment received</text>
+  <rect x="614" y="300" width="154" height="34" rx="12" fill="#F59E0B" fill-opacity="0.05"/>
+  <text x="626" y="322" font-family="Nunito, sans-serif" font-size="11" fill="#334155" fill-opacity="0.6">Order shipped</text>
+  <rect x="614" y="342" width="154" height="34" rx="12" fill="#6366F1" fill-opacity="0.05"/>
+  <text x="626" y="364" font-family="Nunito, sans-serif" font-size="11" fill="#334155" fill-opacity="0.6">Bug reported</text>
+  <rect x="614" y="384" width="154" height="34" rx="12" fill="#EC4899" fill-opacity="0.05"/>
+  <text x="626" y="406" font-family="Nunito, sans-serif" font-size="11" fill="#334155" fill-opacity="0.6">Deploy complete</text>
+</svg>
