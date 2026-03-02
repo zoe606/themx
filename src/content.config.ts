@@ -23,6 +23,14 @@ const themes = defineCollection({
       body: z.string(),
     }),
     characteristics: z.array(z.string()),
+    examples: z
+      .array(
+        z.object({
+          src: z.string(),
+          label: z.string(),
+        })
+      )
+      .optional(),
   }),
 });
 

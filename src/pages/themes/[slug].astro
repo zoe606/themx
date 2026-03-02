@@ -44,6 +44,28 @@ const { data } = theme;
       />
     </div>
 
+    {/* Examples Gallery */}
+    {data.examples && data.examples.length > 0 && (
+      <div class="mt-10">
+        <h2 class="text-lg font-semibold text-gray-900">Examples</h2>
+        <div class="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2">
+          {data.examples.map((example) => (
+            <div class="overflow-hidden rounded-lg border border-gray-200 bg-white">
+              <img
+                src={example.src}
+                alt={`${data.name} — ${example.label}`}
+                class="w-full"
+                loading="lazy"
+              />
+              <div class="border-t border-gray-100 px-3 py-2">
+                <span class="text-xs font-medium text-gray-500">{example.label}</span>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    )}
+
     {/* Color Palette */}
     <div class="mt-10">
       <h2 class="text-lg font-semibold text-gray-900">Color Palette</h2>
