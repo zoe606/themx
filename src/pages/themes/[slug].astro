@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import ColorSwatch from "../../components/ColorSwatch.astro";
+import PromptBuilder from "../../components/PromptBuilder";
 import { getCollection, render } from "astro:content";
 
 export async function getStaticPaths() {
@@ -94,9 +95,15 @@ const { data } = theme;
       <Content />
     </div>
 
-    {/* Prompt Builder placeholder */}
-    <div class="mt-12 rounded-lg border-2 border-dashed border-gray-300 p-8 text-center text-gray-400">
-      Prompt builder will go here (Task 8)
+    {/* Prompt Builder */}
+    <div class="mt-12">
+      <PromptBuilder
+        client:load
+        themeName={data.name}
+        characteristics={data.characteristics}
+        colors={data.colors}
+        typography={data.typography}
+      />
     </div>
   </div>
 </BaseLayout>
