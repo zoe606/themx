@@ -134,9 +134,7 @@ export default function PromptBuilder({ themeName, characteristics, colors, typo
             {copied ? "Copied!" : "Copy to Clipboard"}
           </button>
         </div>
-        <pre class="mt-2 max-h-80 overflow-auto rounded-lg bg-gray-50 p-4 text-sm leading-relaxed text-gray-700">
-          {prompt}
-        </pre>
+        <pre class="mt-2 max-h-80 overflow-auto rounded-lg bg-gray-50 p-4 text-sm leading-relaxed text-gray-700">{prompt}</pre>
       </div>
     </div>
   );

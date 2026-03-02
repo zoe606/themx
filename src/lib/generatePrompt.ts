@@ -50,9 +50,11 @@ export function generatePrompt(config: PromptConfig): string {
   }
 
   lines.push("");
-  lines.push(
-    `Use ${config.cssApproach} utility classes. Ensure responsive design (mobile-first).`
-  );
+  if (config.cssApproach === "Tailwind") {
+    lines.push("Use Tailwind utility classes. Ensure responsive design (mobile-first).");
+  } else {
+    lines.push(`Use ${config.cssApproach}. Ensure responsive design (mobile-first).`);
+  }
 
   return lines.join("\n");
 }

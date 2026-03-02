@@ -61,4 +61,13 @@ describe("generatePrompt", () => {
     const result = generatePrompt({ ...baseConfig, components: [] });
     expect(result).not.toContain("Generate the following components");
   });
+
+  it("says 'utility classes' only for Tailwind", () => {
+    const tailwindResult = generatePrompt(baseConfig);
+    expect(tailwindResult).toContain("Tailwind utility classes");
+
+    const vanillaResult = generatePrompt({ ...baseConfig, cssApproach: "Vanilla CSS" });
+    expect(vanillaResult).not.toContain("utility classes");
+    expect(vanillaResult).toContain("Use Vanilla CSS.");
+  });
 });
