@@ -1,18 +1,9 @@
 ---
-import "../styles/global.css";
-import { getCollection } from "astro:content";
-const themes = await getCollection("themes");
+import BaseLayout from "../layouts/BaseLayout.astro";
 ---
-
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>themx</title>
-  </head>
-  <body>
+<BaseLayout title="Home">
+  <div class="mx-auto max-w-6xl px-6 py-12">
     <h1 class="text-3xl font-bold">themx</h1>
-    <p>Themes loaded: {themes.length}</p>
-    <p>First theme: {themes[0]?.data.name}</p>
-  </body>
-</html>
+    <p class="mt-2 text-gray-600">Coming soon.</p>
+  </div>
+</BaseLayout>
