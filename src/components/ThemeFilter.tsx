@@ -18,6 +18,7 @@ interface Props {
   themes: ThemeData[];
   categories: string[];
   years: number[];
+  basePath?: string;
 }
 
 const categoryColors: Record<string, string> = {
@@ -28,7 +29,7 @@ const categoryColors: Record<string, string> = {
   corporate: "bg-blue-500/20 text-blue-300 border-blue-500/30",
 };
 
-export default function ThemeFilter({ themes, categories, years }: Props) {
+export default function ThemeFilter({ themes, categories, years, basePath = "" }: Props) {
   const [activeCategory, setActiveCategory] = useState<string | null>(null);
   const [activeYear, setActiveYear] = useState<number | null>(null);
 
@@ -100,7 +101,7 @@ export default function ThemeFilter({ themes, categories, years }: Props) {
         {filtered.map((theme) => (
           <a
             key={theme.slug}
-            href={`/themes/${theme.slug}`}
+            href={`${basePath}/themes/${theme.slug}`}
             class="glass glass-hover group block overflow-hidden transition-shadow"
           >
             <div class="aspect-[4/3] overflow-hidden" style={{ background: "var(--tx-card-bg)" }}>
@@ -127,6 +128,7 @@ export default function ThemeFilter({ themes, categories, years }: Props) {
                 {[theme.colors.primary, theme.colors.secondary, theme.colors.accent].map(
                   (color) => (
                     <div
+                      key={color}
                       class="h-4 w-4 rounded-full"
                       style={{ backgroundColor: color, border: "1px solid var(--tx-card-border)" }}
                       title={color}
