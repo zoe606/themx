@@ -20,6 +20,8 @@ const themeData = themes.map((t) => ({
 
 const categories = [...new Set(themes.map((t) => t.data.category))].sort();
 const years = [...new Set(themes.map((t) => t.data.year))].sort((a, b) => b - a);
+
+const basePath = import.meta.env.BASE_URL.replace(/\/$/, "");
 ---
 <BaseLayout title="Design Themes & AI Prompts">
   {/* Hero */}
@@ -41,11 +43,7 @@ const years = [...new Set(themes.map((t) => t.data.year))].sort((a, b) => b - a)
       themes={themeData}
       categories={categories}
       years={years}
-      basePath={base}
-    />
-  </section>
-</BaseLayout>
-s}
+      basePath={basePath}
     />
   </section>
 </BaseLayout>
