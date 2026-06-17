@@ -1,6 +1,7 @@
 ---
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
+import ThemeApplicator from "../components/ThemeApplicator";
 import "../styles/global.css";
 
 interface Props {
@@ -16,14 +17,78 @@ const { title, description = "Web design themes with ready-to-use AI prompts" } 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content={description} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@600;700&display=swap" rel="stylesheet" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <title>{title} | themx</title>
+    <!-- FOUC prevention: apply stored theme before first paint -->
+    <script is:inline>
+    (function() {
+      try {
+        var raw = localStorage.getItem('themx-applied-theme');
+        if (!raw) return;
+        var theme = JSON.parse(raw);
+        var tokens = theme.tokens;
+        if (!tokens) return;
+        var root = document.documentElement;
+        var map = {
+          surfaceBg:'--tx-surface-bg', surfaceBgImage:'--tx-surface-bg-image',
+          cardBg:'--tx-card-bg', cardBorder:'--tx-card-border',
+          cardBorderWidth:'--tx-card-border-width', cardRadius:'--tx-card-radius',
+          cardShadow:'--tx-card-shadow', cardBackdropBlur:'--tx-card-backdrop-blur',
+          cardBorderHover:'--tx-card-border-hover', cardShadowHover:'--tx-card-shadow-hover',
+          fontHeading:'--tx-font-heading', fontBody:'--tx-font-body',
+          fontHeadingWeight:'--tx-font-heading-weight', fontBodyWeight:'--tx-font-body-weight',
+          textMuted:'--tx-text-muted', textSubtle:'--tx-text-subtle',
+          linkColor:'--tx-link-color', buttonRadius:'--tx-button-radius',
+          inputBg:'--tx-input-bg', inputBorder:'--tx-input-border'
+        };
+        for (var key in map) {
+          var val = tokens[key];
+          if (val != null) {
+            if (key === 'fontHeading' || key === 'fontBody') {
+              root.style.setProperty(map[key], "'" + val + "', sans-serif");
+            } else {
+              root.style.setProperty(map[key], val);
+            }
+          }
+        }
+        // Derive text color from background brightness
+        var bg = tokens.surfaceBg || '';
+        var c = bg.replace('#','');
+        if (c.length === 6) {
+          var r = parseInt(c.substring(0,2),16);
+          var g = parseInt(c.substring(2,4),16);
+          var b = parseInt(c.substring(4,6),16);
+          var bright = (r*299+g*587+b*114)/1000;
+          root.style.setProperty('--tx-text', bright > 128 ? '#1a1a1a' : '#F8FAFC');
+        }
+        // Load Google Fonts for heading + body
+        var fonts = [tokens.fontHeading, tokens.fontBody].filter(Boolean);
+        var systemFonts = ['system-ui','sans-serif','serif','monospace','Helvetica Neue','Helvetica','Arial','SF Pro Display','SF Pro Text'];
+        fonts.forEach(function(f) {
+          if (systemFonts.indexOf(f) === -1) {
+            var family = f.replace(/ /g,'+') + ':wght@400;500;600;700';
+            var href = 'https://fonts.googleapis.com/css2?family=' + family + '&display=swap';
+            if (!document.querySelector('link[href="' + href + '"]')) {
+              var link = document.createElement('link');
+              link.rel = 'stylesheet';
+              link.href = href;
+              document.head.appendChild(link);
+            }
+          }
+        });
+      } catch(e) {}
+    })();
+    </script>
   </head>
-  <body class="flex min-h-screen flex-col bg-gray-50 text-gray-900 antialiased">
+  <body class="mesh-gradient flex min-h-screen flex-col antialiased" style="font-family: var(--tx-font-body); color: var(--tx-text);">
     <Header />
     <main class="flex-1">
       <slot />
     </main>
     <Footer />
+    <ThemeApplicator client:load />
   </body>
 </html>

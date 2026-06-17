@@ -21,11 +21,11 @@ interface Props {
 }
 
 const categoryColors: Record<string, string> = {
-  minimalist: "bg-gray-100 text-gray-700 border-gray-300",
-  bold: "bg-red-100 text-red-700 border-red-300",
-  elegant: "bg-purple-100 text-purple-700 border-purple-300",
-  playful: "bg-yellow-100 text-yellow-700 border-yellow-300",
-  corporate: "bg-blue-100 text-blue-700 border-blue-300",
+  minimalist: "bg-white/10 text-white/80 border-white/20",
+  bold: "bg-red-500/20 text-red-300 border-red-500/30",
+  elegant: "bg-purple-500/20 text-purple-300 border-purple-500/30",
+  playful: "bg-yellow-500/20 text-yellow-300 border-yellow-500/30",
+  corporate: "bg-blue-500/20 text-blue-300 border-blue-500/30",
 };
 
 export default function ThemeFilter({ themes, categories, years }: Props) {
@@ -42,16 +42,18 @@ export default function ThemeFilter({ themes, categories, years }: Props) {
     <div>
       {/* Filter bar */}
       <div class="mb-8 flex flex-wrap items-center gap-3">
-        <span class="text-sm font-medium text-gray-500">Filter:</span>
+        <span class="text-sm font-medium" style={{ color: "var(--tx-text-subtle)" }}>Filter:</span>
 
         {/* Category pills */}
         <button
           onClick={() => setActiveCategory(null)}
-          class={`rounded-full px-3 py-1 text-sm font-medium transition-colors ${
-            activeCategory === null
-              ? "bg-gray-900 text-white"
-              : "bg-gray-100 text-gray-600 hover:bg-gray-200"
-          }`}
+          class="rounded-full px-3 py-1 text-sm font-medium transition-colors"
+          style={{
+            borderRadius: "var(--tx-button-radius)",
+            background: activeCategory === null ? "var(--tx-link-color)" : "var(--tx-card-bg)",
+            color: activeCategory === null ? "#fff" : "var(--tx-text-muted)",
+            border: activeCategory === null ? "none" : "var(--tx-card-border-width) solid var(--tx-card-border)",
+          }}
         >
           All
         </button>
@@ -59,11 +61,13 @@ export default function ThemeFilter({ themes, categories, years }: Props) {
           <button
             key={cat}
             onClick={() => setActiveCategory(activeCategory === cat ? null : cat)}
-            class={`rounded-full px-3 py-1 text-sm font-medium capitalize transition-colors ${
-              activeCategory === cat
-                ? "bg-gray-900 text-white"
-                : "bg-gray-100 text-gray-600 hover:bg-gray-200"
-            }`}
+            class="rounded-full px-3 py-1 text-sm font-medium capitalize transition-colors"
+            style={{
+              borderRadius: "var(--tx-button-radius)",
+              background: activeCategory === cat ? "var(--tx-link-color)" : "var(--tx-card-bg)",
+              color: activeCategory === cat ? "#fff" : "var(--tx-text-muted)",
+              border: activeCategory === cat ? "none" : "var(--tx-card-border-width) solid var(--tx-card-border)",
+            }}
           >
             {cat}
           </button>
@@ -76,7 +80,13 @@ export default function ThemeFilter({ themes, categories, years }: Props) {
             const val = (e.target as HTMLSelectElement).value;
             setActiveYear(val ? Number(val) : null);
           }}
-          class="rounded-lg border border-gray-200 bg-white px-3 py-1 text-sm text-gray-600"
+          class="rounded-lg px-3 py-1 text-sm backdrop-blur"
+          style={{
+            background: "var(--tx-input-bg)",
+            border: "1px solid var(--tx-input-border)",
+            color: "var(--tx-text)",
+            borderRadius: "var(--tx-button-radius)",
+          }}
         >
           <option value="">All years</option>
           {years.map((y) => (
@@ -91,9 +101,9 @@ export default function ThemeFilter({ themes, categories, years }: Props) {
           <a
             key={theme.slug}
             href={`/themes/${theme.slug}`}
-            class="group block overflow-hidden rounded-lg border border-gray-200 bg-white transition-shadow hover:shadow-lg"
+            class="glass glass-hover group block overflow-hidden transition-shadow"
           >
-            <div class="aspect-[4/3] overflow-hidden bg-gray-100">
+            <div class="aspect-[4/3] overflow-hidden" style={{ background: "var(--tx-card-bg)" }}>
               <img
                 src={theme.preview}
                 alt={`${theme.name} theme preview`}
@@ -103,22 +113,22 @@ export default function ThemeFilter({ themes, categories, years }: Props) {
             </div>
             <div class="p-4">
               <div class="mb-2 flex items-center gap-2">
-                <h3 class="font-semibold text-gray-900">{theme.name}</h3>
+                <h3 class="font-semibold" style={{ color: "var(--tx-text)" }}>{theme.name}</h3>
                 <span
-                  class={`rounded-full px-2 py-0.5 text-xs font-medium ${
-                    categoryColors[theme.category] ?? "bg-gray-100 text-gray-700"
+                  class={`rounded-full border px-2 py-0.5 text-xs font-medium ${
+                    categoryColors[theme.category] ?? "bg-white/10 text-white/80 border-white/20"
                   }`}
                 >
                   {theme.category}
                 </span>
               </div>
-              <p class="text-sm text-gray-500">{theme.tagline}</p>
+              <p class="text-sm" style={{ color: "var(--tx-text-subtle)" }}>{theme.tagline}</p>
               <div class="mt-3 flex gap-1.5">
                 {[theme.colors.primary, theme.colors.secondary, theme.colors.accent].map(
                   (color) => (
                     <div
-                      class="h-4 w-4 rounded-full border border-gray-200"
-                      style={`background-color: ${color}`}
+                      class="h-4 w-4 rounded-full"
+                      style={{ backgroundColor: color, border: "1px solid var(--tx-card-border)" }}
                       title={color}
                     />
                   )
@@ -130,7 +140,7 @@ export default function ThemeFilter({ themes, categories, years }: Props) {
       </div>
 
       {filtered.length === 0 && (
-        <p class="py-12 text-center text-gray-400">No themes match your filters.</p>
+        <p class="py-12 text-center" style={{ color: "var(--tx-text-subtle)" }}>No themes match your filters.</p>
       )}
     </div>
   );

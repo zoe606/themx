@@ -52,21 +52,28 @@ export default function PromptBuilder({ themeName, characteristics, colors, typo
     setTimeout(() => setCopied(false), 2000);
   }, [prompt]);
 
+  const selectStyle = {
+    background: "var(--tx-input-bg)",
+    border: "1px solid var(--tx-input-border)",
+    color: "var(--tx-text)",
+  };
+
   return (
-    <div class="rounded-lg border border-gray-200 bg-white p-6">
-      <h2 class="text-lg font-semibold text-gray-900">Prompt Builder</h2>
-      <p class="mt-1 text-sm text-gray-500">
+    <div class="glass p-6">
+      <h2 class="text-lg font-semibold" style={{ color: "var(--tx-text)" }}>Prompt Builder</h2>
+      <p class="mt-1 text-sm" style={{ color: "var(--tx-text-subtle)" }}>
         Configure your project settings and copy the generated prompt.
       </p>
 
       <div class="mt-6 grid gap-6 sm:grid-cols-2">
         {/* Framework */}
         <div>
-          <label class="block text-sm font-medium text-gray-700">Framework</label>
+          <label class="block text-sm font-medium" style={{ color: "var(--tx-text-muted)" }}>Framework</label>
           <select
             value={framework}
             onChange={(e) => setFramework((e.target as HTMLSelectElement).value)}
-            class="mt-1 w-full rounded-lg border border-gray-200 bg-white px-3 py-2 text-sm"
+            class="mt-1 w-full rounded-lg px-3 py-2 text-sm backdrop-blur"
+            style={selectStyle}
           >
             {FRAMEWORKS.map((f) => (
               <option key={f} value={f}>{f}</option>
@@ -76,11 +83,12 @@ export default function PromptBuilder({ themeName, characteristics, colors, typo
 
         {/* CSS Approach */}
         <div>
-          <label class="block text-sm font-medium text-gray-700">CSS Approach</label>
+          <label class="block text-sm font-medium" style={{ color: "var(--tx-text-muted)" }}>CSS Approach</label>
           <select
             value={cssApproach}
             onChange={(e) => setCssApproach((e.target as HTMLSelectElement).value)}
-            class="mt-1 w-full rounded-lg border border-gray-200 bg-white px-3 py-2 text-sm"
+            class="mt-1 w-full rounded-lg px-3 py-2 text-sm backdrop-blur"
+            style={selectStyle}
           >
             {CSS_APPROACHES.map((c) => (
               <option key={c} value={c}>{c}</option>
@@ -90,11 +98,12 @@ export default function PromptBuilder({ themeName, characteristics, colors, typo
 
         {/* Tone */}
         <div>
-          <label class="block text-sm font-medium text-gray-700">Tone</label>
+          <label class="block text-sm font-medium" style={{ color: "var(--tx-text-muted)" }}>Tone</label>
           <select
             value={tone}
             onChange={(e) => setTone((e.target as HTMLSelectElement).value)}
-            class="mt-1 w-full rounded-lg border border-gray-200 bg-white px-3 py-2 text-sm"
+            class="mt-1 w-full rounded-lg px-3 py-2 text-sm backdrop-blur"
+            style={selectStyle}
           >
             {TONES.map((t) => (
               <option key={t} value={t}>{t}</option>
@@ -105,17 +114,19 @@ export default function PromptBuilder({ themeName, characteristics, colors, typo
 
       {/* Components multi-select */}
       <div class="mt-6">
-        <label class="block text-sm font-medium text-gray-700">Components</label>
+        <label class="block text-sm font-medium" style={{ color: "var(--tx-text-muted)" }}>Components</label>
         <div class="mt-2 flex flex-wrap gap-2">
           {COMPONENTS.map((comp) => (
             <button
               key={comp}
               onClick={() => toggleComponent(comp)}
-              class={`rounded-full px-3 py-1 text-sm font-medium transition-colors ${
-                selectedComponents.includes(comp)
-                  ? "bg-gray-900 text-white"
-                  : "bg-gray-100 text-gray-600 hover:bg-gray-200"
-              }`}
+              class="rounded-full px-3 py-1 text-sm font-medium transition-colors"
+              style={{
+                borderRadius: "var(--tx-button-radius)",
+                background: selectedComponents.includes(comp) ? "var(--tx-link-color)" : "var(--tx-card-bg)",
+                color: selectedComponents.includes(comp) ? "#fff" : "var(--tx-text-subtle)",
+                border: selectedComponents.includes(comp) ? "none" : "var(--tx-card-border-width) solid var(--tx-card-border)",
+              }}
             >
               {comp}
             </button>
@@ -126,15 +137,26 @@ export default function PromptBuilder({ themeName, characteristics, colors, typo
       {/* Generated prompt */}
       <div class="mt-6">
         <div class="flex items-center justify-between">
-          <label class="block text-sm font-medium text-gray-700">Generated Prompt</label>
+          <label class="block text-sm font-medium" style={{ color: "var(--tx-text-muted)" }}>Generated Prompt</label>
           <button
             onClick={copyToClipboard}
-            class="rounded-lg bg-gray-900 px-4 py-1.5 text-sm font-medium text-white transition-colors hover:bg-gray-800"
+            class="rounded-lg px-4 py-1.5 text-sm font-medium transition-colors hover:opacity-80"
+            style={{
+              background: "var(--tx-link-color)",
+              color: "#fff",
+              borderRadius: "var(--tx-button-radius)",
+            }}
           >
             {copied ? "Copied!" : "Copy to Clipboard"}
           </button>
         </div>
-        <pre class="mt-2 max-h-80 overflow-auto rounded-lg bg-gray-50 p-4 text-sm leading-relaxed text-gray-700">{prompt}</pre>
+        <pre
+          class="mt-2 max-h-80 overflow-auto rounded-lg p-4 text-sm leading-relaxed"
+          style={{
+            background: "rgba(0,0,0,0.3)",
+            color: "var(--tx-text-muted)",
+          }}
+        >{prompt}</pre>
       </div>
     </div>
   );

@@ -1,0 +1,42 @@
+/*
+ * Runtime theme variables (--tx-*)
+ * Defaults match the glassmorphism look (site default).
+ * Overridden at runtime via ThemeApplicator / FOUC script.
+ */
+:root {
+  /* Surface */
+  --tx-surface-bg: #0F172A;
+  --tx-surface-bg-image:
+    radial-gradient(ellipse 80% 50% at 20% 40%, rgba(124, 58, 237, 0.15), transparent),
+    radial-gradient(ellipse 60% 50% at 80% 20%, rgba(236, 72, 153, 0.12), transparent),
+    radial-gradient(ellipse 50% 40% at 50% 80%, rgba(6, 182, 212, 0.10), transparent);
+
+  /* Card / Glass */
+  --tx-card-bg: rgba(255, 255, 255, 0.05);
+  --tx-card-border: rgba(255, 255, 255, 0.1);
+  --tx-card-border-width: 1px;
+  --tx-card-radius: 1rem;
+  --tx-card-shadow: none;
+  --tx-card-backdrop-blur: 16px;
+  --tx-card-border-hover: rgba(255, 255, 255, 0.2);
+  --tx-card-shadow-hover: none;
+
+  /* Typography */
+  --tx-font-heading: 'Poppins', sans-serif;
+  --tx-font-body: 'Inter', sans-serif;
+  --tx-font-heading-weight: 700;
+  --tx-font-body-weight: 400;
+
+  /* Text colors */
+  --tx-text: #F8FAFC;
+  --tx-text-muted: rgba(248, 250, 252, 0.7);
+  --tx-text-subtle: rgba(248, 250, 252, 0.5);
+
+  /* Accent */
+  --tx-link-color: #7C3AED;
+  --tx-button-radius: 9999px;
+
+  /* Inputs */
+  --tx-input-bg: rgba(255, 255, 255, 0.05);
+  --tx-input-border: rgba(255, 255, 255, 0.1);
+}

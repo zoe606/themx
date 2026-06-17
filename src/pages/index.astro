@@ -23,12 +23,12 @@ const years = [...new Set(themes.map((t) => t.data.year))].sort((a, b) => b - a)
 ---
 <BaseLayout title="Design Themes & AI Prompts">
   {/* Hero */}
-  <section class="border-b border-gray-200 bg-white">
+  <section class="border-b" style="border-color: var(--tx-card-border);">
     <div class="mx-auto max-w-6xl px-6 py-16 text-center">
-      <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
+      <h1 class="text-4xl font-bold tracking-tight sm:text-5xl" style="font-family: var(--tx-font-heading); color: var(--tx-text);">
         themx
       </h1>
-      <p class="mx-auto mt-4 max-w-xl text-lg text-gray-500">
+      <p class="mx-auto mt-4 max-w-xl text-lg" style="color: var(--tx-text-subtle);">
         Discover trending web design styles. Generate ready-to-use prompts for Claude to build your next project in any style.
       </p>
     </div>

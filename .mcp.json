@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "git": {
+      "command": "uvx",
+      "args": [
+        "--from",
+        "mcp-server-git==2025.4.8",
+        "mcp-server-git",
+        "--repository",
+        "/Users/librantara.erlangga/dev/personal/themx"
+      ]
+    }
+  }
+}

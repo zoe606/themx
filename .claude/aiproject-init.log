@@ -1,0 +1,18 @@
+aiproject-init v1.0.0 run on 2026-05-04T08:33:19Z
+PROJECT_ROOT=/Users/librantara.erlangga/dev/personal/themx
+Detected stack: Node/TypeScript
+Detected test command: npm test
+
+Generated files (with checksums where applicable):
+  AGENTS.md                                          checksum=(none)
+  CLAUDE.md                                          checksum=88e8d1abbb8f429f1d02e511476e71816cca59f60fd44c5f299a6a027a1e07b7
+  .cursorrules                                       checksum=6e2afd4364e779f4ef89a7dbe99dc5897196fe5d8ada9c7ee5861ccebe728ece
+  .cursor/rules/agents-link.mdc                      checksum=9d9031d771d1fecaad7e698099bd14d70bd89eb8b417986993529f3b20e16708
+  .windsurf/rules/agents-link.md                     checksum=b71f5ec2769dfddb3c82432f7efad0eecea8766c2948b0b59114e72c30332192
+  .aider.conf.yml                                    checksum=7a8370a8f3cf7f8e7620bddab8a7e3695d02c9675845273f522d69a24226f28b
+  .mcp.json                                          checksum=(none)
+  .cursorignore                                      checksum=(none)
+  .cursorindexingignore                              checksum=(none)
+  .repomixignore                                     checksum=(none)
+  .aiderignore                                       checksum=(none)
+  .claude/commands/check.md                          checksum=(none)

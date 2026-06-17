@@ -1,2 +1,67 @@
 @import "tailwindcss";
+@import "./theme-vars.css";
 @plugin "@tailwindcss/typography";
+
+@theme {
+  --color-primary: #7C3AED;
+  --color-secondary: #EC4899;
+  --color-accent: #06B6D4;
+  --color-bg: #0F172A;
+  --color-text: #F8FAFC;
+  --color-glass-surface: rgba(255, 255, 255, 0.05);
+  --color-glass-border: rgba(255, 255, 255, 0.1);
+  --color-glass-border-hover: rgba(255, 255, 255, 0.2);
+}
+
+/* Glass surface — reads from runtime --tx-* vars */
+.glass {
+  background: var(--tx-card-bg);
+  backdrop-filter: blur(var(--tx-card-backdrop-blur));
+  -webkit-backdrop-filter: blur(var(--tx-card-backdrop-blur));
+  border: var(--tx-card-border-width) solid var(--tx-card-border);
+  border-radius: var(--tx-card-radius);
+}
+
+.glass-hover {
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+.glass-hover:hover {
+  border-color: var(--tx-card-border-hover);
+  box-shadow: var(--tx-card-shadow-hover);
+}
+
+/* Fixed mesh gradient background — reads from runtime --tx-* vars */
+.mesh-gradient {
+  background-color: var(--tx-surface-bg);
+  background-image: var(--tx-surface-bg-image);
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+/* Prose overrides for dark backgrounds */
+.prose-glass {
+  --tw-prose-body: var(--tx-text-muted);
+  --tw-prose-headings: var(--tx-text);
+  --tw-prose-lead: var(--tx-text-subtle);
+  --tw-prose-links: var(--tx-link-color);
+  --tw-prose-bold: var(--tx-text);
+  --tw-prose-counters: var(--tx-text-subtle);
+  --tw-prose-bullets: rgba(248, 250, 252, 0.4);
+  --tw-prose-hr: var(--tx-card-border);
+  --tw-prose-quotes: var(--tx-text-muted);
+  --tw-prose-quote-borders: rgba(124, 58, 237, 0.5);
+  --tw-prose-captions: var(--tx-text-subtle);
+  --tw-prose-kbd: var(--tx-text);
+  --tw-prose-kbd-shadows: 248 250 252;
+  --tw-prose-code: var(--tx-text);
+  --tw-prose-pre-code: var(--tx-text-muted);
+  --tw-prose-pre-bg: rgba(0, 0, 0, 0.3);
+  --tw-prose-th-borders: rgba(255, 255, 255, 0.15);
+  --tw-prose-td-borders: rgba(255, 255, 255, 0.08);
+}
+
+/* Theme transition — applied to body when theme is switching */
+.tx-transitioning,
+.tx-transitioning * {
+  transition: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease !important;
+}

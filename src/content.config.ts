@@ -31,6 +31,30 @@ const themes = defineCollection({
         })
       )
       .optional(),
+    styleTokens: z
+      .object({
+        surfaceBg: z.string(),
+        surfaceBgImage: z.string(),
+        cardBg: z.string(),
+        cardBorder: z.string(),
+        cardBorderWidth: z.string(),
+        cardRadius: z.string(),
+        cardShadow: z.string(),
+        cardBackdropBlur: z.string(),
+        cardBorderHover: z.string(),
+        cardShadowHover: z.string(),
+        fontHeading: z.string(),
+        fontBody: z.string(),
+        fontHeadingWeight: z.string(),
+        fontBodyWeight: z.string(),
+        textMuted: z.string(),
+        textSubtle: z.string(),
+        linkColor: z.string(),
+        buttonRadius: z.string(),
+        inputBg: z.string(),
+        inputBorder: z.string(),
+      })
+      .optional(),
   }),
 });
 
