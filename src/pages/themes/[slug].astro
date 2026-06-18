@@ -16,12 +16,13 @@ export async function getStaticPaths() {
 const { theme } = Astro.props;
 const { Content } = await render(theme);
 const { data } = theme;
+const base = import.meta.env.BASE_URL;
 ---
 <BaseLayout title={data.name} description={`${data.name} — ${data.tagline}. Get a ready-to-use AI prompt for this design style.`}>
   {/* Header */}
   <section class="border-b" style="border-color: var(--tx-card-border);">
     <div class="mx-auto max-w-4xl px-6 py-8">
-      <a href="/" class="text-sm transition-colors hover:opacity-80" style="color: var(--tx-text-subtle);">&larr; Back to themes</a>
+      <a href={base} class="text-sm transition-colors hover:opacity-80" style="color: var(--tx-text-subtle);">&larr; Back to themes</a>
       <div class="mt-4 flex flex-wrap items-center gap-3">
         <h1 class="text-3xl font-bold" style="font-family: var(--tx-font-heading); color: var(--tx-text);">{data.name}</h1>
         <span class="glass rounded-full px-3 py-1 text-sm font-medium capitalize" style="color: var(--tx-text-muted);">
