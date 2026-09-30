@@ -1,6 +1,6 @@
 # themx
 
-themx is a static catalog of 30 web design themes. It includes searchable theme cards, browser-local favorites, interactive component previews, theme comparison, a configurable prompt builder, and CSS/JSON exports.
+themx is a static catalog of 36 web design themes. It includes searchable theme cards, browser-local favorites, interactive component previews, theme comparison, a configurable prompt builder, and CSS/JSON exports.
 
 ## Local development
 
@@ -33,10 +33,12 @@ Live previews run in isolated iframe documents. They show the same sample conten
 The prompt builder includes the project brief, target users, page purpose, framework, CSS approach, selected components, exact CSS variables, and behavior rules. Optional layers apply in this order:
 
 1. A layout pattern changes content arrangement.
-2. A visual effect changes background images, card surfaces, borders, radius, shadows, and blur.
+2. A visual effect changes background images, card surfaces, borders, radius, shadows, blur, and optional image filters.
 3. A color mode changes palette, surface colors, input colors, and text colors. Translucent card opacity is preserved.
 
 The base typography remains unchanged. The combined preview and exports use the resolved values. CSS exports contain variable declarations. JSON exports contain colors, typography, tokens, CSS variables, and behavior rules. Load the declared fonts and apply the variables to your own components.
+
+Risograph / Print and Duotone include before-and-after image previews. Their optional `mediaEffect` metadata defines two ink colors. Risograph also defines static grain and an ink registration offset. These themes offer an SVG filter export. Add the SVG definition once to your page and apply `filter: var(--tx-media-filter)` to selected images or illustrations. Keep text and controls unfiltered. JSON export and generated prompts include the same filter definition. Color mode layers change interface colors while preserving image ink colors. Selecting another visual effect replaces the previous image treatment.
 
 ## Deployment
 

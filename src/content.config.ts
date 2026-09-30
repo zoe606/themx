@@ -13,6 +13,11 @@ const themes = defineCollection({
     avoidFor: z.array(z.string()).nonempty(),
     layoutRules: z.array(z.string()).nonempty(),
     interactionRules: z.array(z.string()).nonempty(),
+    mediaEffect: z.discriminatedUnion("kind", [
+      z.object({ kind: z.literal("duotone"), ink1: hexColor, ink2: hexColor }),
+      z.object({ kind: z.literal("risograph"), ink1: hexColor, ink2: hexColor,
+        grainOpacity: z.number().min(0).max(1), offset: z.number().min(0).max(8) }),
+    ]).optional(),
     category: z.enum(["minimalist", "bold", "elegant", "playful", "corporate"]),
     year: z.number(),
     tags: z.array(z.string()),

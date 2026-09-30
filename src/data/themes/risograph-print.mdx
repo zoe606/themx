@@ -1,0 +1,69 @@
+---
+name: "Risograph / Print"
+slug: "risograph-print"
+kind: "visual-effect"
+category: "playful"
+year: 2026
+tags: ["risograph", "print", "grain", "ink", "overprint", "texture"]
+preview: "/themx/previews/risograph-print.svg"
+tagline: "Two ink layers, slight registration offsets, and visible print grain"
+useCases: ["editorial", "brand", "portfolio", "entertainment"]
+avoidFor: ["Medical, product, or technical images whose original colors carry important information."]
+layoutRules: ["Use printed image blocks on a light paper surface. Keep the content grid simple and leave space around illustrations.", "Apply the ink effect to images only. Keep text, form labels, and controls crisp."]
+interactionRules: ["Keep ink registration and grain static. Use ordinary focus outlines and clear button states."]
+mediaEffect:
+  kind: "risograph"
+  ink1: "#D44550"
+  ink2: "#2463A6"
+  grainOpacity: 0.18
+  offset: 3
+colors:
+  primary: "#A72C39"
+  secondary: "#2463A6"
+  accent: "#F2C766"
+  background: "#FFF9EF"
+  text: "#2B2926"
+typography:
+  heading: "DM Sans"
+  body: "DM Sans"
+characteristics:
+  - "Two ink layers with overlapping color"
+  - "Fine monochrome grain inside images"
+  - "Small static registration offsets between ink layers"
+  - "Light paper surfaces with unfiltered readable controls"
+styleTokens:
+  surfaceBg: "#FFF9EF"
+  surfaceBgImage: "radial-gradient(#2B292610 1px, transparent 1px)"
+  cardBg: "#FFFDF7"
+  cardBorder: "#A89A87"
+  cardBorderWidth: "1px"
+  cardRadius: "0"
+  cardShadow: "3px 3px 0 #D9CBB8"
+  cardBackdropBlur: "0px"
+  cardBorderHover: "#2463A6"
+  cardShadowHover: "5px 5px 0 #D9CBB8"
+  fontHeading: "DM Sans"
+  fontBody: "DM Sans"
+  fontHeadingWeight: "700"
+  fontBodyWeight: "400"
+  textMuted: "#60574E"
+  textSubtle: "#746656"
+  linkColor: "#A72C39"
+  buttonRadius: "0"
+  inputBg: "#FFFFFF"
+  inputBorder: "#8A7C6B"
+---
+
+Risograph / Print simulates two ink layers, an offset between them, and fine grain. The preview applies this treatment to a grayscale illustration so the change is visible. This filter is a visual approximation of print, not a print-production separation tool.
+
+## Image Treatment
+
+The filter uses red and blue ink mappings, a three-unit SVG offset, and static grain. Export the SVG filter definition and add it once to the target page. Apply `filter: var(--tx-media-filter)` to selected images or illustrations. CSS variables alone do not contain the filter definition. JSON export includes both its settings and SVG markup.
+
+## Layout and Interaction
+
+Use a simple layout around image blocks. Keep text and controls unfiltered. Preserve original images when their colors have a practical meaning. Avoid animated grain and moving ink offsets.
+
+## Combining Themes
+
+Select this theme as a visual effect layer to preserve the base typography and layout while adding print surfaces and image treatment. A color mode changes interface colors while the two image ink colors remain fixed.

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" role="img" aria-labelledby="title"><title id="title">Risograph / Print design preview</title><rect width="800" height="600" fill="#FFF9EF"/><text x="48" y="60" font-family="Arial,sans-serif" font-size="28" font-weight="700" fill="#2B2926">Risograph / Print</text><text x="48" y="96" font-family="Arial,sans-serif" font-size="17" fill="#60574E">Two inks. Static grain. Slight registration offset.</text><svg xmlns="http://www.w3.org/2000/svg" x="48" y="126" width="704" height="387" viewBox="0 0 800 440" role="img" aria-labelledby="thumbnail-title">
+    <title id="thumbnail-title">Risograph landscape illustration</title>
+    <defs><linearGradient id="thumbnail-sky" x1="0%" y1="0%" x2="0%" y2="100%"><stop stop-color="#FFFFFF"/><stop offset="1" stop-color="#999999"/></linearGradient><filter id="tx-media-effect" x="-5%" y="-5%" width="110%" height="110%" color-interpolation-filters="sRGB"><feColorMatrix in="SourceGraphic" type="saturate" values="0" result="gray"/>
+      <feComponentTransfer in="gray" result="ink1"><feFuncR type="table" tableValues="0.8313725490196079 1"/><feFuncG type="table" tableValues="0.27058823529411763 1"/><feFuncB type="table" tableValues="0.3137254901960784 1"/></feComponentTransfer>
+      <feComponentTransfer in="gray" result="ink2"><feFuncR type="table" tableValues="0.1411764705882353 1"/><feFuncG type="table" tableValues="0.38823529411764707 1"/><feFuncB type="table" tableValues="0.6509803921568628 1"/></feComponentTransfer>
+      <feOffset in="ink2" dx="3" dy="-3" result="shifted"/>
+      <feBlend in="ink1" in2="shifted" mode="multiply" result="print"/>
+      <feTurbulence type="fractalNoise" baseFrequency="0.75" numOctaves="3" seed="7" result="noise"/>
+      <feColorMatrix in="noise" type="saturate" values="0" result="grain"/>
+      <feComponentTransfer in="grain" result="faint-grain"><feFuncA type="linear" slope="0.18"/></feComponentTransfer>
+      <feBlend in="print" in2="faint-grain" mode="multiply"/></filter></defs>
+    <g filter="url(#tx-media-effect)">
+      <rect width="800" height="440" fill="url(#thumbnail-sky)"/>
+      <circle cx="590" cy="116" r="65" fill="#FFFFFF"/>
+      <path d="M0 278L170 112L340 300L500 174L800 330V440H0Z" fill="#999999"/>
+      <path d="M0 345L252 199L450 371L660 254L800 310V440H0Z" fill="#555555"/>
+      <path d="M0 398Q210 330 430 395T800 362V440H0Z" fill="#222222"/>
+      <path d="M340 440L431 394L405 369L444 345L465 371L448 396L540 440Z" fill="#CCCCCC"/>
+      <path d="M70 390V251M30 321L70 265L110 321M27 352L70 294L115 352M655 399V276M616 340L655 286L697 340" fill="none" stroke="#111111" stroke-width="12"/>
+    </g>
+  </svg><circle cx="61" cy="554" r="13" fill="#D44550"/><circle cx="99" cy="554" r="13" fill="#2463A6"/><text x="130" y="560" font-family="Arial,sans-serif" font-size="16" fill="#2B2926">#D44550 + #2463A6</text></svg>

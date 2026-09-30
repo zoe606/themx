@@ -1,7 +1,8 @@
 import type { StyleTokens } from "./themeStorage";
-import type { ThemeDefinition } from "./themeCatalog";
+import type { MediaEffect, ThemeDefinition } from "./themeCatalog";
 import { resolveThemeStyle } from "./themeCatalog";
 import { exportThemeCSS } from "./themeExport";
+import { exportMediaEffectSVG } from "./mediaEffect";
 
 export interface PromptConfig {
   themeName: string;
@@ -28,6 +29,7 @@ export interface PromptConfig {
   layoutRules?: string[];
   interactionRules?: string[];
   layers?: ThemeDefinition[];
+  mediaEffect?: MediaEffect;
 }
 
 export function generatePrompt(config: PromptConfig): string {
@@ -59,7 +61,7 @@ export function generatePrompt(config: PromptConfig): string {
   if (config.styleTokens) {
     lines.push("", "Use these exact CSS variables for the base theme:");
     lines.push(exportThemeCSS({ colors: config.colors, typography: config.typography,
-      styleTokens: config.styleTokens }).trim());
+      styleTokens: config.styleTokens, mediaEffect: config.mediaEffect }).trim());
   }
   if (config.layoutRules?.length) {
     lines.push("", "Layout rules:", ...config.layoutRules.map((rule) => `- ${rule}`));
@@ -89,6 +91,13 @@ export function generatePrompt(config: PromptConfig): string {
     lines.push("Preserve translucent surface opacity when applying a color mode.");
     lines.push("", "Use these resolved CSS variables for the combined style:");
     lines.push(exportThemeCSS({ ...resolveThemeStyle(config, config.layers), typography: config.typography }).trim());
+  }
+
+  const { mediaEffect } = resolveThemeStyle(config, config.layers ?? []);
+  if (mediaEffect) {
+    lines.push("", `Image treatment: ${mediaEffect.kind}. Use ink colors ${mediaEffect.ink1} and ${mediaEffect.ink2}.`);
+    lines.push("Add this SVG filter definition to the page. Apply filter: var(--tx-media-filter) to images and illustrations only. Keep text and controls unfiltered.");
+    lines.push(exportMediaEffectSVG(mediaEffect));
   }
 
   if (config.components.length > 0) {

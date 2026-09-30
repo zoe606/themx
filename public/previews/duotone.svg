@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" role="img" aria-labelledby="title"><title id="title">Duotone design preview</title><rect width="800" height="600" fill="#FFF9EF"/><text x="48" y="60" font-family="Arial,sans-serif" font-size="28" font-weight="700" fill="#2B2926">Duotone</text><text x="48" y="96" font-family="Arial,sans-serif" font-size="17" fill="#60574E">Image shadows and highlights mapped to two colors.</text><svg xmlns="http://www.w3.org/2000/svg" x="48" y="126" width="704" height="387" viewBox="0 0 800 440" role="img" aria-labelledby="thumbnail-title">
+    <title id="thumbnail-title">Duotone landscape illustration</title>
+    <defs><linearGradient id="thumbnail-sky" x1="0%" y1="0%" x2="0%" y2="100%"><stop stop-color="#FFFFFF"/><stop offset="1" stop-color="#999999"/></linearGradient><filter id="tx-media-effect" x="-5%" y="-5%" width="110%" height="110%" color-interpolation-filters="sRGB"><feColorMatrix in="SourceGraphic" type="saturate" values="0" result="gray"/><feComponentTransfer in="gray"><feFuncR type="table" tableValues="0.1568627450980392 0.9647058823529412"/><feFuncG type="table" tableValues="0.06274509803921569 0.8470588235294118"/><feFuncB type="table" tableValues="0.3058823529411765 0.4196078431372549"/></feComponentTransfer></filter></defs>
+    <g filter="url(#tx-media-effect)">
+      <rect width="800" height="440" fill="url(#thumbnail-sky)"/>
+      <circle cx="590" cy="116" r="65" fill="#FFFFFF"/>
+      <path d="M0 278L170 112L340 300L500 174L800 330V440H0Z" fill="#999999"/>
+      <path d="M0 345L252 199L450 371L660 254L800 310V440H0Z" fill="#555555"/>
+      <path d="M0 398Q210 330 430 395T800 362V440H0Z" fill="#222222"/>
+      <path d="M340 440L431 394L405 369L444 345L465 371L448 396L540 440Z" fill="#CCCCCC"/>
+      <path d="M70 390V251M30 321L70 265L110 321M27 352L70 294L115 352M655 399V276M616 340L655 286L697 340" fill="none" stroke="#111111" stroke-width="12"/>
+    </g>
+  </svg><circle cx="61" cy="554" r="13" fill="#28104E"/><circle cx="99" cy="554" r="13" fill="#F6D86B"/><text x="130" y="560" font-family="Arial,sans-serif" font-size="16" fill="#2B2926">#28104E + #F6D86B</text></svg>

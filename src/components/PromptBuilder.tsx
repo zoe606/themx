@@ -40,6 +40,7 @@ export default function PromptBuilder({ theme, themes }: Props) {
     colors: theme.colors,
     typography: theme.typography,
     styleTokens: theme.styleTokens,
+    mediaEffect: theme.mediaEffect,
     layoutRules: [...theme.layoutRules, ...(layoutNotes.trim() ? [layoutNotes.trim()] : [])],
     interactionRules: [...theme.interactionRules, ...(interactionNotes.trim() ? [interactionNotes.trim()] : [])],
     framework, cssApproach, components: selectedComponents, tone, brief, audience,

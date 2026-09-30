@@ -1,0 +1,67 @@
+---
+name: "Duotone"
+slug: "duotone"
+kind: "visual-effect"
+category: "bold"
+year: 2026
+tags: ["duotone", "two-colors", "image", "photography", "contrast"]
+preview: "/themx/previews/duotone.svg"
+tagline: "Map image shadows and highlights to two distinct ink colors"
+useCases: ["brand", "portfolio", "editorial", "entertainment"]
+avoidFor: ["Product images, charts, and instructional images where original colors need to remain accurate."]
+layoutRules: ["Use large image blocks with a consistent two-color treatment and a clear text hierarchy.", "Map dark image tones to the first ink and light tones to the second. Keep text and controls outside the image filter."]
+interactionRules: ["Keep the image treatment stable on hover. Preserve clear focus outlines and readable control states."]
+mediaEffect:
+  kind: "duotone"
+  ink1: "#28104E"
+  ink2: "#F6D86B"
+colors:
+  primary: "#6622CC"
+  secondary: "#28104E"
+  accent: "#F6D86B"
+  background: "#FFF9E9"
+  text: "#28104E"
+typography:
+  heading: "Space Grotesk"
+  body: "Inter"
+characteristics:
+  - "Image shadows mapped to deep violet and highlights to warm yellow"
+  - "Smooth tonal interpolation between two ink colors"
+  - "Large treated image areas with crisp unfiltered text"
+  - "Clean surfaces without print grain or registration offsets"
+styleTokens:
+  surfaceBg: "#FFF9E9"
+  surfaceBgImage: "none"
+  cardBg: "#FFFFFF"
+  cardBorder: "#9C88B8"
+  cardBorderWidth: "1px"
+  cardRadius: "0.75rem"
+  cardShadow: "none"
+  cardBackdropBlur: "0px"
+  cardBorderHover: "#6622CC"
+  cardShadowHover: "0 6px 20px rgba(40,16,78,0.1)"
+  fontHeading: "Space Grotesk"
+  fontBody: "Inter"
+  fontHeadingWeight: "700"
+  fontBodyWeight: "400"
+  textMuted: "#67557B"
+  textSubtle: "#786785"
+  linkColor: "#6622CC"
+  buttonRadius: "0.5rem"
+  inputBg: "#FFFFFF"
+  inputBorder: "#8A71A8"
+---
+
+Duotone converts an image to grayscale and maps its shadows and highlights to two colors. The preview shows the original illustration beside a violet-and-yellow version. The treatment changes image colors, not just the surrounding interface palette.
+
+## Image Treatment
+
+The first ink defines shadows and the second defines highlights. Intermediate tones interpolate between them. Export the SVG filter definition and add it once to the target page. Apply `filter: var(--tx-media-filter)` only to images and illustrations. JSON export includes the ink settings and the same SVG definition.
+
+## Layout and Interaction
+
+Use the treatment consistently across selected image blocks. Keep text, controls, and informative charts unfiltered. Retain original colors when they matter for product choice or understanding instructions. Duotone has no grain or registration offset.
+
+## Combining Themes
+
+Select Duotone as a visual effect layer to retain the base typography and layout. Color modes change interface colors while retaining the selected image ink mapping.

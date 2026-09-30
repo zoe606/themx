@@ -5,6 +5,8 @@ import { composeTheme, filterThemes } from "./themeCatalog";
 import type { ThemeDefinition } from "./themeCatalog";
 import { contrastText, exportThemeCSS, exportThemeJSON } from "./themeExport";
 import { generatePrompt } from "./generatePrompt";
+import { buildPreviewDocument } from "./previewDocument";
+import { exportMediaEffectSVG } from "./mediaEffect";
 import ThemeFilter from "../components/ThemeFilter";
 import ThemeCompare from "../components/ThemeCompare";
 import ThemeExport from "../components/ThemeExport";
@@ -35,6 +37,10 @@ const glass: ThemeDefinition = { ...base, name: "Glass", slug: "glassmorphism", 
 const dark: ThemeDefinition = { ...base, name: "Dark", slug: "dark-mode", kind: "color-mode",
   colors: { ...base.colors, background: "#111111", text: "#FFFFFF" },
   styleTokens: { ...base.styleTokens!, surfaceBg: "#111111", cardBg: "#222222", textMuted: "#BBBBBB", cardRadius: "2rem" } };
+const duotone: ThemeDefinition = { ...base, name: "Duotone", slug: "duotone", kind: "visual-effect",
+  mediaEffect: { kind: "duotone", ink1: "#28104E", ink2: "#F6D86B" } };
+const risograph: ThemeDefinition = { ...base, name: "Risograph", slug: "risograph-print", kind: "visual-effect",
+  mediaEffect: { kind: "risograph", ink1: "#D44550", ink2: "#2463A6", grainOpacity: 0.18, offset: 3 } };
 const themes = [base, terminal, bento, glass, dark];
 
 beforeEach(() => { localStorage.clear(); window.history.replaceState(null, "", "/themx/compare"); });
@@ -115,6 +121,64 @@ describe("project prompts", () => {
     const finalCSS = exportThemeCSS(composeTheme(base, layers)).trim();
     expect(prompt.split("Use these resolved CSS variables for the combined style:")[1]).toContain(finalCSS);
     expect(finalCSS).toContain("--tx-card-bg: rgba(255,255,255,0.1);");
+  });
+});
+
+describe("image effects", () => {
+  it("preserves ink settings through layout and color layers and replaces them with the next effect", () => {
+    const combined = composeTheme(base, [bento, risograph, dark]);
+    expect(combined.mediaEffect).toEqual(risograph.mediaEffect);
+    expect(combined.colors).toEqual(dark.colors);
+    expect(combined.typography).toEqual(base.typography);
+    expect(combined.layoutPattern).toBe("bento-grid");
+    expect(composeTheme(duotone, [risograph]).mediaEffect).toEqual(risograph.mediaEffect);
+    expect(composeTheme(risograph, [glass]).mediaEffect).toBeUndefined();
+    expect(exportThemeCSS(composeTheme(risograph, [glass]))).toContain("--tx-media-filter: none;");
+  });
+  it("exports matching image settings, filter markup, and CSS for both effects", () => {
+    for (const theme of [duotone, risograph]) {
+      const json = JSON.parse(exportThemeJSON(theme));
+      const svg = exportMediaEffectSVG(theme.mediaEffect!);
+      const document = new DOMParser().parseFromString(svg, "image/svg+xml");
+      expect(document.querySelector("parsererror")).toBeNull();
+      expect(document.querySelector("filter")?.id).toBe("tx-media-effect");
+      expect(json.mediaEffect).toEqual(theme.mediaEffect);
+      expect(json.svgFilter).toBe(svg);
+      expect(exportThemeCSS(theme)).toContain('--tx-media-filter: url("#tx-media-effect");');
+      expect(json.cssVariables["--tx-media-ink-1"]).toBe(theme.mediaEffect!.ink1);
+      expect(svg.includes("feTurbulence")).toBe(theme === risograph);
+      expect(svg.includes('dx="3" dy="-3"')).toBe(theme === risograph);
+    }
+  });
+  it("renders an unfiltered original beside a treated illustration without filtering controls", () => {
+    const document = new DOMParser().parseFromString(buildPreviewDocument(risograph), "text/html");
+    const images = document.querySelectorAll(".media-comparison svg");
+    expect(images).toHaveLength(2);
+    expect(images[0].querySelector("filter")).toBeNull();
+    expect(images[1].querySelector('g[filter="url(#tx-media-effect)"]')).toBeTruthy();
+    expect(document.querySelectorAll("[filter]")).toHaveLength(1);
+    expect(document.querySelector("#invite-form button")?.closest("[filter]")).toBeNull();
+    expect(buildPreviewDocument(base)).not.toContain('aria-label="Image treatment comparison"');
+  });
+  it("puts the resolved image treatment in the prompt and removes it when another effect replaces it", () => {
+    const config = { themeName: base.name, characteristics: base.characteristics, colors: base.colors,
+      typography: base.typography, styleTokens: base.styleTokens, framework: "Astro", cssApproach: "CSS",
+      components: [], tone: "Minimal" };
+    const prompt = generatePrompt({ ...config, layers: [duotone, dark] });
+    expect(prompt).toContain("Image treatment: duotone. Use ink colors #28104E and #F6D86B.");
+    expect(prompt).toContain(exportMediaEffectSVG(duotone.mediaEffect!));
+    expect(prompt).toContain("Keep text and controls unfiltered.");
+    expect(generatePrompt({ ...config, mediaEffect: risograph.mediaEffect, layers: [glass] })).not.toContain("<filter");
+  });
+  it("offers an SVG export for image effects and falls back to CSS when the effect is removed", () => {
+    const { rerender, container } = render(h(ThemeExport, { theme: duotone }));
+    fireEvent.change(screen.getByRole("combobox", { name: "Export format" }), { target: { value: "svg" } });
+    expect(container.querySelector("pre")?.textContent).toBe(exportMediaEffectSVG(duotone.mediaEffect!));
+    expect(screen.getByRole("button", { name: "Download .svg" })).toBeTruthy();
+    rerender(h(ThemeExport, { theme: base }));
+    expect((screen.getByRole("combobox", { name: "Export format" }) as HTMLSelectElement).value).toBe("css");
+    expect(container.querySelector("pre")?.textContent).toBe(exportThemeCSS(base));
+    expect(screen.queryByRole("option", { name: "SVG filter" })).toBeNull();
   });
 });
 

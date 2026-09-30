@@ -23,6 +23,10 @@ export const USE_CASE_LABELS = {
 export type ThemeKind = keyof typeof KIND_LABELS;
 export type UseCase = keyof typeof USE_CASE_LABELS;
 
+export type MediaEffect =
+  | { kind: "duotone"; ink1: string; ink2: string }
+  | { kind: "risograph"; ink1: string; ink2: string; grainOpacity: number; offset: number };
+
 export interface ThemeDefinition {
   name: string;
   slug: string;
@@ -47,11 +51,13 @@ export interface ThemeDefinition {
   typography: { heading: string; body: string };
   styleTokens?: StyleTokens;
   layoutPattern?: string;
+  mediaEffect?: MediaEffect;
 }
 
-export function resolveThemeStyle(base: Pick<ThemeDefinition, "colors" | "styleTokens">, layers: ThemeDefinition[]) {
+export function resolveThemeStyle(base: Pick<ThemeDefinition, "colors" | "styleTokens" | "mediaEffect">, layers: ThemeDefinition[]) {
   let colors = { ...base.colors };
   let tokens = base.styleTokens ? { ...base.styleTokens } : undefined;
+  let mediaEffect = base.mediaEffect;
   for (const layer of layers) {
     if (layer.kind === "color-mode") {
       colors = { ...layer.colors };
@@ -65,13 +71,16 @@ export function resolveThemeStyle(base: Pick<ThemeDefinition, "colors" | "styleT
           tokens.cardBg = `rgba(${channels.join(",")},${alpha})`;
         }
       }
-    } else if (layer.kind === "visual-effect" && tokens && layer.styleTokens) {
-      for (const key of ["surfaceBgImage", "cardBg", "cardBorder", "cardBorderWidth", "cardRadius", "cardShadow", "cardBackdropBlur", "cardBorderHover", "cardShadowHover"] as const) {
-        tokens[key] = layer.styleTokens[key];
+    } else if (layer.kind === "visual-effect") {
+      mediaEffect = layer.mediaEffect;
+      if (tokens && layer.styleTokens) {
+        for (const key of ["surfaceBgImage", "cardBg", "cardBorder", "cardBorderWidth", "cardRadius", "cardShadow", "cardBackdropBlur", "cardBorderHover", "cardShadowHover"] as const) {
+          tokens[key] = layer.styleTokens[key];
+        }
       }
     }
   }
-  return { colors, styleTokens: tokens };
+  return { colors, styleTokens: tokens, mediaEffect };
 }
 
 export function composeTheme(base: ThemeDefinition, layers: ThemeDefinition[]): ThemeDefinition {

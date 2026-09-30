@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" role="img" aria-labelledby="title">
+  <title id="title">Art Nouveau Botanical design preview</title>
+  <rect width="800" height="600" fill="#F7F0DF"/>
+  <path d="M24 576V160C24 57 139 24 400 24S776 57 776 160V576Z M34 566V160C34 68 145 34 400 34S766 68 766 160V566Z" fill="none" stroke="#B99149"/>
+  <text x="400" y="87" text-anchor="middle" font-family="Georgia,serif" font-size="22" fill="#315D4C">BOTANICAL JOURNAL</text>
+  <g transform="translate(542 125)" fill="none" stroke="#315D4C" stroke-width="2"><path d="M10 230V94C10 34 47 10 102 10S194 34 194 94V230 M102 230C46 179 51 139 77 105C103 71 106 51 102 32 M102 230C158 179 153 139 127 105C101 71 98 51 102 32 M73 176C34 180 24 149 40 132C62 136 73 152 73 176Z M131 176C170 180 180 149 164 132C142 136 131 152 131 176Z M74 117C35 108 37 74 54 64C74 74 82 98 74 117Z M130 117C169 108 167 74 150 64C130 74 122 98 130 117Z M102 90C78 75 80 51 102 32C124 51 126 75 102 90Z"/><circle cx="102" cy="215" r="6" fill="#B99149" stroke="none"/></g>
+  <g font-family="Georgia,serif" font-size="43" fill="#273C32"><text x="68" y="183">Designed with</text><text x="68" y="238">room to grow.</text></g>
+  <text x="68" y="283" font-family="Arial,sans-serif" font-size="17" fill="#56634F">Curved lines. Warm paper. Clear content.</text>
+  <rect x="68" y="316" width="180" height="46" rx="23" fill="#315D4C"/><text x="94" y="346" font-family="Arial,sans-serif" font-size="16" fill="#FFFFFF">Explore collection</text>
+  <g fill="#FFFBF1" stroke="#A68D63"><path d="M68 526V430Q68 398 100 398H268Q300 398 300 430V526Z"/><path d="M322 526V430Q322 398 354 398H732V526Z"/></g>
+  <g font-family="Georgia,serif" fill="#273C32"><text x="88" y="442" font-size="22">Seasonal notes</text><text x="342" y="442" font-size="22">Stories from the garden</text></g>
+  <g font-family="Arial,sans-serif" fill="#56634F" font-size="16"><text x="88" y="476">Leaves, flowers, and form.</text><text x="342" y="476">A clear reading order with restrained ornament.</text></g>
+  <text x="400" y="556" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#315D4C">Art Nouveau / Botanical</text>
+</svg>
