@@ -1,0 +1,15 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import ThemeCompare from "../components/ThemeCompare";
+import { getCollection } from "astro:content";
+
+const themes = (await getCollection("themes")).map((theme) => theme.data).sort((a, b) => a.name.localeCompare(b.name));
+const basePath = import.meta.env.BASE_URL.replace(/\/$/, "");
+---
+<BaseLayout title="Compare themes" description="Compare two design themes on the same interactive page, with mobile and desktop previews.">
+  <div class="mx-auto max-w-7xl px-6 py-12">
+    <h1 class="text-3xl font-bold" style="font-family: var(--tx-font-heading);">Compare themes</h1>
+    <p class="mb-8 mt-3" style="color: var(--tx-text-muted);">Both previews show the same content and controls. Compare colors, typography, surfaces, and interaction states.</p>
+    <ThemeCompare client:load themes={themes} basePath={basePath} />
+  </div>
+</BaseLayout>

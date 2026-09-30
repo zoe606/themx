@@ -2,6 +2,33 @@
 @import "./theme-vars.css";
 @plugin "@tailwindcss/typography";
 
+.tx-input {
+  min-height: 44px;
+  padding: 0.6rem 0.75rem;
+  background: var(--tx-input-bg);
+  border: 1px solid var(--tx-input-border);
+  border-radius: var(--tx-button-radius);
+  color: var(--tx-text);
+}
+.tx-input option { background: var(--tx-surface-bg); color: var(--tx-text); }
+.tx-button {
+  min-height: 44px;
+  padding: 0.5rem 0.9rem;
+  border: 1px solid var(--tx-card-border);
+  border-radius: var(--tx-button-radius);
+  background: var(--tx-card-bg);
+  color: var(--tx-text);
+  cursor: pointer;
+}
+.tx-button[aria-pressed="true"] { border-color: var(--tx-link-color); text-decoration: underline; text-underline-offset: 4px; }
+.tx-button:disabled { opacity: 0.55; cursor: default; }
+.tx-button:hover:not(:disabled) { box-shadow: var(--tx-card-shadow-hover); }
+:where(button, a, input, select, textarea):focus-visible { outline: 2px solid var(--tx-text); outline-offset: 4px; }
+.tx-code { max-height: 24rem; overflow: auto; padding: 1rem; border: 1px solid var(--tx-card-border); border-radius: var(--tx-card-radius); background: var(--tx-input-bg); color: var(--tx-text); font-size: 0.8rem; white-space: pre-wrap; overflow-wrap: anywhere; }
+.preview-frame { overflow: auto; border: 1px solid var(--tx-card-border); border-radius: var(--tx-card-radius); }
+.preview-frame iframe { display: block; border: 0; margin-inline: auto; }
+@media (prefers-reduced-motion: reduce) { .tx-transitioning, .tx-transitioning * { transition: none !important; } }
+
 @theme {
   --color-primary: #7C3AED;
   --color-secondary: #EC4899;

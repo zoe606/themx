@@ -18,11 +18,13 @@ This file is the **canonical source of project rules** for AI agents (Claude Cod
 
 Run tests with: `npm test`
 
-Run full check (lint + tests) with the slash command: `/check`
+Run tests and the production build with: `npm run check`
+The `/check` adapter currently runs tests only. There is no lint command.
 
 ## Build / Run
 
-_(Add project-specific build/run notes here.)_
+Run locally with `npm run dev`. Open the `/themx/` base path.
+Build with `npm run build`. Preview the build with `npm run preview`.
 
 ## Don'ts
 
@@ -32,4 +34,7 @@ _(Add project-specific build/run notes here.)_
 
 ## Project-specific notes
 
-_(Add anything else an agent should know about this project.)_
+Theme content is in `src/data/themes/`. Keep design type, use-case metadata,
+layout rules, and interaction rules in each theme's frontmatter.
+Live previews use isolated iframe documents. Keep their style variables
+consistent with prompt output and CSS/JSON exports.

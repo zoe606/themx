@@ -4,19 +4,7 @@ import ThemeFilter from "../components/ThemeFilter";
 import { getCollection } from "astro:content";
 
 const themes = await getCollection("themes");
-const themeData = themes.map((t) => ({
-  name: t.data.name,
-  slug: t.data.slug,
-  category: t.data.category,
-  year: t.data.year,
-  tagline: t.data.tagline,
-  preview: t.data.preview,
-  colors: {
-    primary: t.data.colors.primary,
-    secondary: t.data.colors.secondary,
-    accent: t.data.colors.accent,
-  },
-}));
+const themeData = themes.map((theme) => theme.data).sort((a, b) => a.name.localeCompare(b.name));
 
 const categories = [...new Set(themes.map((t) => t.data.category))].sort();
 const years = [...new Set(themes.map((t) => t.data.year))].sort((a, b) => b - a);
@@ -31,7 +19,7 @@ const basePath = import.meta.env.BASE_URL.replace(/\/$/, "");
         themx
       </h1>
       <p class="mx-auto mt-4 max-w-xl text-lg" style="color: var(--tx-text-subtle);">
-        Discover trending web design styles. Generate ready-to-use prompts for Claude to build your next project in any style.
+        Explore design styles, try live components, and generate detailed prompts for your next project.
       </p>
     </div>
   </section>

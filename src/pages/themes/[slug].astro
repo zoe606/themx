@@ -3,6 +3,9 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import ColorSwatch from "../../components/ColorSwatch.astro";
 import PromptBuilder from "../../components/PromptBuilder";
 import ApplyThemeButton from "../../components/ApplyThemeButton";
+import LivePreview from "../../components/LivePreview";
+import ThemeExport from "../../components/ThemeExport";
+import { KIND_LABELS, USE_CASE_LABELS } from "../../lib/themeCatalog";
 import { getCollection, render } from "astro:content";
 
 export async function getStaticPaths() {
@@ -17,6 +20,7 @@ const { theme } = Astro.props;
 const { Content } = await render(theme);
 const { data } = theme;
 const base = import.meta.env.BASE_URL;
+const themes = (await getCollection("themes")).map((theme) => theme.data).sort((a, b) => a.name.localeCompare(b.name));
 ---
 <BaseLayout title={data.name} description={`${data.name} — ${data.tagline}. Get a ready-to-use AI prompt for this design style.`}>
   {/* Header */}
@@ -29,10 +33,12 @@ const base = import.meta.env.BASE_URL;
           {data.category}
         </span>
         <span class="glass rounded-full px-3 py-1 text-sm font-medium" style="color: var(--tx-text-muted);">
-          {data.year}
+          {KIND_LABELS[data.kind]}
         </span>
       </div>
       <p class="mt-2 text-lg" style="color: var(--tx-text-subtle);">{data.tagline}</p>
+      <p class="mt-2 text-sm" style="color: var(--tx-text-muted);">Reference year: {data.year}</p>
+      <a class="mt-3 inline-block text-sm underline" href={`${base.replace(/\/$/, "")}/compare?left=${encodeURIComponent(data.slug)}`}>Compare this theme</a>
       {data.styleTokens && (
         <div class="mt-4">
           <ApplyThemeButton
@@ -47,6 +53,11 @@ const base = import.meta.env.BASE_URL;
   </section>
 
   <div class="mx-auto max-w-4xl px-6 py-12">
+    <div class="glass mb-8 grid gap-5 p-6 sm:grid-cols-2">
+      <div><h2 class="font-semibold">Best for</h2><p class="mt-2 text-sm" style="color: var(--tx-text-muted);">{data.useCases.map((key) => USE_CASE_LABELS[key]).join(", ")}</p></div>
+      <div><h2 class="font-semibold">Less suitable for</h2><ul class="mt-2 space-y-2 text-sm" style="color: var(--tx-text-muted);">{data.avoidFor.map((reason) => <li>{reason}</li>)}</ul></div>
+    </div>
+    <div class="mb-10"><LivePreview client:load theme={data} /></div>
     {/* Preview */}
     <div class="glass overflow-hidden">
       <img
@@ -130,13 +141,12 @@ const base = import.meta.env.BASE_URL;
     </div>
 
     {/* Prompt Builder */}
+    <div class="mt-10"><ThemeExport client:load theme={data} /></div>
     <div class="mt-12">
       <PromptBuilder
         client:load
-        themeName={data.name}
-        characteristics={data.characteristics}
-        colors={data.colors}
-        typography={data.typography}
+        theme={data}
+        themes={themes}
       />
     </div>
   </div>

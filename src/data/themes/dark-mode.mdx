@@ -1,6 +1,11 @@
 ---
 name: "Dark Mode"
 slug: "dark-mode"
+kind: "color-mode"
+useCases: ["dashboard","developer","saas"]
+avoidFor: ["Pages with untested dark text, images, or controls inherited from a light palette."]
+layoutRules: ["Keep the existing layout. Separate dark surfaces with borders and spacing."]
+interactionRules: ["Show focus and selected states with visible borders as well as color."]
 category: "corporate"
 year: 2020
 tags: ["dark", "accessible", "eye-friendly", "modern"]
