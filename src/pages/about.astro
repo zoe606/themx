@@ -15,7 +15,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       <p>
         Use the <strong style="color: var(--tx-text);">prompt builder</strong> to describe your project,
         target users, tech stack, and desired components. The generated prompt includes exact style
-        tokens, layout rules, and interaction requirements. Copy it into your preferred coding assistant.
+        tokens, layout rules, interaction requirements, and library mappings. Copy it into your preferred coding assistant or download a design document.
       </p>
 
       <h2 class="text-xl font-semibold pt-4" style="font-family: var(--tx-font-heading); color: var(--tx-text);">How to Use</h2>
@@ -24,9 +24,11 @@ import BaseLayout from "../layouts/BaseLayout.astro";
         <li>Search by name or tag, or filter by category, design type, use case, and reference year</li>
         <li>Save favorites in this browser and select two themes to compare</li>
         <li>Open a theme and try its buttons, navigation, and form in desktop or mobile preview</li>
-        <li>Describe your project and choose your framework, CSS approach, and components</li>
+        <li>Describe your project and choose your framework, UI library, task, and components</li>
         <li>Add optional layout, effect, and color-mode layers to the base theme</li>
-        <li>Copy the prompt, or download CSS variables and JSON tokens for the base or combined style</li>
+        <li>Include optional skill references and choose a UI prompt, document prompt, DESIGN.md, or AGENTS.md section</li>
+        <li>Copy or download the output, and save or export the setup to use it again</li>
+        <li>Choose a library mapping when downloading CSS or JSON tokens</li>
       </ol>
 
       <h2 class="text-xl font-semibold pt-4" style="font-family: var(--tx-font-heading); color: var(--tx-text);">Categories</h2>
@@ -42,6 +44,8 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       <p>A visual style defines the overall appearance. A visual effect defines surface treatments such as blur and shadows. A layout pattern defines content arrangement. A color mode defines a palette. A design system defines component conventions.</p>
       <p>You can combine these types. Optional layers apply in this order: layout pattern, visual effect, color mode. Each layer overrides values only in its scope. The base typography stays the same. Live previews and exports show the combined tokens. The sample preview is a component demonstration, not a complete implementation of every design system or effect.</p>
       <p>Reference years are catalog labels for exploring styles. They do not identify when a style was invented. Favorites are saved locally in this browser.</p>
+      <p>Astra uses a space-themed dashboard composition with a single orbital diagram. Galaxy uses large display type and an asymmetric cosmic composition for portfolios and brand pages. Their orbital motion is optional and respects reduced motion.</p>
+      <p>Library mappings target Tailwind CSS 4 and daisyUI 5. shadcn/ui is available for Next.js and React (Vite). The live preview uses themx components. Supporting skill selections provide references for your coding agent; they do not install skills. Saved prompt setups stay in this browser.</p>
     </div>
   </div>
 </BaseLayout>

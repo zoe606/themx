@@ -13,7 +13,7 @@ export default function LivePreview({ theme, viewport: sharedViewport, showContr
   const [motion, setMotion] = useState(false);
   const size = sharedViewport ?? viewport;
   const document = useMemo(() => buildPreviewDocument(theme, motion), [theme, motion]);
-  const hasMotion = ["kinetic-typography", "aurora-ui"].includes(theme.slug);
+  const hasMotion = ["kinetic-typography", "aurora-ui", "astra", "galaxy"].includes(theme.slug);
 
   return (
     <div>

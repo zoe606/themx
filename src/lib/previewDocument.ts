@@ -7,6 +7,8 @@ const escapeHTML = (value: string) => value.replace(/[&<>"']/g, (char) => ({
 }[char]!));
 
 const decorations: Record<string, string> = {
+  astra: `<svg viewBox="0 0 320 280" aria-hidden="true" fill="none"><circle cx="160" cy="140" r="98" stroke="var(--tx-primary)" opacity=".5"/><circle cx="160" cy="140" r="58" stroke="var(--tx-secondary)" stroke-dasharray="4 8"/><g class="orbital-ring"><ellipse cx="160" cy="140" rx="142" ry="49" transform="rotate(-35 160 140)" stroke="var(--tx-primary)"/><circle cx="244" cy="82" r="8" fill="var(--tx-accent)"/></g><circle cx="160" cy="140" r="24" fill="var(--tx-primary)"/><path d="M28 38h10m-5-5v10m247 189h10m-5-5v10" stroke="var(--tx-secondary)" stroke-width="2"/></svg>`,
+  galaxy: `<svg viewBox="0 0 320 280" aria-hidden="true" fill="none"><g class="orbital-ring"><ellipse cx="160" cy="140" rx="140" ry="49" transform="rotate(-38 160 140)" stroke="var(--tx-secondary)" stroke-width="2"/><ellipse cx="160" cy="140" rx="113" ry="76" transform="rotate(29 160 140)" stroke="var(--tx-primary)"/><circle cx="260" cy="71" r="9" fill="var(--tx-accent)"/></g><circle cx="160" cy="140" r="42" fill="var(--tx-card-bg)" stroke="var(--tx-secondary)"/><path d="M32 35h12m-6-6v12m238 193h10m-5-5v10" stroke="var(--tx-accent)" stroke-width="2"/></svg>`,
   "blueprint-technical": `<svg viewBox="0 0 320 280" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M60 72L166 36L258 90V204L153 246L60 190Z M60 72L153 127L258 90 M153 127V246 M166 36V145L60 190 M166 145L258 204"/><path d="M30 72V190 M23 72H37 M23 190H37 M60 262H258 M60 255V269 M258 255V269"/><circle cx="153" cy="127" r="26" stroke-dasharray="4 4"/><text x="12" y="140" font-size="12" fill="currentColor" stroke="none" transform="rotate(-90 12 140)">HEIGHT</text><text x="125" y="278" font-size="12" fill="currentColor" stroke="none">WIDTH</text></svg>`,
   "bauhaus-geometric": `<svg viewBox="0 0 320 280" aria-hidden="true"><rect x="10" y="20" width="140" height="240" fill="var(--tx-secondary)"/><circle cx="165" cy="102" r="80" fill="var(--tx-primary)"/><path d="M175 270L310 82V270Z" fill="var(--tx-accent)"/><rect x="25" y="188" width="170" height="18" fill="var(--tx-text)"/></svg>`,
   "art-nouveau": `<svg viewBox="0 0 280 340" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><path d="M24 322V134C24 56 77 18 140 18S256 56 256 134V322 M36 322V134C36 67 81 30 140 30S244 67 244 134V322 M54 305H226"/><path d="M140 305C80 252 76 197 110 155C145 112 145 91 140 58 M140 305C200 252 204 197 170 155C135 112 135 91 140 58 M110 237C65 240 52 203 66 181C86 180 109 202 110 237Z M170 237C215 240 228 203 214 181C194 180 171 202 170 237Z M103 187C61 172 65 136 86 122C108 138 115 160 103 187Z M177 187C219 172 215 136 194 122C172 138 165 160 177 187Z M140 126C113 101 114 78 140 58C166 78 167 101 140 126Z"/><circle cx="140" cy="284" r="8" fill="var(--tx-accent)" stroke="none"/></svg>`,
@@ -15,9 +17,14 @@ const decorations: Record<string, string> = {
 export function buildPreviewDocument(theme: ThemeDefinition, motion = false): string {
   const decoration = decorations[theme.slug];
   const mediaPreview = theme.mediaEffect ? `<figure class="media-comparison" aria-label="Image treatment comparison"><div><p class="eyebrow">Original illustration</p>${landscapeIllustration("original")}</div><div><p class="eyebrow">${theme.mediaEffect.kind === "duotone" ? "Duotone" : "Risograph"} treatment</p>${landscapeIllustration("treated", theme.mediaEffect)}</div><figcaption class="muted">Two image inks: ${theme.mediaEffect.ink1} and ${theme.mediaEffect.ink2}. Text and controls remain unfiltered.</figcaption></figure>` : "";
-  const fonts = [...new Set([theme.typography.heading, theme.typography.body])];
-  const fontLinks = fonts.filter((font) => !["system-ui", "serif", "sans-serif", "monospace", "Helvetica Neue", "SF Pro Display", "SF Pro Text"].includes(font))
-    .map((font) => `<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=${encodeURIComponent(font)}&display=swap">`).join("");
+  const fonts = new Map<string, Set<string>>();
+  for (const [font, weight] of [[theme.typography.heading, theme.styleTokens?.fontHeadingWeight ?? "700"], [theme.typography.body, theme.styleTokens?.fontBodyWeight ?? "400"]]) {
+    const weights = fonts.get(font) ?? new Set<string>();
+    weights.add(weight);
+    fonts.set(font, weights);
+  }
+  const fontLinks = [...fonts].filter(([font]) => !["system-ui", "serif", "sans-serif", "monospace", "Helvetica Neue", "SF Pro Display", "SF Pro Text"].includes(font))
+    .map(([font, weights]) => `<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=${encodeURIComponent(font)}:wght@${[...weights].sort((a, b) => Number(a) - Number(b)).join(";")}&display=swap">`).join("");
   return `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
     <title>${escapeHTML(theme.name)} component demo</title>${fontLinks}<style>
     ${exportThemeCSS(theme).replace(/<\//g, "<\\/")}
@@ -58,7 +65,6 @@ export function buildPreviewDocument(theme: ThemeDefinition, motion = false): st
     input { min-height: 44px; width: 100%; padding: 10px; color: var(--tx-text); background: var(--tx-input-bg); border: 1px solid var(--tx-input-border); border-radius: var(--tx-button-radius); }
     .status { min-height: 24px; }
     footer { margin-top: 24px; padding-top: 16px; border-top: 1px solid var(--tx-card-border); }
-    .theme-bento-grid .grid { grid-template-columns: 2fr 1fr 1fr; }
     .theme-editorial-magazine .hero { max-width: none; border-bottom: 1px solid var(--tx-card-border); margin-bottom: 20px; }
     .theme-editorial-magazine h1 { max-width: 18ch; }
     .theme-editorial-magazine .card { border-width: 1px 0 0; padding-left: 0; }
@@ -90,12 +96,23 @@ export function buildPreviewDocument(theme: ThemeDefinition, motion = false): st
     .theme-art-nouveau h1 { font-size: clamp(38px, 6vw, 60px); }
     .theme-art-nouveau .hero-art { max-width: 240px; }
     .theme-art-nouveau .eyebrow { letter-spacing: 0.15em; }
+    .theme-astra h1 { font-size: clamp(32px, 6vw, 58px); max-width: 12ch; letter-spacing: -0.035em; }
+    .theme-astra .grid { grid-template-columns: 1.4fr 1fr 1fr; }
+    .theme-astra .primary { border-color: var(--tx-primary); }
+    .theme-galaxy h1 { font-size: clamp(40px, 7.5vw, 72px); max-width: 11ch; letter-spacing: -0.04em; }
+    .theme-galaxy .hero-with-art { grid-template-columns: 1.5fr 1fr; padding: 42px 0; }
+    .theme-galaxy .grid { grid-template-columns: 1.6fr 1fr 1fr; }
+    .theme-galaxy .primary { border-color: var(--tx-primary); }
+    .theme-bento-grid .grid { grid-template-columns: 2fr 1fr 1fr; }
+    .orbital-ring { transform-origin: 160px 140px; }
+    :is(.theme-astra, .theme-galaxy)[data-motion="true"] .orbital-ring { animation: orbit 48s linear infinite; }
     ${theme.mediaEffect?.kind === "risograph" ? "body { background-size: 8px 8px; }" : ""}
     .theme-kinetic-typography[data-motion="true"] h1 { animation: type-shift 3s ease-in-out infinite alternate; }
     .theme-aurora-ui[data-motion="true"] { background-size: 180% 180%; animation: aurora 8s ease-in-out infinite alternate; }
     @keyframes type-shift { from { transform: translateX(0); letter-spacing: -0.02em; } to { transform: translateX(8px); letter-spacing: 0.02em; } }
     @keyframes aurora { from { background-position: 0% 0%; } to { background-position: 100% 100%; } }
-    @media (max-width: 520px) { body { padding: 18px; } .grid, .workspace, .hero-with-art, .media-comparison, .theme-bento-grid .grid { grid-template-columns: 1fr; } .hero-art { max-width: 200px; } .theme-art-nouveau .hero-art { max-width: 180px; } .theme-hand-drawn .card, .theme-collage-scrapbook .card { transform: none !important; } }
+    @keyframes orbit { to { transform: rotate(360deg); } }
+    @media (max-width: 520px) { body { padding: 18px; } .grid, .workspace, .hero-with-art, .media-comparison, .theme-bento-grid .grid, .theme-astra .grid, .theme-galaxy .grid, .theme-galaxy .hero-with-art { grid-template-columns: 1fr; } .hero-art { max-width: 200px; } .theme-art-nouveau .hero-art { max-width: 180px; } .theme-hand-drawn .card, .theme-collage-scrapbook .card { transform: none !important; } }
     @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; } }
     </style></head><body class="theme-${escapeHTML(theme.slug)} ${theme.layoutPattern ? `theme-${escapeHTML(theme.layoutPattern)}` : ""}" data-motion="${motion}">
     <header><strong>Workspace</strong><nav aria-label="Demo navigation"><button type="button" data-tab="Overview" aria-pressed="true">Overview</button><button type="button" data-tab="Projects" aria-pressed="false">Projects</button><button type="button" data-tab="Team" aria-pressed="false">Team</button></nav></header>

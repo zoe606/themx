@@ -3,8 +3,9 @@ import { h } from "preact";
 import { cleanup, fireEvent, render, screen, waitFor } from "@testing-library/preact";
 import { composeTheme, filterThemes } from "./themeCatalog";
 import type { ThemeDefinition } from "./themeCatalog";
-import { contrastText, exportThemeCSS, exportThemeJSON } from "./themeExport";
+import { contrastText, exportLibraryCSS, exportThemeCSS, exportThemeJSON } from "./themeExport";
 import { generatePrompt } from "./generatePrompt";
+import { createPromptSetup, parsePromptSetup } from "./promptSetup";
 import { buildPreviewDocument } from "./previewDocument";
 import { exportMediaEffectSVG } from "./mediaEffect";
 import ThemeFilter from "../components/ThemeFilter";
@@ -108,10 +109,10 @@ describe("project prompts", () => {
   it("describes each layer's scope in the same order as composition", () => {
     const prompt = generatePrompt({ themeName: base.name, characteristics: base.characteristics, colors: base.colors,
       typography: base.typography, framework: "Astro", cssApproach: "Tailwind", components: [], tone: "Minimal", layers: [bento, glass, dark] });
-    expect(prompt.indexOf("Add Bento")).toBeLessThan(prompt.indexOf("Add Glass"));
-    expect(prompt.indexOf("Add Glass")).toBeLessThan(prompt.indexOf("Add Dark"));
-    expect(prompt).toContain("Keep the base colors and typography. Override only the layout.");
-    expect(prompt).toContain("Override the base palette");
+    expect(prompt.indexOf("- Bento:")).toBeLessThan(prompt.indexOf("- Glass:"));
+    expect(prompt.indexOf("- Glass:")).toBeLessThan(prompt.indexOf("- Dark:"));
+    expect(prompt).toContain("The selected layout replaces the base layout rules.");
+    expect(prompt).toContain("The selected color mode replaces the palette.");
   });
   it("uses the same final variables as the combined preview and export", () => {
     const layers = [bento, glass, dark];
@@ -119,7 +120,8 @@ describe("project prompts", () => {
       typography: base.typography, styleTokens: base.styleTokens, framework: "Astro", cssApproach: "Tailwind",
       components: ["Cards"], tone: "Minimal", layers });
     const finalCSS = exportThemeCSS(composeTheme(base, layers)).trim();
-    expect(prompt.split("Use these resolved CSS variables for the combined style:")[1]).toContain(finalCSS);
+    expect(prompt).toContain(finalCSS);
+    expect(prompt.match(/--tx-card-radius:/g)).toHaveLength(1);
     expect(finalCSS).toContain("--tx-card-bg: rgba(255,255,255,0.1);");
   });
 });
@@ -256,7 +258,7 @@ describe("prompt builder and export controls", () => {
     expect(frame.srcdoc).toContain("--tx-card-radius: 1rem;");
     expect(frame.srcdoc).toContain("--tx-text: #FFFFFF;");
     expect(frame.srcdoc).toContain('theme-bento-grid');
-    expect(container.querySelectorAll("pre")[1].textContent).toContain("Add Dark");
+    expect(container.querySelector("[data-generated-output]")?.textContent).toContain("- Dark: color mode");
   });
   it("shows a usable fallback when the clipboard is denied", async () => {
     Object.defineProperty(navigator, "clipboard", { configurable: true, value: { writeText: vi.fn().mockRejectedValue(new Error("Denied")) } });
@@ -265,5 +267,109 @@ describe("prompt builder and export controls", () => {
     await waitFor(() => expect(screen.getByRole("status").textContent).toContain("Select and copy"));
     fireEvent.change(screen.getByRole("combobox", { name: "Export format" }), { target: { value: "json" } });
     expect(JSON.parse(document.querySelector("pre")!.textContent!).slug).toBe("editorial");
+  });
+});
+
+describe("project design workflows", () => {
+  const config = {
+    themeName: base.name, themeKind: base.kind, characteristics: base.characteristics,
+    colors: base.colors, typography: base.typography, styleTokens: base.styleTokens,
+    layoutRules: base.layoutRules, interactionRules: base.interactionRules, avoidFor: base.avoidFor,
+    brief: "Inventory dashboard", audience: "Warehouse operators", useCase: "Dashboard",
+    framework: "Next.js", cssApproach: "Tailwind", components: ["Tables", "Sidebar"], tone: "Professional",
+  };
+
+  it("uses one resolved design for prompts, documents, and library exports", () => {
+    const layers = [bento, glass, dark];
+    const css = exportLibraryCSS(composeTheme(base, layers), "daisyui").trim();
+    const options = { ...config, uiLibrary: "daisyui" as const, layers, layoutNotes: "Keep the stock table full-width." };
+    for (const outputMode of ["ui", "design-prompt", "design-md"] as const) {
+      const output = generatePrompt({ ...options, outputMode });
+      expect(output).toContain(css);
+      expect(output.match(/--tx-card-radius:/g)).toHaveLength(1);
+      expect(output).toContain("Keep the stock table full-width.");
+      expect(output).toContain("Dense dashboards");
+      expect(output).not.toContain("Use a readable article column.");
+    }
+    const json = JSON.parse(exportThemeJSON(composeTheme(base, layers), "daisyui"));
+    expect(json.libraryCSS.trim()).toBe(css);
+    expect(css).toContain('--color-primary-content: #FFFFFF;');
+    expect(css).toContain('--color-error: #B91C1C;');
+    expect(exportLibraryCSS(base, "shadcn")).toContain("--primary-foreground: #FFFFFF;");
+  });
+
+  it("audits existing UI without build instructions and keeps agent additions scoped", () => {
+    const audit = generatePrompt({ ...config, taskMode: "audit", skills: ["antislop"] });
+    expect(audit).toContain("Do not edit files or install packages.");
+    expect(audit).toContain("Use antislop after for this session.");
+    expect(audit).not.toContain("Generate the following components");
+    expect(generatePrompt({ ...config, taskMode: "update" })).toContain("Preserve unrelated behavior");
+    const agents = generatePrompt({ ...config, outputMode: "agents-prompt" });
+    expect(agents).toContain("Preserve existing instructions and unrelated sections.");
+    expect(agents).toContain("Use actual repository commands and file paths.");
+    expect(agents).not.toContain("Generate the following components");
+    expect(generatePrompt({ ...config, outputMode: "agents-md" })).not.toContain("npm test");
+  });
+
+  it("chooses useful components for the inventory example and enforces library compatibility", () => {
+    const { container } = render(h(PromptBuilder, { theme: base, themes }));
+    fireEvent.click(screen.getByRole("button", { name: "Inventory dashboard", exact: true }));
+    expect(screen.getByRole("button", { name: "Hero", exact: true }).getAttribute("aria-pressed")).toBe("false");
+    expect(screen.getByRole("button", { name: "Sidebar", exact: true }).getAttribute("aria-pressed")).toBe("true");
+    fireEvent.change(screen.getByRole("combobox", { name: "CSS approach" }), { target: { value: "Vanilla CSS" } });
+    fireEvent.change(screen.getByRole("combobox", { name: "UI library" }), { target: { value: "daisyui" } });
+    const css = screen.getByRole("combobox", { name: "CSS approach" }) as HTMLSelectElement;
+    expect(css.value).toBe("Tailwind");
+    expect(css.disabled).toBe(true);
+    expect(container.querySelector("[data-generated-output]")?.textContent).toContain('@plugin "daisyui/theme"');
+    fireEvent.change(screen.getByRole("combobox", { name: "UI library" }), { target: { value: "shadcn" } });
+    fireEvent.change(screen.getByRole("combobox", { name: "Framework" }), { target: { value: "Vue" } });
+    expect((screen.getByRole("combobox", { name: "UI library" }) as HTMLSelectElement).value).toBe("custom");
+    expect(screen.getByRole("status").textContent).toContain("shadcn/ui requires");
+  });
+
+  it("includes selected skill references and exports documents without implementation instructions", () => {
+    const { container } = render(h(PromptBuilder, { theme: base, themes }));
+    fireEvent.change(screen.getByRole("combobox", { name: "UI library" }), { target: { value: "shadcn" } });
+    fireEvent.click(screen.getByRole("checkbox", { name: "Official library skill" }));
+    fireEvent.click(screen.getByRole("checkbox", { name: "Anti-slop", exact: true }));
+    fireEvent.click(screen.getByRole("checkbox", { name: "Frontend Design", exact: true }));
+    let output = container.querySelector("[data-generated-output]")?.textContent;
+    expect(output).toContain("Use antislop during for this session.");
+    expect(output).toContain("https://ui.shadcn.com/docs/skills");
+    expect(output).toContain("only for unspecified decisions");
+    fireEvent.change(screen.getByRole("combobox", { name: "Output", exact: true }), { target: { value: "design-md" } });
+    output = container.querySelector("[data-generated-output]")?.textContent;
+    expect(output?.startsWith("# Design direction")).toBe(true);
+    expect(output).toContain("--primary: var(--tx-primary);");
+    expect(output).not.toContain("Generate the following components");
+    expect(screen.getByRole("button", { name: "Download document" })).toBeTruthy();
+  });
+
+  it("saves and restores a layered product setup without changing favorites", async () => {
+    const first = render(h(PromptBuilder, { theme: base, themes }));
+    localStorage.setItem("themx-favorites", JSON.stringify([base.slug]));
+    fireEvent.click(screen.getByRole("button", { name: "Product page", exact: true }));
+    fireEvent.change(screen.getByRole("combobox", { name: "UI library" }), { target: { value: "daisyui" } });
+    fireEvent.change(screen.getByRole("combobox", { name: "Visual effect" }), { target: { value: "glassmorphism" } });
+    fireEvent.change(screen.getByRole("combobox", { name: "Output", exact: true }), { target: { value: "design-md" } });
+    fireEvent.click(screen.getByRole("button", { name: "Save setup" }));
+    first.unmount();
+    render(h(PromptBuilder, { theme: base, themes }));
+    await waitFor(() => expect((screen.getByRole("combobox", { name: "UI library" }) as HTMLSelectElement).value).toBe("daisyui"));
+    expect((screen.getByRole("combobox", { name: "Visual effect" }) as HTMLSelectElement).value).toBe("glassmorphism");
+    expect((screen.getByRole("combobox", { name: "Output", exact: true }) as HTMLSelectElement).value).toBe("design-md");
+    expect((screen.getByRole("textbox", { name: "Target users" }) as HTMLInputElement).value).toContain("Shoppers");
+    fireEvent.click(screen.getByRole("button", { name: "Reset setup" }));
+    expect(localStorage.getItem(`themx-prompt-${base.slug}`)).toBeNull();
+    expect(JSON.parse(localStorage.getItem("themx-favorites")!)).toEqual([base.slug]);
+  });
+
+  it("rejects imported setups for the wrong theme or an incompatible stack", () => {
+    const setup = createPromptSetup(base);
+    expect(parsePromptSetup(JSON.stringify(setup), base, themes)).toEqual(setup);
+    expect(() => parsePromptSetup(JSON.stringify({ ...setup, themeSlug: "other-theme" }), base, themes)).toThrow("another theme");
+    expect(() => parsePromptSetup(JSON.stringify({ ...setup, framework: "Vue", uiLibrary: "shadcn" }), base, themes)).toThrow("incompatible");
+    expect(() => generatePrompt({ ...config, framework: "Plain HTML", uiLibrary: "shadcn" })).toThrow("requires");
   });
 });
