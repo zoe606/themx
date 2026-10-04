@@ -5,6 +5,7 @@ import { ready, noHorizontalOverflow } from "./scenarios.mjs";
 
 test("native library previews, composed tokens, and ZIP use the same saved setup", async ({ page }) => {
   await page.goto("themes/astra/");
+  await expect(page.locator("astro-island:has(#prompt-builder)")).not.toHaveAttribute("ssr", "");
   const builder = page.locator("#prompt-builder");
   await builder.getByLabel("Project brief", { exact: true }).fill("Warehouse stock for the night shift");
   await builder.getByRole("combobox", { name: "UI library", exact: true }).selectOption("daisyui");
@@ -49,6 +50,7 @@ test("native library previews, composed tokens, and ZIP use the same saved setup
 
 test("purpose switches the native preview and unsupported stacks reset the library", async ({ page }) => {
   await page.goto("themes/enterprise-flat/");
+  await expect(page.locator("astro-island:has(#prompt-builder)")).not.toHaveAttribute("ssr", "");
   const builder = page.locator("#prompt-builder");
   await builder.getByRole("combobox", { name: "Framework", exact: true }).selectOption("React (Vite)");
   await builder.getByRole("combobox", { name: "UI library", exact: true }).selectOption("shadcn");
@@ -69,6 +71,7 @@ test("purpose switches the native preview and unsupported stacks reset the libra
 test("optional orbital motion respects reduced motion on mobile", async ({ page }) => {
   await page.setViewportSize({ width: 360, height: 800 });
   await page.goto("themes/galaxy/");
+  await expect(page.locator("astro-island:has(> [data-theme-preview])")).not.toHaveAttribute("ssr", "");
   const previewSection = page.locator("[data-theme-preview]").first();
   await previewSection.getByLabel("Show motion (respects reduced motion)").check();
   const preview = previewSection.frameLocator("iframe");
