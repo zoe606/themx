@@ -1,0 +1,23 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { EXAMPLES, resolveExample } from "../../lib/exampleCatalog";
+import { UI_LIBRARIES } from "../../lib/promptOptions";
+import { getCollection } from "astro:content";
+const themes = (await getCollection("themes")).map((item) => item.data);
+const examples = EXAMPLES.map((example) => resolveExample(example, themes));
+const base = import.meta.env.BASE_URL.replace(/\/$/, "");
+---
+<BaseLayout title="Prompt Examples" description="Runnable UI examples produced from recorded themx prompts, with screenshots, source, and browser check results.">
+  <main class="mx-auto max-w-6xl px-6 py-12">
+    <p class="text-sm" style="color: var(--tx-text-muted);">Recorded prompts → runnable examples</p>
+    <h1 class="mt-3 text-4xl font-semibold" style="font-family: var(--tx-font-heading);">See the resulting UI.</h1>
+    <p class="mt-4 max-w-2xl" style="color: var(--tx-text-muted);">Explore three implementations produced from saved themx prompts. Each includes a working demo, desktop and mobile screenshots, the original setup, source, and browser check results. All content is sample data.</p>
+    <div class="mt-10 grid gap-7 md:grid-cols-2">
+      {examples.map((example) => <article class="glass overflow-hidden">
+        <a href={`${base}/examples/${example.slug}/`}><img class="aspect-[16/10] w-full object-cover object-top" src={`${base}/examples/${example.slug}-desktop.png`} alt={`${example.title} desktop screenshot`} width="1440" height="900" loading="lazy" /></a>
+        <div class="p-6"><p class="text-sm" style="color: var(--tx-text-muted);">{example.theme.name} · {UI_LIBRARIES[example.setup.uiLibrary].label}</p><h2 class="mt-2 text-xl font-semibold"><a href={`${base}/examples/${example.slug}/`}>{example.title}</a></h2><p class="mt-3" style="color: var(--tx-text-muted);">{example.summary}</p><div class="mt-5 flex flex-wrap gap-4"><a class="underline" href={`${base}/examples/${example.slug}/`}>View example and checks</a><a class="underline" href={`${base}/demos/${example.slug}/`} target="_blank" rel="noreferrer">Open demo ↗</a></div></div>
+      </article>)}
+    </div>
+    <p class="mt-8 max-w-3xl text-sm" style="color: var(--tx-text-muted);">These are agent-produced reference implementations with corrections made during verification. They show how one recorded prompt was implemented. They are not an independent comparison of AI models or a guarantee of future output quality.</p>
+  </main>
+</BaseLayout>

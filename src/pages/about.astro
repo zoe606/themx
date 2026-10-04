@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+const base = import.meta.env.BASE_URL.replace(/\/$/, "");
 ---
 <BaseLayout title="About" description="What is themx and how to use the generated prompts">
   <div class="mx-auto max-w-3xl px-6 py-16">
@@ -29,6 +30,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
         <li>Include optional skill references and choose a UI prompt, document prompt, DESIGN.md, or AGENTS.md section</li>
         <li>Copy or download the output, and save or export the setup to use it again</li>
         <li>Choose a library mapping when downloading CSS or JSON tokens</li>
+        <li>Download a design bundle with the prompt, documents, tokens, optional filter, and setup</li>
       </ol>
 
       <h2 class="text-xl font-semibold pt-4" style="font-family: var(--tx-font-heading); color: var(--tx-text);">Categories</h2>
@@ -45,7 +47,9 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       <p>You can combine these types. Optional layers apply in this order: layout pattern, visual effect, color mode. Each layer overrides values only in its scope. The base typography stays the same. Live previews and exports show the combined tokens. The sample preview is a component demonstration, not a complete implementation of every design system or effect.</p>
       <p>Reference years are catalog labels for exploring styles. They do not identify when a style was invented. Favorites are saved locally in this browser.</p>
       <p>Astra uses a space-themed dashboard composition with a single orbital diagram. Galaxy uses large display type and an asymmetric cosmic composition for portfolios and brand pages. Their orbital motion is optional and respects reduced motion.</p>
-      <p>Library mappings target Tailwind CSS 4 and daisyUI 5. shadcn/ui is available for Next.js and React (Vite). The live preview uses themx components. Supporting skill selections provide references for your coding agent; they do not install skills. Saved prompt setups stay in this browser.</p>
+      <p>Library mappings target Tailwind CSS 4 and daisyUI 5. shadcn/ui is available for Next.js and React (Vite). Previews offer inventory, product, and portfolio examples with custom controls, compiled daisyUI styles, or React shadcn/ui components. These are sample screens with local interactions.</p>
+      <p><a class="underline" href={`${base}/examples/`}>Reference examples</a> include runnable demos, desktop and mobile screenshots, recorded prompts, source, and browser checks. They show one agent-produced implementation that was corrected during verification. They are not a benchmark of AI models.</p>
+      <p>Supporting skill selections provide references for your coding agent; they do not install skills. Saved prompt setups stay in this browser.</p>
     </div>
   </div>
 </BaseLayout>

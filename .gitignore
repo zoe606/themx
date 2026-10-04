@@ -6,3 +6,12 @@ dist/
 
 # astro generated types
 .astro/
+
+# generated preview assets
+src/generated/
+public/preview-assets/
+public/demos/
+
+# browser test output
+playwright-report/
+test-results/

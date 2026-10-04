@@ -44,6 +44,14 @@ export function exportThemeCSS(theme: Pick<ThemeDefinition, "colors" | "typograp
 }
 
 export function exportLibraryCSS(theme: Pick<ThemeDefinition, "colors" | "typography" | "styleTokens" | "mediaEffect">, library: UiLibrary): string {
+  return libraryCSS(theme, library, false);
+}
+
+export function exportPreviewCSS(theme: Pick<ThemeDefinition, "colors" | "typography" | "styleTokens" | "mediaEffect">, library: UiLibrary): string {
+  return libraryCSS(theme, library, true);
+}
+
+function libraryCSS(theme: Pick<ThemeDefinition, "colors" | "typography" | "styleTokens" | "mediaEffect">, library: UiLibrary, runtime: boolean): string {
   const base = exportThemeCSS(theme);
   if (library === "custom") return base;
   const dark = contrastText(theme.colors.background) === "#FFFFFF";
@@ -71,6 +79,7 @@ export function exportLibraryCSS(theme: Pick<ThemeDefinition, "colors" | "typogr
       "--border": theme.styleTokens ? "var(--tx-card-border-width)" : "1px",
       "--depth": "0", "--noise": "0",
     };
+    if (runtime) return `${base}\n:root, [data-theme="themx"] {\n  color-scheme: ${dark ? "dark" : "light"};\n${Object.entries(values).map(([key, value]) => `  ${key}: ${value};`).join("\n")}\n}\n`;
     return `${base}\n@plugin "daisyui" {\n  themes: false;\n}\n\n@plugin "daisyui/theme" {\n  name: "themx";\n  default: true;\n  prefersdark: false;\n  color-scheme: ${dark ? "dark" : "light"};\n${Object.entries(values).map(([key, value]) => `  ${key}: ${value};`).join("\n")}\n}\n`;
   }
   const values: Record<string, string> = {
@@ -80,12 +89,13 @@ export function exportLibraryCSS(theme: Pick<ThemeDefinition, "colors" | "typogr
     secondary: "var(--tx-secondary)", "secondary-foreground": contrastText(theme.colors.secondary),
     muted: card, "muted-foreground": mutedText,
     accent: "var(--tx-accent)", "accent-foreground": contrastText(theme.colors.accent),
-    destructive: dark ? "#F87171" : "#B91C1C", border, input, ring: "var(--tx-text)",
+    destructive: dark ? "#F87171" : "#B91C1C", "destructive-foreground": contrastText(dark ? "#F87171" : "#B91C1C"), border, input, ring: "var(--tx-text)",
     sidebar: "var(--tx-surface-bg)", "sidebar-foreground": "var(--tx-text)",
     "sidebar-primary": "var(--tx-primary)", "sidebar-primary-foreground": contrastText(theme.colors.primary),
     "sidebar-accent": "var(--tx-accent)", "sidebar-accent-foreground": contrastText(theme.colors.accent),
     "sidebar-border": border, "sidebar-ring": "var(--tx-text)",
   };
+  if (runtime) return `${base}\n:root {\n  color-scheme: ${dark ? "dark" : "light"};\n  --radius: ${radius};\n${Object.entries(values).map(([key, value]) => `  --${key}: ${value};`).join("\n")}\n}\n`;
   return `${base}\n:root {\n  color-scheme: ${dark ? "dark" : "light"};\n  --radius: ${radius};\n${Object.entries(values).map(([key, value]) => `  --${key}: ${value};`).join("\n")}\n}\n\n@theme inline {\n  --font-sans: var(--tx-font-body);\n${Object.keys(values).map((key) => `  --color-${key}: var(--${key});`).join("\n")}\n  --radius-sm: calc(var(--radius) * 0.6);\n  --radius-md: calc(var(--radius) * 0.8);\n  --radius-lg: var(--radius);\n  --radius-xl: calc(var(--radius) * 1.4);\n}\n`;
 }
 

@@ -1,0 +1,83 @@
+{
+  "astra-inventory": {
+    "capturedAt": "2026-10-04T13:21:35.593Z",
+    "artifactHash": "f572bed3e4fa01c8a004e4d73585d6c23b42ab4fad27631fc3172fea9ae9a92a",
+    "browser": "Chromium 153.0.8010.12",
+    "checks": [
+      "Search, low-stock filtering, and empty results",
+      "Quantity validation, loading, stock totals, and reset",
+      "No horizontal page overflow at 1440px and 390px",
+      "No browser runtime errors",
+      "Automated WCAG A/AA checks at both viewports"
+    ],
+    "axeViolations": 0,
+    "viewports": [
+      {
+        "width": 1440,
+        "height": 900
+      },
+      {
+        "width": 390,
+        "height": 844
+      }
+    ],
+    "review": [
+      "Desktop keeps the stock table beside a shorter adjustment panel.",
+      "Mobile places summary labels and values on one row. The table has its own horizontal scroll area."
+    ]
+  },
+  "enterprise-product": {
+    "capturedAt": "2026-10-04T13:21:38.360Z",
+    "artifactHash": "28e44adbb224ba9b66f4bd854208eb91db38fe456eda0165993916869bc39700",
+    "browser": "Chromium 153.0.8010.12",
+    "checks": [
+      "React gallery, available sizes, and validation",
+      "Adding state, demo bag quantities, total, and clear action",
+      "No horizontal page overflow at 1440px and 390px",
+      "No browser runtime errors",
+      "Automated WCAG A/AA checks at both viewports"
+    ],
+    "axeViolations": 0,
+    "viewports": [
+      {
+        "width": 1440,
+        "height": 900
+      },
+      {
+        "width": 390,
+        "height": 844
+      }
+    ],
+    "review": [
+      "Desktop gives the product illustration more space than the choices.",
+      "Mobile stacks gallery and details. Size labels and the add action remain visible."
+    ]
+  },
+  "galaxy-portfolio": {
+    "capturedAt": "2026-10-04T13:21:40.285Z",
+    "artifactHash": "985ca39feb8e791d64546b55be746ca2a83331c003bf2a0919f9656145f39de8",
+    "browser": "Chromium 153.0.8010.12",
+    "checks": [
+      "Project filters and visible counts",
+      "Project dialog, Escape, close action, and restored keyboard focus",
+      "No horizontal page overflow at 1440px and 390px",
+      "No browser runtime errors",
+      "Automated WCAG A/AA checks at both viewports"
+    ],
+    "axeViolations": 0,
+    "viewports": [
+      {
+        "width": 1440,
+        "height": 900
+      },
+      {
+        "width": 390,
+        "height": 844
+      }
+    ],
+    "review": [
+      "Desktop uses a wider interface study beside two smaller studies.",
+      "Mobile keeps the project order and wraps category filters. Text stays outside the orbital artwork."
+    ]
+  }
+}

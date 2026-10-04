@@ -1,5 +1,6 @@
 import type { ThemeDefinition, UseCase } from "./themeCatalog";
-import { USE_CASE_LABELS } from "./themeCatalog";
+import { composeTheme, USE_CASE_LABELS } from "./themeCatalog";
+import type { PromptConfig } from "./generatePrompt";
 import { COMPONENTS, CSS_APPROACHES, FRAMEWORKS, OUTPUT_MODES, recommendedComponents, SKILL_CHOICES, supportsLibrary, TASK_MODES, TONES, UI_LIBRARIES } from "./promptOptions";
 import type { OutputMode, SkillChoice, TaskMode, UiLibrary } from "./promptOptions";
 
@@ -33,6 +34,21 @@ export function createPromptSetup(theme: ThemeDefinition): PromptSetup {
     brief: "", audience: "", useCase: theme.useCases[0], layoutNotes: "", interactionNotes: "",
     layerSlugs: {}, taskMode: "build", outputMode: "ui", skills: [], antislopMode: "during",
   };
+}
+
+export function resolvePromptSetup(theme: ThemeDefinition, themes: ThemeDefinition[], setup: PromptSetup) {
+  const layers = LAYER_KINDS.flatMap((kind) => {
+    const layer = themes.find((item) => item.slug === setup.layerSlugs[kind] && item.kind === kind);
+    return layer ? [layer] : [];
+  });
+  const config: PromptConfig = {
+    ...setup, themeName: theme.name, themeKind: theme.kind, characteristics: theme.characteristics,
+    colors: theme.colors, typography: theme.typography, styleTokens: theme.styleTokens,
+    mediaEffect: theme.mediaEffect, avoidFor: theme.avoidFor,
+    layoutRules: theme.layoutRules, interactionRules: theme.interactionRules,
+    useCase: USE_CASE_LABELS[setup.useCase], layers,
+  };
+  return { layers, composed: composeTheme(theme, layers), config };
 }
 
 export function parsePromptSetup(text: string, theme: ThemeDefinition, themes: ThemeDefinition[]): PromptSetup {

@@ -1,10 +1,10 @@
 import { useEffect, useState } from "preact/hooks";
 import { generatePrompt } from "../lib/generatePrompt";
-import { composeTheme, KIND_LABELS, USE_CASE_LABELS } from "../lib/themeCatalog";
+import { KIND_LABELS, USE_CASE_LABELS } from "../lib/themeCatalog";
 import type { ThemeDefinition, UseCase } from "../lib/themeCatalog";
 import { COMPONENTS, CSS_APPROACHES, FRAMEWORKS, getSkillReferences, OUTPUT_MODES, PROJECT_EXAMPLES, recommendedComponents, SKILL_CHOICES, supportsLibrary, TASK_MODES, TONES, UI_LIBRARIES } from "../lib/promptOptions";
 import type { UiLibrary } from "../lib/promptOptions";
-import { createPromptSetup, LAYER_KINDS, parsePromptSetup } from "../lib/promptSetup";
+import { createPromptSetup, LAYER_KINDS, parsePromptSetup, resolvePromptSetup } from "../lib/promptSetup";
 import type { PromptSetup } from "../lib/promptSetup";
 import LivePreview from "./LivePreview";
 import ThemeExport from "./ThemeExport";
@@ -26,18 +26,8 @@ export default function PromptBuilder({ theme, themes }: Props) {
   }, [storageKey]);
 
   const change = (values: Partial<PromptSetup>) => { setSetup((previous) => ({ ...previous, ...values })); setStatus(""); };
-  const layers = LAYER_KINDS.flatMap((kind) => {
-    const layer = themes.find((item) => item.slug === setup.layerSlugs[kind] && item.kind === kind);
-    return layer ? [layer] : [];
-  });
-  const composed = composeTheme(theme, layers);
-  const prompt = generatePrompt({
-    ...setup, themeName: theme.name, themeKind: theme.kind, characteristics: theme.characteristics,
-    colors: theme.colors, typography: theme.typography, styleTokens: theme.styleTokens,
-    mediaEffect: theme.mediaEffect, avoidFor: theme.avoidFor,
-    layoutRules: theme.layoutRules, interactionRules: theme.interactionRules,
-    useCase: USE_CASE_LABELS[setup.useCase], layers,
-  });
+  const { layers, composed, config } = resolvePromptSetup(theme, themes, setup);
+  const prompt = generatePrompt(config);
   const skillReferences = getSkillReferences(setup.skills, setup.uiLibrary);
   const isDocument = setup.outputMode === "design-md" || setup.outputMode === "agents-md";
   const outputLabel = isDocument ? "document" : "prompt";
@@ -59,12 +49,19 @@ export default function PromptBuilder({ theme, themes }: Props) {
     try { await navigator.clipboard.writeText(prompt); setStatus(`${isDocument ? "Document" : "Prompt"} copied.`); }
     catch { setStatus("Clipboard is unavailable. Select and copy the output below."); }
   };
-  const download = (content: string, name: string, mime: string) => {
-    const url = URL.createObjectURL(new Blob([content], { type: mime }));
+  const download = (content: string | Uint8Array, name: string, mime: string) => {
+    const body = typeof content === "string" ? content : new Uint8Array(content);
+    const url = URL.createObjectURL(new Blob([body], { type: mime }));
     const link = document.createElement("a");
     link.href = url; link.download = name; link.click();
     setTimeout(() => URL.revokeObjectURL(url), 1000);
     setStatus("Download started.");
+  };
+  const downloadBundle = async () => {
+    try {
+      const { createPromptBundle, zipFiles } = await import("../lib/promptBundle");
+      download(zipFiles(createPromptBundle(theme, themes, setup)), `${theme.slug}-design-bundle.zip`, "application/zip");
+    } catch { setStatus("The bundle could not be created. Download the individual outputs instead."); }
   };
   const save = () => {
     try { window.localStorage.setItem(storageKey, JSON.stringify(setup)); setStatus("Setup saved in this browser. Your brief is not uploaded."); }
@@ -166,11 +163,11 @@ export default function PromptBuilder({ theme, themes }: Props) {
           </label>)}
         </div>
       </fieldset>
-      {layers.length > 0 && <div class="mt-6 space-y-6">
+      <div class="mt-6 space-y-6">
         <p class="text-sm font-medium">{composed.name}</p>
-        <LivePreview theme={composed} />
-        <ThemeExport theme={composed} uiLibrary={setup.uiLibrary} idPrefix="combined-theme-export" />
-      </div>}
+        <LivePreview theme={composed} uiLibrary={setup.uiLibrary} useCase={setup.useCase} />
+        {layers.length > 0 && <ThemeExport theme={composed} uiLibrary={setup.uiLibrary} idPrefix="combined-theme-export" />}
+      </div>
       <fieldset class="mt-6">
         <legend class="text-sm font-medium">Optional skills</legend>
         <p class="mt-1 text-sm" style={{ color: "var(--tx-text-muted)" }}>Include skill references and installation instructions for your coding agent. Selecting a skill here does not install it.</p>
@@ -190,6 +187,7 @@ export default function PromptBuilder({ theme, themes }: Props) {
       <div class="mt-5 flex flex-wrap gap-2">
         <button class="tx-button" type="button" onClick={save}>Save setup</button>
         <button class="tx-button" type="button" onClick={() => download(JSON.stringify(setup, null, 2), `${theme.slug}-setup.json`, "application/json")}>Download setup</button>
+        <button class="tx-button" type="button" onClick={() => { void downloadBundle(); }}>Download design bundle .zip</button>
         <label class="grid gap-1 text-sm"><span>Import setup</span><input type="file" accept=".json,application/json" class="max-w-full" onChange={(event) => { void importSetup(event.currentTarget.files?.[0]); event.currentTarget.value = ""; }} /></label>
         <button class="tx-button" type="button" onClick={reset}>Reset setup</button>
       </div>
